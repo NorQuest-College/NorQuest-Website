@@ -470,6 +470,23 @@ main {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
+.container-grid {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -ms-grid;
+  display: grid;
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.container-flex {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 120rem;
+  margin: 0 auto; }
+
 .container-no, .container {
   position: relative;
   max-width: 120rem;
@@ -710,6 +727,16 @@ footer {
       padding-bottom: 1rem; }
       footer nav ul[class^="menu__"] li a {
         color: white; } }
+  footer .container-grid {
+    -ms-grid-columns: 1fr 3.2rem 1fr 3.2rem 1fr 3.2rem 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3.2rem; }
+  footer h4 {
+    color: white; }
+  footer .bottom-footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 /* Styles for components of the UI. */
 .table-wrapper {

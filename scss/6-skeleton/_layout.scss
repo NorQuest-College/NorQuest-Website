@@ -7,7 +7,19 @@
 main {
   flex-grow: 1;
 }
+.container-grid {
+  box-sizing: content-box;
+  display: grid;
+  max-width: $container;
+  margin: 0 auto;
 
+}
+.container-flex {
+  box-sizing: content-box;
+  display: flex;
+  max-width: $container;
+  margin: 0 auto;
+}
 .container-no {
   position: relative;
   max-width: $container;

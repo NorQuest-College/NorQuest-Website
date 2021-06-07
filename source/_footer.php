@@ -1,5 +1,5 @@
 <footer>
-  <div class="container">
+  <div class="container-grid">
     <div>
       <p>We acknowledge that we are on the traditional lands, referred to as Treaty 6 Territory and that the City of Edmonton and all the people here are beneficiaries of this peace and friendship treaty. </p>
     </div>
@@ -33,13 +33,26 @@
           <use xlink:href="#norquest-logo-vertical"></use>
         </svg>
       </div>
+      <div class="footer-social">
+      <ul>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+        <li><a href=""></a></li>
+      </ul>
+      </div>
     </div>
   </div>
-  <div class="container">
-    <p>© 2021 NorQuest College. All rights reserved.</p>
-    <ul>
-      <li><a href="">Terms of service</a></li>
-      <li><a href="">Privacy statemente</a></li>
-    </ul>
+  <div class="container-flex">
+    <div class="bottom-footer-content">
+      <p>© 2021 NorQuest College. All rights reserved.</p>
+      &nbsp;|&nbsp;
+      <nav>
+        <ul class="menu__footer-bottom">
+          <li><a href="">Terms of service</a></li>
+          <li><a href="">Privacy statemente</a></li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </footer>
