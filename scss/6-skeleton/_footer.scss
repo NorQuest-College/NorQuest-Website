@@ -12,4 +12,14 @@ footer {
       }
     }
   }
+  .container-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 3.2rem;
+  }
+  h4 {
+    color: white;
+  }
+  .bottom-footer-content {
+    display: flex;
+  }
 }

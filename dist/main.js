@@ -8,7 +8,6 @@
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var map = {
-	"./ajax-loader.svg": "./images/sprites/ajax-loader.svg",
 	"./norquest-logo-horizontal.svg": "./images/sprites/norquest-logo-horizontal.svg",
 	"./norquest-logo-vertical.svg": "./images/sprites/norquest-logo-vertical.svg"
 };
@@ -64,25 +63,6 @@ window.addEventListener("scroll", function () {
   } // console.log(scrollpos);
 
 });
-
-/***/ }),
-
-/***/ "./images/sprites/ajax-loader.svg":
-/*!****************************************!*\
-  !*** ./images/sprites/ajax-loader.svg ***!
-  \****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-      id: "ajax-loader-usage",
-      viewBox: "0 0 100 100",
-      url: __webpack_require__.p + "sprites.svg#ajax-loader",
-      toString: function () {
-        return this.url;
-      }
-    });
 
 /***/ }),
 
