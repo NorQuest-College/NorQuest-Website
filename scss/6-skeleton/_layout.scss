@@ -1,0 +1,22 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.container-no {
+  position: relative;
+  max-width: $container;
+  margin: 0 auto;
+}
+
+.container {
+  @extend .container-no;
+  box-sizing: content-box;
+  padding-right: $space_sm;
+  padding-left: $space_sm;
+}

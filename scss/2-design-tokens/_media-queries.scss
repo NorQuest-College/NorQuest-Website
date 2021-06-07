@@ -1,0 +1,29 @@
+$xs: 20em; // 320px
+$small: 26.5625em; // 425px
+$smedium: 40em; // 640px
+$medium-down: 47.9375em; // 767px
+$medium: 48em; // 768px
+$mlarge: 53.75em; // 860px
+$large: 62em; // 992px
+$lxlarge-down: 63.9375em; // 1023px
+$lxlarge: 64em; // 1024px
+$xlarge: 71.25em; // 1140px
+$xxlarge: 75em; // 1200px
+
+$screenSizes: (
+  xs: $xs,
+  small: $small,
+  smedium: $smedium,
+  medium: $medium,
+  mlarge: $mlarge,
+  large: $large,
+  lxlarge: $lxlarge,
+  xlarge: $xlarge,
+  xxlarge: $xxlarge
+);
+
+@mixin breakpoint($breakpoint) {
+  @media (min-width: map-get($screenSizes, $breakpoint)) {
+    @content;
+  }
+}

@@ -1,0 +1,46 @@
+$container: 120rem;
+$base_font: 10px;
+$font_size: 1.6rem;
+
+// Colors
+
+:root {
+  --black: #424242;
+  --grey: #6e7371;
+  --light_grey: #e1e1e1;
+  --ivory: #fff7e9;
+  --ffffff: #ffffff;
+  --rouge: #ae2830;
+  --red: #e71321;
+  --yellow: #ffbd00;
+  --orange: #f58b2e;
+  --purple: #702f8a;
+}
+
+$black: #424242;
+$grey: #6e7371;
+$light_grey: #e1e1e1;
+$ivory: #fff7e9;
+$rouge: #ae2830;
+$red: #e71321;
+$yellow: #ffbd00;
+$orange: #f58b2e;
+$purple: #702f8a;
+
+$offwhite: #acacac;
+$buttongrey: #cececd;
+$beige: #efeeea;
+$white: #fff;
+$green: #73a03c;
+
+$lazy-gradient: linear-gradient(
+      180deg,
+      #acacac,
+      #b5b5b5,
+      #bfbfbf,
+      #c8c8c8,
+      #d2d2d2,
+      #dbdbdb,
+      #e5e5e5,
+      #efefef
+    );

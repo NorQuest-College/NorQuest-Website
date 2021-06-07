@@ -1,0 +1,101 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: $black;
+  font-family: $primary_font;
+}
+
+h1 {
+  // viewport min/max must be in ems for proper rendering, so font size min/max must also be passed as ems
+  // 40px = 2.5em, 72px = 4.5em
+  @include interpolate(font-size, $xs, $xxlarge, 2.5em, 4.5em);
+  // pass line height in units relative to font-size of parent element (ems)
+  @include interpolate(line-height, $xs, $xxlarge, 1.25em, 1.17em);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.22;
+}
+
+h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  line-height: 1.33;
+}
+
+h4 {
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+h5 {
+  margin-bottom: 1.25rem;
+  font-size: 1.25rem;
+}
+
+h6 {
+  margin-bottom: 1.25rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: $font_size;
+  font-family: $primary_font;
+  line-height: 1.6;
+}
+
+p.lead {
+  margin-bottom: 1rem;
+  font-size: $font_size;
+  font-family: $primary_font;
+  line-height: 1.6;
+}
+
+blockquote {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-left: 0.5rem solid $grey;
+  background: $white;
+
+  p {
+    color: $grey;
+    font-style: italic;
+    font-family: $primary_font;
+    line-height: 1.6;
+  }
+}
+
+small {
+  display: block;
+  margin: 0;
+  color: $grey;
+  font-size: 1.8rem;
+}
+
+// default WYSIWYG text styles
+b,
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+u {
+  text-decoration: underline;
+}
+
+s {
+  text-decoration: line-through;
+}

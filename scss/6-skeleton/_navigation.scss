@@ -1,0 +1,252 @@
+//
+// *NOTE: It is not recommended that you use these styles in their present form! It would be advisable to use these as reference only. Build your custom styles while keeping mobile-first, accessibility, and modularity top of mind.
+//
+
+nav {
+  ul[class^="menu__"] {
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    line-height: inherit;
+
+    li {
+      padding: 0 2rem;
+
+      a {
+        box-shadow: inset 0 -0.1rem 0 currentColor;
+        transition: 0.3s;
+
+        &:hover {
+          padding-bottom: 0.3rem;
+        }
+      }
+    }
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+    }
+  }
+}
+
+.mobile_toggle__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 11rem;
+  margin-right: $space_xs;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1rem;
+
+  @include breakpoint(lxlarge) {
+    display: none;
+  }
+}
+
+.mobile_toggle {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -$space_xs;
+    width: 11rem;
+    height: 11rem;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+  }
+
+  &.is-active::before {
+    background-color: $grey;
+  }
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+  }
+}
+
+// @media screen and (max-width: $medium-down) {
+//   body.menu-is-active {
+//     .overlay {
+//       content: "";
+//       position: fixed;
+//       top: 0;
+//       left: 0;
+//       z-index: 2;
+//       display: block;
+//       width: 100%;
+//       height: 100%;
+//       background-color: rgba(51, 51, 51, 0.9);
+//       transition: 0.3s;
+//     }
+//   }
+// }
+
+.has-hero-image {
+  header {
+    position: absolute;
+
+    nav ul[class^="menu__"] li a {
+      color: $black;
+
+      &:hover {
+        color: $white;
+      }
+
+      @include breakpoint(medium) {
+        color: $white;
+      }
+    }
+  }
+}
+
+header.header {
+  position: static;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid $yellow;
+  background-color: white;
+  z-index: 1;
+  @extend %transition;
+  &.stick {
+    background-color: $yellow;
+    position: fixed;
+    @media screen and (max-width: $medium-down) {
+      background-color: $yellow;
+    }
+  }
+
+  .container {
+    display: block;
+    @include breakpoint(medium) {
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows: 3rem 7rem;
+    }
+  }
+  nav.menu-top-nav {
+    margin-left: auto;
+    grid-column: 2;
+    grid-row: 1;
+  }
+  .site-logo {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .header-search {
+    grid-column: 2;
+    grid-row: 2/3;
+    max-width: 28.6rem;
+    margin-left: auto;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  nav.menu-primary-nav {
+    grid-column: 2;
+    grid-row: 2/3;
+
+    margin-top: auto;
+    margin-bottom: 2rem;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    @include breakpoint(medium) {
+      display: block;
+      height: auto;
+      margin-top: auto;
+      margin-bottom: 2rem;
+      background: none;
+      opacity: 1;
+      visibility: visible;
+    }
+    &.is-active {
+      @extend %transition;
+      display: block;
+      height: auto;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    ul[class^="menu__"] {
+      li {
+        padding: 1rem 0;
+        text-align: right;
+
+        &.menu-main__item--active-trail {
+          a {
+            padding-bottom: 0.3rem;
+            box-shadow: inset 0 -0.3rem 0 $yellow;
+          }
+        }
+
+        a {
+          color: $black;
+          box-shadow: none;
+          font-weight: 700;
+          font-size: 2rem;
+          text-transform: uppercase;
+
+          @include breakpoint(medium) {
+            font-size: 1.6rem;
+
+            &:hover {
+              box-shadow: inset 0 -0.3rem 0 $yellow;
+            }
+          }
+
+          @include breakpoint(lxlarge) {
+            font-size: 1.5rem;
+          }
+        }
+
+        @include breakpoint(medium) {
+          padding: 0 0.5rem;
+        }
+
+        @include breakpoint(large) {
+          padding: 0 1rem;
+          text-align: left;
+        }
+      }
+    }
+    li {
+      .menu__subnav {
+        display: none;
+        @include breakpoint(medium) {
+          display: none;
+          width: 100%;
+          grid-template-columns: 1fr 1fr 1fr 1fr;
+          background-color: white;
+          position: absolute;
+          left: 0;
+          z-index: 1;
+          background: white;
+          &:before {
+            position: absolute;
+            width: 100vw;
+            box-shadow: 0 10px 10px 0 rgba(2, 31, 44, 0.05);
+            background: white;
+            left: calc(-50vw + 50%);
+            right: 100%;
+            top: 0;
+            z-index: -1;
+            content: "";
+            height: 100%;
+          }
+          &:after {
+            content: "";
+            height: 100%;
+          }
+        }
+      }
+      &:hover {
+        .menu__subnav {
+          display: grid;
+        }
+      }
+    }
+  }
+}

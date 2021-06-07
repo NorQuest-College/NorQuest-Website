@@ -1,0 +1,15 @@
+footer {
+  background-image: linear-gradient(to bottom, var(--black), #2b2b2b);
+  color: white;
+  padding-top :6.4rem;
+  padding-bottom: 3.2rem;
+  @media screen and (max-width: 64rem) {
+    nav ul[class^="menu__"] {
+      li {
+        padding-top: $space_xs;
+        padding-bottom: $space_xs;
+        a { color: white; }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+/*
+* Progress bar styles for batch processing (e.g. view CSV export).
+* Markup/JS located in /js/source/progress[.es6].js
+* Backup template located in /[theme]/templates/progress-bar.html.twig
+ */
+.progress {
+  overflow: hidden;
+  padding-top: $space_ml;
+  padding-bottom: $space_sm;
+
+  .progress {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .progress__track {
+    height: $space_ms;
+    margin-top: 0.6rem;
+    border-color: $grey;
+    border-radius: 2.4rem;
+  }
+
+  .progress__bar {
+    @keyframes move {
+      0% {
+        background-position: 0 0;
+      }
+      100% {
+        background-position: $space_md $space_md;
+      }
+    }
+
+    position: relative;
+    height: 100%;
+    border-radius: 2.4rem;
+    background-color: $white;
+    transition: width 0.3s ease;
+
+    span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      overflow: hidden;
+      border-radius: 2.4rem;
+      background-image: linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+      );
+      background-size: $space_md $space_md;
+      animation: move 2s linear infinite;
+    }
+  }
+
+  .progress__description,
+  .progress__percentage {
+    margin-top: 0.4rem;
+    color: $black;
+    font-size: 1.6rem;
+  }
+
+  .progress__description {
+    margin-left: 1rem;
+  }
+
+  .progress__percentage {
+    margin-right: 1rem;
+  }
+
+  .messages {
+    display: none;
+  }
+}

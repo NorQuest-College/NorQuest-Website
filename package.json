@@ -1,0 +1,49 @@
+{
+  "name": "royal_roads_lib",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-dev": "webpack --mode development --progress --watch",
+    "build-prod": "webpack --mode production --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://git.yellowpencil.com/onpoint-webops/RRU-LIB"
+  },
+  "author": "Yellow Pencil",
+  "license": "ISC",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "Firefox ESR",
+    "IE 11"
+  ],
+  "homepage": "https://git.yellowpencil.com/onpoint-webops/RRU-LIB#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "babel-loader": "^8.2.2",
+    "browser-sync": "^2.26.14",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "core-js": "^3.11.3",
+    "css-loader": "^5.2.4",
+    "file-loader": "^6.2.0",
+    "glob": "^7.1.2",
+    "html-loader": "^2.1.2",
+    "imagemin": "^8.0.0",
+    "img-loader": "^4.0.0",
+    "mini-css-extract-plugin": "^1.6.0",
+    "node-sass": "^6.0.0",
+    "node-sass-glob-importer": "^5.3.2",
+    "path": "^0.12.7",
+    "postcss": "^8.2.13",
+    "postcss-loader": "^5.2.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^11.0.1",
+    "svg-sprite-loader": "^6.0.6",
+    "terser-webpack-plugin": "^5.1.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
+  }
+}

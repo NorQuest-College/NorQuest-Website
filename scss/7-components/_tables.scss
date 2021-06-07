@@ -1,0 +1,38 @@
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+table {
+  width: 100%;
+  margin-bottom: $space_sm;
+  border-collapse: collapse;
+
+  caption {
+    margin-bottom: $space_xs;
+  }
+}
+
+th,
+td {
+  width: 1%;
+  padding: 1.2rem 2rem 3rem;
+}
+
+th {
+  border-bottom: 0.2rem solid $white;
+  background-color: $offwhite;
+  font-weight: 700;
+}
+
+tbody tr {
+  td {
+    border-bottom: 0.2rem solid $offwhite;
+  }
+
+  td:first-child {
+    border-bottom-color: $white;
+    background-color: rgba($offwhite, 0.5);
+  }
+}

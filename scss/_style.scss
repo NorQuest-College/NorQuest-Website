@@ -1,0 +1,13 @@
+/* SCSS structure borrowed from:
+https://matthiasott.com/notes/how-i-structure-my-css */
+
+@charset "UTF-8";
+
+@import '1-settings/_settings';
+@import '2-design-tokens/_design-tokens';
+@import '3-tools/_tools';
+@import '4-generic/_generic';
+@import '5-elements/_elements';
+@import '6-skeleton/_skeleton';
+@import '7-components/_components';
+@import '8-utilities/_utilities';
