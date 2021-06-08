@@ -8,6 +8,10 @@
 /***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var map = {
+	"./NorQuest-badge-colour.svg": "./images/sprites/NorQuest-badge-colour.svg",
+	"./NorQuest-badge-light.svg": "./images/sprites/NorQuest-badge-light.svg",
+	"./NorQuest-badge-white.svg": "./images/sprites/NorQuest-badge-white.svg",
+	"./NorQuest-logo.svg": "./images/sprites/NorQuest-logo.svg",
 	"./norquest-logo-horizontal.svg": "./images/sprites/norquest-logo-horizontal.svg",
 	"./norquest-logo-vertical.svg": "./images/sprites/norquest-logo-vertical.svg"
 };
@@ -63,6 +67,82 @@ window.addEventListener("scroll", function () {
   } // console.log(scrollpos);
 
 });
+
+/***/ }),
+
+/***/ "./images/sprites/NorQuest-badge-colour.svg":
+/*!**************************************************!*\
+  !*** ./images/sprites/NorQuest-badge-colour.svg ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "NorQuest-badge-colour-usage",
+      viewBox: "0 0 159.6 186.7",
+      url: __webpack_require__.p + "sprites.svg#NorQuest-badge-colour",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/NorQuest-badge-light.svg":
+/*!*************************************************!*\
+  !*** ./images/sprites/NorQuest-badge-light.svg ***!
+  \*************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "NorQuest-badge-light-usage",
+      viewBox: "0 0 159.6 186.7",
+      url: __webpack_require__.p + "sprites.svg#NorQuest-badge-light",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/NorQuest-badge-white.svg":
+/*!*************************************************!*\
+  !*** ./images/sprites/NorQuest-badge-white.svg ***!
+  \*************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "NorQuest-badge-white-usage",
+      viewBox: "0 0 159.6 186.7",
+      url: __webpack_require__.p + "sprites.svg#NorQuest-badge-white",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/NorQuest-logo.svg":
+/*!******************************************!*\
+  !*** ./images/sprites/NorQuest-logo.svg ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "NorQuest-logo-usage",
+      viewBox: "0 0 749.2 186.7",
+      url: __webpack_require__.p + "sprites.svg#NorQuest-logo",
+      toString: function () {
+        return this.url;
+      }
+    });
 
 /***/ }),
 
