@@ -689,13 +689,16 @@ header.header {
         header.header nav.menu-primary-nav li .menu__subnav {
           display: none;
           width: 100%;
-          -ms-grid-columns: 1fr 1fr 1fr 1fr;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
+          -ms-grid-columns: (268px)[4];
+          grid-template-columns: repeat(4, 268px);
           background-color: white;
           position: absolute;
-          left: 0;
+          left: 2rem;
           z-index: 1;
-          background: white; }
+          background: white;
+          -webkit-columns: 4;
+             -moz-columns: 4;
+                  columns: 4; }
           header.header nav.menu-primary-nav li .menu__subnav:before {
             position: absolute;
             width: 100vw;
@@ -711,9 +714,17 @@ header.header {
           header.header nav.menu-primary-nav li .menu__subnav:after {
             content: "";
             height: 100%; } }
+      header.header nav.menu-primary-nav li .menu__subnav.menu__subnav .lvl-3 {
+        display: none; }
     header.header nav.menu-primary-nav li:hover .menu__subnav {
       display: -ms-grid;
       display: grid; }
+    header.header nav.menu-primary-nav .menu__content {
+      -ms-grid-column: 4;
+      grid-column: 4;
+      -ms-grid-row: 1;
+      -ms-grid-row-span: 3;
+      grid-row: 1/4; }
 
 footer {
   background-image: -webkit-gradient(linear, left top, left bottom, from(var(--black)), to(#2b2b2b));

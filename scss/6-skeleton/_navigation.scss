@@ -218,12 +218,15 @@ header.header {
         @include breakpoint(medium) {
           display: none;
           width: 100%;
-          grid-template-columns: 1fr 1fr 1fr 1fr;
+          // grid-template-columns: repeat(3, 25% [col-start]);
+          // grid-template-columns: 1fr 1fr 1fr 1fr;
+          grid-template-columns: repeat(4, 268px);
           background-color: white;
           position: absolute;
-          left: 0;
+          left: 2rem;
           z-index: 1;
           background: white;
+          columns: 4;
           &:before {
             position: absolute;
             width: 100vw;
@@ -241,12 +244,23 @@ header.header {
             height: 100%;
           }
         }
+        &.menu__subnav
+        .lvl-2 {}
+        &.menu__subnav
+        .lvl-3 {
+          display: none;
+        }
       }
       &:hover {
         .menu__subnav {
           display: grid;
+          // display: block;
         }
       }
+    }
+    .menu__content {
+      grid-column: 4;
+      grid-row: 1/4;
     }
   }
 }
