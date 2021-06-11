@@ -181,11 +181,11 @@ main img {
     max-width: 9rem;
 
     @include breakpoint(medium) {
-      max-width: 13.5rem;
+      max-width: 14.4rem;
     }
 
     @include breakpoint(lxlarge) {
-      max-width: 13.5rem;
+      max-width: 14.4rem;
     }
   }
 }

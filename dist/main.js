@@ -12,6 +12,7 @@ var map = {
 	"./NorQuest-badge-light.svg": "./images/sprites/NorQuest-badge-light.svg",
 	"./NorQuest-badge-white.svg": "./images/sprites/NorQuest-badge-white.svg",
 	"./NorQuest-logo.svg": "./images/sprites/NorQuest-logo.svg",
+	"./norquest-logo-horizontal-edit.svg": "./images/sprites/norquest-logo-horizontal-edit.svg",
 	"./norquest-logo-horizontal.svg": "./images/sprites/norquest-logo-horizontal.svg",
 	"./norquest-logo-vertical.svg": "./images/sprites/norquest-logo-vertical.svg"
 };
@@ -139,6 +140,25 @@ __webpack_require__.r(__webpack_exports__);
       id: "NorQuest-logo-usage",
       viewBox: "0 0 749.2 186.7",
       url: __webpack_require__.p + "sprites.svg#NorQuest-logo",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/norquest-logo-horizontal-edit.svg":
+/*!**********************************************************!*\
+  !*** ./images/sprites/norquest-logo-horizontal-edit.svg ***!
+  \**********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "norquest-logo-horizontal-edit-usage",
+      viewBox: "0 0 750 188",
+      url: __webpack_require__.p + "sprites.svg#norquest-logo-horizontal-edit",
       toString: function () {
         return this.url;
       }

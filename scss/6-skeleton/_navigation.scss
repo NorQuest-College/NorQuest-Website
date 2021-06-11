@@ -13,14 +13,13 @@ nav {
     line-height: inherit;
 
     li {
-      padding: 0 2rem;
-
+      // padding: 0 2rem;
       a {
-        box-shadow: inset 0 -0.1rem 0 currentColor;
-        transition: 0.3s;
+        // box-shadow: inset 0 -0.1rem 0 currentColor;
+        // transition: 0.3s;
 
         &:hover {
-          padding-bottom: 0.3rem;
+          // padding-bottom: 0.3rem;
         }
       }
     }
@@ -68,54 +67,31 @@ nav {
   }
 }
 
-// @media screen and (max-width: $medium-down) {
-//   body.menu-is-active {
-//     .overlay {
-//       content: "";
-//       position: fixed;
-//       top: 0;
-//       left: 0;
-//       z-index: 2;
-//       display: block;
-//       width: 100%;
-//       height: 100%;
-//       background-color: rgba(51, 51, 51, 0.9);
-//       transition: 0.3s;
-//     }
-//   }
-// }
-
-.has-hero-image {
-  header {
-    position: absolute;
-
-    nav ul[class^="menu__"] li a {
-      color: $black;
-
-      &:hover {
-        color: $white;
-      }
-
-      @include breakpoint(medium) {
-        color: $white;
-      }
-    }
-  }
-}
-
 header.header {
-  position: static;
+  position: fixed;
   width: 100%;
-  height: 100px;
+  height: 10rem;
   border-bottom: 1px solid $yellow;
   background-color: white;
   z-index: 1;
   @extend %transition;
   &.stick {
-    background-color: $yellow;
-    position: fixed;
+    background-color: $ivory;
+    transform: translate3d(0,-36px,0);
+    @extend %transition;
     @media screen and (max-width: $medium-down) {
       background-color: $yellow;
+    }
+    .site-logo {
+      align-self: center;
+      // @extend %transition;
+    }
+    svg {
+      height: 2.4em;
+    }
+    #logo-text {
+      visibility: hidden;
+      @extend %transition;
     }
   }
 
@@ -124,40 +100,84 @@ header.header {
     @include breakpoint(medium) {
       display: grid;
       grid-template-columns: 1fr 4fr;
-      grid-template-rows: 3rem 7rem;
+      grid-template-rows: 3.6rem 6.4rem;
     }
   }
   nav.menu-top-nav {
-    margin-left: auto;
+    position: relative;
+    background-color: $red;
     grid-column: 2;
     grid-row: 1;
+    height: 100%;
+    &:after {
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      background: $red;
+      left: 100%;
+      top: 0;
+      content: "";
+    }
+    ul {
+      &.menu__top-nav {
+        align-items: center;
+        justify-content: flex-end;
+        height: 100%;
+        li {
+          &:first-child a { margin-left: 0; }
+          &:last-child a { margin-right: 0; }
+        }
+        a {
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 1.5;
+          margin: 0 2rem 0.5rem 2.1rem;
+          color: $white;
+        }
+      }
+    }
+  }
+  .nav-search {
+    position: relative;
+    grid-column: 2;
+    grid-row: 2/3;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    background: $ivory;
+    height: 100%;
+    border-bottom: 1px solid $yellow;
+    &:after {
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      background: $ivory;
+      left: 100%;
+      top: 0;
+      content: "";
+    }
   }
   .site-logo {
     grid-column: 1;
     grid-row: 2;
   }
+  svg {
+    height: 3.6em;
+  }
+  #logo-text {
+    visibility: visible;
+  }
   .header-search {
-    grid-column: 2;
-    grid-row: 2/3;
+    width: 100%;
     max-width: 28.6rem;
-    margin-left: auto;
-    margin-top: 1.2rem;
-    margin-bottom: 1.2rem;
   }
   nav.menu-primary-nav {
-    grid-column: 2;
-    grid-row: 2/3;
-
-    margin-top: auto;
-    margin-bottom: 2rem;
     height: 0;
     opacity: 0;
     visibility: hidden;
     @include breakpoint(medium) {
       display: block;
       height: auto;
-      margin-top: auto;
-      margin-bottom: 2rem;
       background: none;
       opacity: 1;
       visibility: visible;
@@ -172,43 +192,31 @@ header.header {
 
     ul[class^="menu__"] {
       li {
-        padding: 1rem 0;
         text-align: right;
-
-        &.menu-main__item--active-trail {
-          a {
-            padding-bottom: 0.3rem;
-            box-shadow: inset 0 -0.3rem 0 $yellow;
-          }
-        }
 
         a {
           color: $black;
-          box-shadow: none;
           font-weight: 700;
           font-size: 2rem;
-          text-transform: uppercase;
 
           @include breakpoint(medium) {
             font-size: 1.6rem;
 
             &:hover {
-              box-shadow: inset 0 -0.3rem 0 $yellow;
             }
           }
-
           @include breakpoint(lxlarge) {
             font-size: 1.5rem;
           }
         }
 
         @include breakpoint(medium) {
-          padding: 0 0.5rem;
+
         }
 
         @include breakpoint(large) {
-          padding: 0 1rem;
-          text-align: left;
+
+
         }
       }
     }
@@ -218,8 +226,6 @@ header.header {
         @include breakpoint(medium) {
           display: none;
           width: 100%;
-          // grid-template-columns: repeat(3, 25% [col-start]);
-          // grid-template-columns: 1fr 1fr 1fr 1fr;
           grid-template-columns: repeat(4, 268px);
           background-color: white;
           position: absolute;
@@ -254,7 +260,6 @@ header.header {
       &:hover {
         .menu__subnav {
           display: grid;
-          // display: block;
         }
       }
     }
