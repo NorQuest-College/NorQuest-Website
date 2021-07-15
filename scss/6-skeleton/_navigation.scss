@@ -103,6 +103,16 @@ header.header {
       content: "";
       z-index: -1;
     }
+    @media screen and (max-width: $mlarge-down) {
+      max-height: 0;
+      transition: all .3s ease;
+      overflow:hidden;
+      &.is-active {
+       display: flex;
+       max-height: 5000px;
+       transition: all 1s ease;
+     }
+    }
     @include breakpoint(mlarge){
       align-items: center;
       justify-content: flex-end;
@@ -217,7 +227,7 @@ header.header {
           border-bottom: unset;
         }
         &:last-child { padding-right: 5rem; }
-        > a {
+        a {
           margin: 0 2rem;
           font-size: 1.6rem;
           font-weight: 500;
@@ -230,14 +240,24 @@ header.header {
             font-size: 1.8rem;
           }
         }
-        .menu-close {
+        button.menu-close {
           position: absolute;
           height: 3.2rem;
           width: 3.2rem;
           top: 1.6rem;
           right: 1.4rem;
+          padding: 0;
+          background: transparent;
+          border: transparent;
           @include breakpoint(mlarge) {
             display: none;
+          }
+          &.active {
+            border: 1px solid $rouge;
+            .menu-close-icon {
+              fill: $rouge !important;
+              transform:rotate(315deg)
+            }
           }
         }
         .menu-close-icon {
@@ -245,6 +265,9 @@ header.header {
           width: 1.2em;
           display: block;
           margin: 0.6rem auto;
+          pointer-events: none;
+          transition-duration: 0.3s;
+          transition-property: transform;
         }
       }
       > li {
@@ -300,19 +323,38 @@ header.header {
         }
         &.menu__subnav{
           li {
-            a {
-              margin: 0;
+            @media screen and (max-width: $mlarge-down) {
+              position: relative;
             }
           }
           &.lvl-2 {
+            @media screen and (max-width: $mlarge-down) {
+              &.active {
+                display: block;
+                border-left: 1.2rem solid white;
+              }
+            }
+            li {
+              p {
+                display: none;
+                @include breakpoint(mlarge) {
+                  display: block;
+                }
+              }
+            }
             a {
               font-size: 1.8rem;
-              font-weight: 600;
               line-height: 1.11;
             }
           }
           &.lvl-3 {
             display: none;
+            @media screen and (max-width: $mlarge-down) {
+              &.active {
+                display: block;
+                border-left: 1.2rem solid $red;
+              }
+            }
           }
         }
       }
@@ -325,8 +367,12 @@ header.header {
       }
     }
     .menu__content {
-      grid-column: 4;
-      grid-row: 1/4;
+      display: none;
+      @include breakpoint(mlarge) {
+        grid-column: 4;
+        grid-row: 1/4;
+        display: block;
+      }
     }
   }
 }

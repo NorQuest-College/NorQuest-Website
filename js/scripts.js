@@ -27,17 +27,41 @@ document.querySelector(".header-search-icon-wrapper").onclick = function searchI
 
 // mobile hamburger toggle
 const mobileToggle = document.querySelector(".mobile_toggle");
+const menuTopNav = document.querySelector(".menu-top-nav");
+const navSearch = document.querySelector(".nav-search");
 document.querySelector(".mobile_toggle").onclick = function mobileMenuToggle() {
   mobileToggle.classList.toggle("is-active");
+  menuTopNav.classList.toggle("is-active");
+  navSearch.classList.toggle("is-active");
 };
 // -- END -- mobile hamburger toggle
 
 // Mobile sub nav toggle button
 const toggleSubNavs = document.getElementsByClassName("menu-close");
+const toggleSubMenu = document.getElementsByClassName("lvl-2");
+
 for (var i = 0; i < toggleSubNavs.length; i++) {
-  toggleSubNavs[i].addEventListener("click", subNavToggle);
+  toggleSubNavs[i]
+    .addEventListener("click", function (e) {
+      subNavToggle(e),
+      lvl2Toggle(e)
+      lvl3Toggle(e)
+    });
 }
-function subNavToggle() {
-  this.classList.toggle("active");
+function subNavToggle(e) {
+  e.target.classList.toggle("active");
+}
+
+function lvl2Toggle(e) {
+  var toggleSibling = e.target.nextElementSibling;
+  if (toggleSibling.classList.contains( 'lvl-2' )) {
+    e.target.nextElementSibling.classList.toggle("active");
+  }
+}
+function lvl3Toggle(e) {
+  var toggleSibling = e.target.nextElementSibling;
+  if (toggleSibling.classList.contains("lvl-3")) {
+    e.target.nextElementSibling.classList.toggle("active");
+  }
 }
 // -- END -- Mobile sub nav toggle button

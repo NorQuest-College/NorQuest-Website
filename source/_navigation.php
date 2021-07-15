@@ -2,18 +2,22 @@
   <ul class="menu__primary lvl-1">
     <li>
       <a href="">Programs and courses</a>
-      <!-- <svg viewbox="0 0 16 16" class="menu-open">
-        <use xlink:href="#menu-open"></use>
-      </svg> -->
-      <div class="menu-close">
-        <svg viewbox="0 0 16 16" class="menu-close-icon">
+      <button class="menu-close">
+        <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
           <use xlink:href="#menu-close"></use>
         </svg>
-      </div>
+      </button>
       <ul class="menu__subnav lvl-2">
-        <li><a href="">Program and course listing</a></li>
+        <li>
+          <a href="">Program and course listing</a>
+        </li>
         <li>
           <a href="">Continuing education</a>
+          <button class="menu-close">
+            <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
+              <use xlink:href="#menu-close"></use>
+            </svg>
+          </button>
           <ul class="menu__subnav lvl-3">
             <li><a href="">Browse programs and courses</a></li>
             <li><a href="">Colbourne Institute for Inclusive Leadership</a></li>
@@ -26,6 +30,11 @@
         <li><a href="">Dual credit programs</a></li>
         <li>
           <a href="">Learning at NorQuest</a>
+          <button class="menu-close">
+            <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
+              <use xlink:href="#menu-close"></use>
+            </svg>
+          </button>
           <ul class="menu__subnav lvl-3">
             <li><a href="">Definitions</a></li>
             <li><a href="">Open Admissions Pathways</a></li>
@@ -42,11 +51,11 @@
     </li>
     <li>
       <a href="">Applying to NorQuest</a>
-      <div class="menu-close">
-        <svg viewbox="0 0 16 16" class="menu-close-icon">
+      <button class="menu-close">
+        <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
           <use xlink:href="#menu-close"></use>
         </svg>
-      </div>
+      </button>
       <ul class="menu__subnav lvl-2">
         <li>
           <a href="">How to apply</a>
@@ -138,6 +147,11 @@
     </li>
     <li>
       <a href="">Student resources</a>
+      <button class="menu-close">
+        <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
+          <use xlink:href="#menu-close"></use>
+        </svg>
+      </button>
       <ul class="menu__subnav lvl-2">
         <li>
           <a href="">Academic support</a>
@@ -222,6 +236,11 @@
     </li>
     <li>
       <a href="">About</a>
+      <button class="menu-close">
+        <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
+          <use xlink:href="#menu-close"></use>
+        </svg>
+      </button>
       <ul class="menu__subnav lvl-2">
         <li>
           <a href="">About NorQuest Collegevc</a>

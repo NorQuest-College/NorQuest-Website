@@ -2,12 +2,22 @@
   nav.menu-top-nav {
     position: relative;
     background-color: $red;
-    height: 100%;
     order: 2;
+    @media screen and (max-width: $mlarge-down) {
+      max-height: 0;
+      transition: all .3s ease;
+      overflow:hidden;
+      &.is-active {
+       display: block;
+       max-height: 500px;
+       transition: all 1s ease;
+     }
+   }
     @include breakpoint(mlarge) {
       grid-column: 2;
       grid-row: 1;
       order: unset;
+      display: block;
     }
     &:after {
       position: absolute;
@@ -31,9 +41,9 @@
         }
         li {
           width: 50%;
-          padding-top: 1.7rem;
+          padding: 0.85rem 0;
           @include breakpoint(mlarge) {
-            padding-top: 0;
+            padding: 0;
             width: auto;
             &:last-child a { margin-right: 0; }
           }
