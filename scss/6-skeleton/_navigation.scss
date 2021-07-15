@@ -1,7 +1,7 @@
 //
 // *NOTE: It is not recommended that you use these styles in their present form! It would be advisable to use these as reference only. Build your custom styles while keeping mobile-first, accessibility, and modularity top of mind.
 //
-
+// Default menu styles
 nav {
   ul[class^="menu__"] {
     display: flex;
@@ -11,36 +11,18 @@ nav {
     padding: 0;
     list-style-type: none;
     line-height: inherit;
-
-    li {
-      // padding: 0 2rem;
-      a {
-        // box-shadow: inset 0 -0.1rem 0 currentColor;
-        // transition: 0.3s;
-
-        &:hover {
-          // padding-bottom: 0.3rem;
-        }
-      }
-    }
-
-    @include breakpoint(medium) {
-      flex-direction: row;
-    }
   }
 }
 
 .mobile_toggle__wrapper {
-  position: relative;
   display: flex;
   align-items: center;
-  height: 11rem;
-  margin-right: $space_xs;
-  padding-top: 1rem;
-  padding-right: 2rem;
-  padding-bottom: 1rem;
+  height: auto;
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
 
-  @include breakpoint(lxlarge) {
+  @include breakpoint(mlarge) {
     display: none;
   }
 }
@@ -56,11 +38,6 @@ nav {
     background-color: transparent;
     transition: background-color 0.2s ease;
   }
-
-  &.is-active::before {
-    background-color: $grey;
-  }
-
   &:hover,
   &:active {
     background-color: transparent;
@@ -68,26 +45,26 @@ nav {
 }
 
 header.header {
-  position: fixed;
   width: 100%;
-  height: 10rem;
-  border-bottom: 1px solid $yellow;
+  box-shadow: 0 10px 10px 0 rgba(2, 31, 44, 0.05);
   background-color: white;
   z-index: 1;
   @extend %transition;
+  @include breakpoint(mlarge) {
+    position: fixed;
+    height: 10rem;
+  }
   &.stick {
     background-color: $ivory;
-    transform: translate3d(0,-36px,0);
+    transform: translate3d(0,-48px,0);
     @extend %transition;
-    @media screen and (max-width: $medium-down) {
-      background-color: $yellow;
-    }
     .site-logo {
       align-self: center;
-      // @extend %transition;
     }
-    svg {
-      height: 2.4em;
+    #NorquestLogo {
+      height: 2em;
+      margin-top: 2rem;
+      @extend %transition;
     }
     #logo-text {
       visibility: hidden;
@@ -96,91 +73,125 @@ header.header {
   }
 
   .container {
-    display: block;
-    @include breakpoint(medium) {
+    display: flex;
+    flex-flow: column;
+    @include breakpoint(mlarge) {
       display: grid;
-      grid-template-columns: 1fr 4fr;
+      grid-template-columns: auto 4fr;
       grid-template-rows: 3.6rem 6.4rem;
     }
-  }
-  nav.menu-top-nav {
-    position: relative;
-    background-color: $red;
-    grid-column: 2;
-    grid-row: 1;
-    height: 100%;
-    &:after {
-      position: absolute;
-      width: 100vw;
-      height: 100%;
-      background: $red;
-      left: 100%;
-      top: 0;
-      content: "";
-    }
-    ul {
-      &.menu__top-nav {
-        align-items: center;
-        justify-content: flex-end;
-        height: 100%;
-        li {
-          &:first-child a { margin-left: 0; }
-          &:last-child a { margin-right: 0; }
-        }
-        a {
-          font-size: 1.6rem;
-          font-weight: 500;
-          line-height: 1.5;
-          margin: 0 2rem 0.5rem 2.1rem;
-          color: $white;
-        }
-      }
+    @media screen and (max-width: $mlarge-down) {
+      padding: 0;
     }
   }
+
   .nav-search {
-    position: relative;
     grid-column: 2;
     grid-row: 2/3;
-    align-items: center;
     display: flex;
-    justify-content: flex-end;
     background: $ivory;
     height: 100%;
-    border-bottom: 1px solid $yellow;
+    flex-flow: column;
+    order: 1;
     &:after {
       position: absolute;
       width: 100vw;
       height: 100%;
       background: $ivory;
-      left: 100%;
+      left: calc(-50vw + 100%);
       top: 0;
       content: "";
+      z-index: -1;
+    }
+    @include breakpoint(mlarge){
+      align-items: center;
+      justify-content: flex-end;
+      flex-flow: row;
+      order: unset;
     }
   }
+  .header-search {
+    width: 100%;
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+    padding: 1.6rem 2.4rem;
+    background: $red;
+    @include breakpoint(mlarge) {
+      width: auto;
+      max-width: 28.6rem;
+      position: absolute;
+      padding: 0;
+      background: transparent;
+      &.active {
+        width: 26.8rem;
+      }
+    }
+  }
+  .header-search-icon {
+    height: 18px;
+    cursor: pointer;
+    transform: translate(50%, 50%);
+  }
+  .header-search-form {
+    display: block;
+    @include breakpoint(mlarge) {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  .header-search-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 2.4rem;
+    top: 1.7rem;
+    pointer-events: none;
+    @include breakpoint(mlarge) {
+      position: relative;
+      pointer-events: unset;
+      right: 0;
+      top: 0;
+    }
+    &.active {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
   .site-logo {
     grid-column: 1;
     grid-row: 2;
+    height: 6.4rem;
+    padding: 2rem 2.4rem;
+    @include breakpoint(mlarge) {
+      padding: 0 3.6rem 0 0;
+    }
   }
-  svg {
-    height: 3.6em;
+  #NorquestLogo {
+    height: 2em;
+    @extend %transition;
+    @include breakpoint(large) {
+      height: 2.3em;
+    }
   }
   #logo-text {
     visibility: visible;
   }
-  .header-search {
-    width: 100%;
-    max-width: 28.6rem;
-  }
+
+
   nav.menu-primary-nav {
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    @include breakpoint(medium) {
+    order: 2;
+    @include breakpoint(mlarge) {
       display: block;
-      height: auto;
+      height: 100%;
       background: none;
       opacity: 1;
       visibility: visible;
+      order: unset;
     }
     &.is-active {
       @extend %transition;
@@ -190,52 +201,89 @@ header.header {
       visibility: visible;
     }
 
-    ul[class^="menu__"] {
-      li {
-        text-align: right;
-
-        a {
+    ul.menu__primary {
+      height: 100%;
+      flex-flow: column;
+      @include breakpoint(mlarge) {
+        flex-flow: row;
+      }
+      > li {
+        height: 100%;
+        display: block;
+        border-bottom: 1px solid white;
+        position: relative;
+        @include breakpoint(mlarge) {
+          position: unset;
+          border-bottom: unset;
+        }
+        &:last-child { padding-right: 5rem; }
+        > a {
+          margin: 0 2rem;
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 1.33;
           color: $black;
-          font-weight: 700;
-          font-size: 2rem;
-
-          @include breakpoint(medium) {
-            font-size: 1.6rem;
-
-            &:hover {
+          display: block;
+          padding: 2rem 0;
+          text-decoration: none;
+          @include breakpoint(large) {
+            font-size: 1.8rem;
+          }
+        }
+        .menu-close {
+          position: absolute;
+          height: 3.2rem;
+          width: 3.2rem;
+          top: 1.6rem;
+          right: 1.4rem;
+          @include breakpoint(mlarge) {
+            display: none;
+          }
+        }
+        .menu-close-icon {
+          height: 1.2em;
+          width: 1.2em;
+          display: block;
+          margin: 0.6rem auto;
+        }
+      }
+      > li {
+        @include breakpoint(mlarge) {
+          &:hover {
+            &:after {
+              content: '';
+              width: 4rem;
+              height: 1.2rem;
+              border-style: solid;
+              border-width: 0 2rem 1.2rem 2rem;
+              border-color: transparent transparent $red;
+              position: relative;
+              bottom: 12px;
+              margin: 0 auto;
+              display: block;
             }
           }
-          @include breakpoint(lxlarge) {
-            font-size: 1.5rem;
-          }
-        }
-
-        @include breakpoint(medium) {
-
-        }
-
-        @include breakpoint(large) {
-
-
         }
       }
     }
     li {
       .menu__subnav {
         display: none;
-        @include breakpoint(medium) {
-          display: none;
+        @include breakpoint(mlarge) {
           width: 100%;
-          grid-template-columns: repeat(4, 268px);
+          grid-gap: 3.2rem;
           background-color: white;
           position: absolute;
-          left: 2rem;
+          left: 0;
+          top: 10rem;
           z-index: 1;
           background: white;
           columns: 4;
+          padding: 5.6rem 0;
           &:before {
             position: absolute;
             width: 100vw;
+            border-top: 0.1rem solid $red;
             box-shadow: 0 10px 10px 0 rgba(2, 31, 44, 0.05);
             background: white;
             left: calc(-50vw + 50%);
@@ -250,16 +298,29 @@ header.header {
             height: 100%;
           }
         }
-        &.menu__subnav
-        .lvl-2 {}
-        &.menu__subnav
-        .lvl-3 {
-          display: none;
+        &.menu__subnav{
+          li {
+            a {
+              margin: 0;
+            }
+          }
+          &.lvl-2 {
+            a {
+              font-size: 1.8rem;
+              font-weight: 600;
+              line-height: 1.11;
+            }
+          }
+          &.lvl-3 {
+            display: none;
+          }
         }
       }
-      &:hover {
-        .menu__subnav {
-          display: grid;
+      @include breakpoint(mlarge) {
+        &:hover {
+          .menu__subnav {
+            display: grid;
+          }
         }
       }
     }

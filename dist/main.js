@@ -12,6 +12,9 @@ var map = {
 	"./NorQuest-badge-light.svg": "./images/sprites/NorQuest-badge-light.svg",
 	"./NorQuest-badge-white.svg": "./images/sprites/NorQuest-badge-white.svg",
 	"./NorQuest-logo.svg": "./images/sprites/NorQuest-logo.svg",
+	"./header-search-icon.svg": "./images/sprites/header-search-icon.svg",
+	"./menu-close.svg": "./images/sprites/menu-close.svg",
+	"./menu-open.svg": "./images/sprites/menu-open.svg",
 	"./norquest-logo-horizontal-edit.svg": "./images/sprites/norquest-logo-horizontal-edit.svg",
 	"./norquest-logo-horizontal.svg": "./images/sprites/norquest-logo-horizontal.svg",
 	"./norquest-logo-vertical.svg": "./images/sprites/norquest-logo-vertical.svg"
@@ -45,9 +48,10 @@ webpackContext.id = "./images/sprites sync recursive \\.svg$";
   \***********************/
 /***/ (function() {
 
+// header scroll class eventListener
 var scrollpos = window.scrollY;
 var header = document.querySelector("header");
-var header_height = header.offsetHeight; // const header_height = ( parseFloat(header.offsetHeight) - 50 );
+var header_height = header.offsetHeight;
 
 var add_class_on_scroll = function add_class_on_scroll() {
   return header.classList.add("stick");
@@ -55,8 +59,7 @@ var add_class_on_scroll = function add_class_on_scroll() {
 
 var remove_class_on_scroll = function remove_class_on_scroll() {
   return header.classList.remove("stick");
-}; // console.log(header_height);
-
+};
 
 window.addEventListener("scroll", function () {
   scrollpos = window.scrollY;
@@ -65,9 +68,39 @@ window.addEventListener("scroll", function () {
     add_class_on_scroll();
   } else {
     remove_class_on_scroll();
-  } // console.log(scrollpos);
+  }
+}); // -- END -- header scroll class eventListener
+// search icon toggle
 
-});
+var searchBtn = document.querySelector(".header-search-icon-wrapper");
+var searchInput = document.querySelector(".header-search-form");
+var searchWrapper = document.querySelector(".header-search");
+
+document.querySelector(".header-search-icon-wrapper").onclick = function searchIcon() {
+  searchBtn.classList.toggle("active");
+  searchInput.classList.toggle("active");
+  searchWrapper.classList.toggle("active");
+}; // -- END -- search icon toggle
+// mobile hamburger toggle
+
+
+var mobileToggle = document.querySelector(".mobile_toggle");
+
+document.querySelector(".mobile_toggle").onclick = function mobileMenuToggle() {
+  mobileToggle.classList.toggle("is-active");
+}; // -- END -- mobile hamburger toggle
+// Mobile sub nav toggle button
+
+
+var toggleSubNavs = document.getElementsByClassName("menu-close");
+
+for (var i = 0; i < toggleSubNavs.length; i++) {
+  toggleSubNavs[i].addEventListener("click", subNavToggle);
+}
+
+function subNavToggle() {
+  this.classList.toggle("active");
+} // -- END -- Mobile sub nav toggle button
 
 /***/ }),
 
@@ -140,6 +173,63 @@ __webpack_require__.r(__webpack_exports__);
       id: "NorQuest-logo-usage",
       viewBox: "0 0 749.2 186.7",
       url: __webpack_require__.p + "sprites.svg#NorQuest-logo",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/header-search-icon.svg":
+/*!***********************************************!*\
+  !*** ./images/sprites/header-search-icon.svg ***!
+  \***********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "header-search-icon-usage",
+      viewBox: "0 0 18 18",
+      url: __webpack_require__.p + "sprites.svg#header-search-icon",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/menu-close.svg":
+/*!***************************************!*\
+  !*** ./images/sprites/menu-close.svg ***!
+  \***************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "menu-close-usage",
+      viewBox: "0 0 12 12",
+      url: __webpack_require__.p + "sprites.svg#menu-close",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/menu-open.svg":
+/*!**************************************!*\
+  !*** ./images/sprites/menu-open.svg ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "menu-open-usage",
+      viewBox: "0 0 10 10",
+      url: __webpack_require__.p + "sprites.svg#menu-open",
       toString: function () {
         return this.url;
       }

@@ -1,8 +1,8 @@
 // mobile menu toggle
 // for other animation style examples, see https://jonsuh.com/hamburgers/
 
-$mobile_toggle-layer-width: 4.3rem !default;
-$mobile_toggle-layer-height: 0.4rem !default;
+$mobile_toggle-layer-width: 3.2rem !default;
+$mobile_toggle-layer-height: 0.5rem !default;
 $mobile_toggle-layer-spacing: 0.4rem !default;
 $mobile_toggle-layer-border-radius: 0.4rem !default;
 
@@ -31,7 +31,7 @@ $mobile_toggle-layer-border-radius: 0.4rem !default;
     }
 
     &::before {
-      background-color: $offwhite;
+      background-color: $rouge;
       transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
         transform 0.13s 0.2s cubic-bezier(0.215, 0.61, 0.355, 1),
         color 0.2s ease;
@@ -44,7 +44,7 @@ $mobile_toggle-layer-border-radius: 0.4rem !default;
     }
 
     &::after {
-      background-color: $offwhite;
+      background-color: $rouge;
       transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
         transform 0.13s 0.2s cubic-bezier(0.215, 0.61, 0.355, 1),
         color 0.2s ease;
@@ -77,8 +77,7 @@ $mobile_toggle-layer-border-radius: 0.4rem !default;
     position: absolute;
     width: $mobile_toggle-layer-width;
     height: $mobile_toggle-layer-height;
-    border-top-left-radius: $mobile_toggle-layer-border-radius;
-    border-bottom-right-radius: $mobile_toggle-layer-border-radius;
+    border-radius: $mobile_toggle-layer-border-radius;
     background-color: $grey;
     transition-timing-function: ease;
     transition-duration: 0.15s;

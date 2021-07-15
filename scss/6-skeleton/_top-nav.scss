@@ -1,0 +1,57 @@
+  // START TOP NAV
+  nav.menu-top-nav {
+    position: relative;
+    background-color: $red;
+    height: 100%;
+    order: 2;
+    @include breakpoint(mlarge) {
+      grid-column: 2;
+      grid-row: 1;
+      order: unset;
+    }
+    &:after {
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      background: $red;
+      left: calc(0vw + 100%);
+      top: 0;
+      content: "";
+      z-index: 1;
+    }
+    ul {
+      &.menu__top-nav {
+        align-items: left;
+        height: 100%;
+        flex-flow: row wrap;
+        @include breakpoint(mlarge) {
+          align-items: center;
+          flex-flow: row nowrap;
+          justify-content: flex-end;
+        }
+        li {
+          width: 50%;
+          padding-top: 1.7rem;
+          @include breakpoint(mlarge) {
+            padding-top: 0;
+            width: auto;
+            &:last-child a { margin-right: 0; }
+          }
+        }
+        a {
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 1.5;
+          margin: 0 2rem 0.5rem 2.1rem;
+          color: $white;
+          @include breakpoint(mlarge) {
+            font-size: 1.4rem;
+          }
+          @include breakpoint(large) {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+  // END TOP NAV

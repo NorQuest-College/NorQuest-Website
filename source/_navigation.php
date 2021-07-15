@@ -2,6 +2,14 @@
   <ul class="menu__primary lvl-1">
     <li>
       <a href="">Programs and courses</a>
+      <!-- <svg viewbox="0 0 16 16" class="menu-open">
+        <use xlink:href="#menu-open"></use>
+      </svg> -->
+      <div class="menu-close">
+        <svg viewbox="0 0 16 16" class="menu-close-icon">
+          <use xlink:href="#menu-close"></use>
+        </svg>
+      </div>
       <ul class="menu__subnav lvl-2">
         <li><a href="">Program and course listing</a></li>
         <li>
@@ -34,6 +42,11 @@
     </li>
     <li>
       <a href="">Applying to NorQuest</a>
+      <div class="menu-close">
+        <svg viewbox="0 0 16 16" class="menu-close-icon">
+          <use xlink:href="#menu-close"></use>
+        </svg>
+      </div>
       <ul class="menu__subnav lvl-2">
         <li>
           <a href="">How to apply</a>

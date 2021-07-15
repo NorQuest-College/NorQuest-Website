@@ -8,6 +8,7 @@ main {
   flex-grow: 1;
   position: relative;
   padding-top: 100px;
+  background-image: $background-gradient;
 }
 .container-grid {
   box-sizing: content-box;

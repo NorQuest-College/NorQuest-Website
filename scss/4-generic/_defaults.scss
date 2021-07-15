@@ -40,15 +40,17 @@ a {
   color: inherit;
   word-wrap: break-word;
   overflow-wrap: break-word;
+  text-decoration: underline;
+  text-decoration-color: transparent;
 
   &:link,
-  &:visited {
-    text-decoration: none;
-  }
+  &:visited { }
 
   &:hover,
   &:active {
     color: inherit;
+    text-decoration-color: currentColor;
+    @extend %transition;
   }
 
   &:visited {
