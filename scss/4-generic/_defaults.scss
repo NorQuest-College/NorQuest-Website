@@ -88,7 +88,7 @@ main a {
 // list styles
 ul,
 ol {
-  margin-bottom: $space_xs;
+  margin-bottom: $space_sm;
   margin-left: 0;
   padding-left: 0;
   padding-left: $space_sm;
@@ -97,7 +97,7 @@ ol {
 
   ul,
   ol {
-    margin-top: $space_xs;
+    margin-top: $space_sm;
     margin-left: $space_sm;
   }
 }
@@ -109,7 +109,7 @@ hr {
   margin-top: $space_sm;
   margin-bottom: $space_sm;
   border: none;
-  background-color: $light_grey;
+  background-color: $orange;
 }
 
 // img styles

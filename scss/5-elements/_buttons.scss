@@ -1,3 +1,4 @@
+.btn,
 .button,
 button,
 input[type="submit"] {
@@ -5,12 +6,16 @@ input[type="submit"] {
   display: inline-block;
   width: auto;
   height: auto;
-  padding: $space_xs;
-  border: solid 0.1rem $light_grey;
+  min-height: 5.6rem;
+  padding: $space_xs $space_md;
+  border: solid 0.1rem $black;
   border-radius: 0.4rem;
-  color: $black;
-  line-height: 1;
+  background-color: $grey;
+  line-height: inherit;
   letter-spacing: normal;
+  font-weight: 600;
+  margin: 2rem 0;
+  cursor: pointer;
 
   &:link,
   &:visited {
@@ -18,10 +23,46 @@ input[type="submit"] {
   }
 
   &:hover {
-    background-color: $buttongrey;
+    box-shadow: 0 2px 20px 0 rgba(66, 66, 66, 0.2);
   }
 
   &:focus {
     box-shadow: 0 0 0.1rem 0.2rem $yellow;
+  }
+  &.disabled {
+    opacity: 40%;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}
+
+.btn-primary {
+  background-color: $red;
+  color: white;
+  border: solid 0.2rem $red;
+  &__reverse {
+    background-color: white;
+    color: $red;
+    border: solid 0.2rem white;
+  }
+}
+.btn-secondary {
+  background-color: transparent;
+  color: $red;
+  border: solid 0.2rem $red;
+  &__reverse {
+    background-color: transparent;
+    color: white;
+    border: solid 0.2rem white;
+  }
+}
+.btn-special {
+  background-color: $purple;
+  color: white;
+  border: solid 0.2rem $purple;
+  &__reverse {
+    background-color: $yellow;
+    color: $black;
+    border: solid 0.2rem $yellow;
   }
 }

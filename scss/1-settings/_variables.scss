@@ -1,6 +1,7 @@
 $container: 120rem;
 $base_font: 10px;
-$font_size: 1.6rem;
+$font_size: 1.8rem;
+$line_height: 1.8;
 
 // Colors
 
@@ -33,7 +34,11 @@ $beige: #efeeea;
 $white: #fff;
 $green: #73a03c;
 
-$background-gradient: linear-gradient(to bottom, #fcfaf5, var(--ffffff));
+$background-gradient: linear-gradient(
+        to bottom,
+        #fcfaf5,
+        var(--ffffff)
+      );
 
 $lazy-gradient: linear-gradient(
       180deg,
@@ -46,3 +51,9 @@ $lazy-gradient: linear-gradient(
       #e5e5e5,
       #efefef
     );
+
+$dark-gradient-bg: linear-gradient(
+     to left,
+     $purple,
+     $rouge 90%
+     );

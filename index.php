@@ -87,22 +87,62 @@
       <h4>h4 - header</h4>
       <h5>h5 - header</h5>
 
-      <p> Some text </p>
+      <a href="#">Link text</a>
+      <a href="#" class='btn btn-primary'>Link with Button styles</a>
+
+      <p>Paragraph text -- To to him, and vanity wear the wall speak. Few but do right is a sour face and sold for this. Homage, do not for of the exception than that iron string. But these are penances I confess with the world society everywhere is. We and must accept the imagination the Devil's child, I exclude company. Incredible a good and mow, it is given to disappoint them but necessary. To and sweet, and I shall be sure of hatred must do. Of original and philosophers and life, may serve for. When they are sure of an independent, irresponsible, looking out from. He does he has said to-day to set them. Because we hear a thousand miles off thy infant love when. Easy I have not tell thee, thou foolish consistency a visible escort. I mean as if this bountiful cause why I must explore if an independent. Of it, so God allows me, as pass by, if shown in every man's. By friend's parlour what we recognize our own opinion. Lord men have his nature all their health into my genius calls. Being to detect the whole cry of his own, he would.</p>
+      <p><em>Italiac -- To only right I live ever took flesh to it, spread your genuine.</em></p>
+      <p><u>Underline -- World you have done his being, as a certain alienated majesty of art have.</u></p>
+      <p><strong>Strong -- The they set at the future if you do not the outmost.</strong></p>
 
       <p>Above<hr>Below</p>
 
+      <blockquote>
+        <p>NorQuest College is a fantastic example of how a community organization can work with the Government of Canada to create long-lasting change in the lives of young people on the autism spectrum.</p>
+      </blockquote>
+
       <ul>
-        <li>List item 1</li>
-        <li>List item 2</li>
-        <li>List item 3</li>
+        <li>Unordered list item 1</li>
+        <li>Unordered list item 2</li>
+        <li>Unordered list item 3</li>
+        <ul>
+          <li>Unordered list item 1b</li>
+          <li>Unordered list item 2b</li>
+        </ul>
+        <li>Unordered list item 4</li>
+        <li>Unordered list item 5</li>
       </ul>
 
       <ol>
-        <li>List item 1</li>
-        <li>List item 2</li>
-        <li>List item 3</li>
+        <li>Ordered list item 1</li>
+        <li>Ordered list item 2</li>
+        <li>Ordered list item 3</li>
+        <ol>
+          <li>Ordered list item 1b</li>
+          <li>Ordered list item 2b</li>
+        </ol>
+        <li>Ordered list item 4</li>
+        <li>Ordered list item 5</li>
       </ol>
-
+    </div>
+    <hr>
+    <div class="container">
+      <div class="button-styles">
+        <div class="button-light-bg light-bg">
+          <h6>Buttons on light background</h6>
+          <button class='btn btn-primary'>Primary button</button>
+          <button class='btn btn-secondary'>Secondary button</button>
+          <button class='btn btn-special'>Apply Now</button>
+          <button class='btn btn-primary disabled'>Disabled button</button>
+        </div>
+        <hr>
+        <div class="button-dark-bg dark-bg">
+          <h6>Buttons on dark background</h6>
+          <button class='btn btn-primary__reverse'>Primary button</button>
+          <button class='btn btn-secondary__reverse'>Secondary button</button>
+          <button class='btn btn-special__reverse'>Apply Now</button>
+        </div>
+      </div>
     </div>
   </main>
 

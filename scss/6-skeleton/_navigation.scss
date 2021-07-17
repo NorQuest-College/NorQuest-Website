@@ -272,7 +272,7 @@ header.header {
       }
       > li {
         @include breakpoint(mlarge) {
-          &:hover {
+          &:hover, &:focus, &:active {
             &:after {
               content: '';
               width: 4rem;
@@ -359,7 +359,7 @@ header.header {
         }
       }
       @include breakpoint(mlarge) {
-        &:hover {
+        &:hover, &:focus, &:active {
           .menu__subnav {
             display: grid;
           }
