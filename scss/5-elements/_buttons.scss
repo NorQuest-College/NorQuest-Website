@@ -1,6 +1,9 @@
 // TODO: not prod code
+.button-styles { display: flex;}
 .button-styles-wrapper {
-  display: grid
+  display: grid;
+  align-content: baseline;
+  justify-content: center;
 }
 // TODO: not prod code
 .btn,
@@ -11,7 +14,7 @@ input[type="submit"] {
   display: inline-block;
   width: auto;
   height: auto;
-  min-height: 5.6rem;
+  // min-height: 5.6rem;
   padding: $space_xs $space_md;
   border: solid 0.1rem $black;
   border-radius: 0.4rem;
@@ -66,9 +69,13 @@ input[type="submit"] {
   background-color: $purple;
   color: white;
   border: solid 0.2rem $purple;
+  font-size: 2.4rem;
+  font-weight: bold;
   &__reverse {
     background-color: $yellow;
     color: $black;
     border: solid 0.2rem $yellow;
+    font-size: 2.4rem;
+    font-weight: bold;
   }
 }

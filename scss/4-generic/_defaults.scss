@@ -37,7 +37,8 @@ body {
 
 a {
   @extend %transition;
-  color: inherit;
+  color: $red;
+  font-weight: 600;
   word-wrap: break-word;
   overflow-wrap: break-word;
   text-decoration: underline;
@@ -189,6 +190,10 @@ main img {
     @include breakpoint(lxlarge) {
       max-width: 14.4rem;
     }
+  }
+  a {
+    display: block;
+    height: auto;
   }
 }
 

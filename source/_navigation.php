@@ -44,8 +44,12 @@
         </li>
         <li><a href="">Information sessions</a></li>
         <span class="menu__content">
-          <h4>Optional featured content in the open mega menu</h4>
-          <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+          <img src="https://picsum.photos/286/128" alt="image">
+          <div class="menu__content-wrapper">
+            <h4>Optional featured content in the open mega menu</h4>
+            <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+            <button class="btn btn-secondary__reverse">Apply now</button>
+          </div>
         </span>
       </ul>
     </li>
@@ -139,10 +143,7 @@
         </li>
         <li><a href="">Forms and documents</a></li>
         <li><a href="">Academic schedule</a></li>
-        <span class="menu__content">
-          <h4>Optional featured content in the open mega menu</h4>
-          <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
-        </span>
+          <!-- No optional block  on this listing-->
       </ul>
     </li>
     <li>
@@ -229,8 +230,12 @@
         <li><a href="">Student experience</a></li>
         <li><a href="">Student handbooks</a></li>
         <span class="menu__content">
-          <h4>Optional featured content in the open mega menu</h4>
-          <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+          <img src="https://picsum.photos/286/128" alt="image">
+          <div class="menu__content-wrapper">
+            <h4>Optional featured content in the open mega menu</h4>
+            <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+            <button class="btn btn-secondary__reverse">Apply now</button>
+          </div>
         </span>
       </ul>
     </li>
@@ -316,8 +321,12 @@
           </ul>
         </li>
         <span class="menu__content">
-          <h4>Optional featured content in the open mega menu</h4>
-          <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+          <img src="https://picsum.photos/286/128" alt="image">
+          <div class="menu__content-wrapper">
+            <h4>Optional featured content in the open mega menu</h4>
+            <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+            <button class="btn btn-secondary__reverse">Apply now</button>
+          </div>
         </span>
       </ul>
     </li>

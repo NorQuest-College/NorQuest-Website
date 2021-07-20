@@ -294,15 +294,14 @@ header.header {
       .menu__subnav {
         display: none;
         @include breakpoint(mlarge) {
+          grid-template-columns: repeat(4, 1fr);
           width: 100%;
-          grid-gap: 3.2rem;
           background-color: white;
           position: absolute;
           left: 0;
           top: 10rem;
           z-index: 1;
           background: white;
-          columns: 4;
           padding: 5.6rem 0;
           &:before {
             position: absolute;
@@ -324,6 +323,7 @@ header.header {
         }
         &.menu__subnav{
           li {
+            margin: .6rem 1.2rem;
             @media screen and (max-width: $mlarge-down) {
               position: relative;
             }
@@ -346,6 +346,7 @@ header.header {
             a {
               font-size: 1.8rem;
               line-height: 1.11;
+              margin: 0;
             }
           }
           &.lvl-3 {
@@ -373,6 +374,26 @@ header.header {
         grid-column: 4;
         grid-row: 1/4;
         display: block;
+        margin: .6rem 1.2rem;
+        max-width: 286px;
+        width: 100%;
+        background-color: $rouge;
+        height: fit-content;
+        h4, p {
+          color: white;
+        }
+        h4 {
+          font-size: 1.8rem;
+          font-weight: bold;
+          line-height: 1.11;
+        }
+        p {
+          font-size: 1.6rem;
+          line-height: 1.25;
+        }
+        .menu__content-wrapper {
+          padding: 2.4rem;
+        }
       }
     }
   }

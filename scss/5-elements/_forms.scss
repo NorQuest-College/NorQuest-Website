@@ -13,6 +13,9 @@ select {
   border-radius: 0.4rem;
   color: $grey;
   line-height: 1.5;
+  &:focus {
+    outline-color: $peach;
+  }
 }
 
 select {

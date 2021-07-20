@@ -18,7 +18,7 @@ h1 {
   @include interpolate(line-height, $xs, $xxlarge, 1.2em, 1.1em);
   font-weight: bold;
   @include breakpoint(mlarge) {
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -30,7 +30,7 @@ h2 {
     font-size: 4.8rem;
     font-weight: 600;
     line-height: 1;
-    margin-bottom: 6.9rem;
+    margin-bottom: 3.2rem;
   }
 }
 
@@ -42,7 +42,7 @@ h3 {
     font-size: 3.2rem;
     font-weight: bold;
     line-height: 1;
-    margin-bottom: 8.3rem;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -54,7 +54,7 @@ h4 {
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 1.33;
-    margin-bottom: 7.9rem;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -93,30 +93,37 @@ p.lead {
 blockquote {
   margin-bottom: 1.5rem;
   padding: 1rem;
-  background: $white;
   position: relative;
-  padding: 2.2rem;
+  padding: 1.1rem 3.2rem;
   @include breakpoint(mlarge) {
-    // padding: 6.4rem;
+    padding: 2.2rem 6.4rem;
   }
   p {
+    max-width: 498px;
     color: $rouge;
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.33;
     letter-spacing: normal;
+    margin-left: 1.2rem;
     @include breakpoint(mlarge) {
       font-size: 2.4rem;
     }
   }
   &:before {
-    content: open-quote;
+    content: '';
+    background: url('/images/quotation-small-dark.svg');
     font-size: 3.2rem;
     position: absolute;
     top: 0;
     left: 0;
     color: $rouge;
+    height: 25px;
+    width: 32px;
     @include breakpoint(mlarge) {
+      background: url('/images/quotation-large-dark.svg');
+      height: 50px;
+      width: 64px;
       font-size: 6.4rem;
     }
   }

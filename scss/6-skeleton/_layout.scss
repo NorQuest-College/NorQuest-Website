@@ -27,6 +27,8 @@ main {
   display: flex;
   max-width: $container;
   margin: 0 auto;
+  padding-right: $space_sm;
+  padding-left: $space_sm;
 }
 .container-no {
   position: relative;

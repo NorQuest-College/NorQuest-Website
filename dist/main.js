@@ -12,10 +12,6 @@ var map = {
 	"./NorQuest-badge-light.svg": "./images/sprites/NorQuest-badge-light.svg",
 	"./NorQuest-badge-white.svg": "./images/sprites/NorQuest-badge-white.svg",
 	"./NorQuest-logo.svg": "./images/sprites/NorQuest-logo.svg",
-	"./Quotation-large-dark.svg": "./images/sprites/Quotation-large-dark.svg",
-	"./Quotation-large-light.svg": "./images/sprites/Quotation-large-light.svg",
-	"./Quotation-small-dark.svg": "./images/sprites/Quotation-small-dark.svg",
-	"./Quotation-small-light.svg": "./images/sprites/Quotation-small-light.svg",
 	"./header-search-icon.svg": "./images/sprites/header-search-icon.svg",
 	"./icon-white-facebook.svg": "./images/sprites/icon-white-facebook.svg",
 	"./icon-white-instagram.svg": "./images/sprites/icon-white-instagram.svg",
@@ -206,82 +202,6 @@ __webpack_require__.r(__webpack_exports__);
       id: "NorQuest-logo-usage",
       viewBox: "0 0 749.2 186.7",
       url: __webpack_require__.p + "sprites.svg#NorQuest-logo",
-      toString: function () {
-        return this.url;
-      }
-    });
-
-/***/ }),
-
-/***/ "./images/sprites/Quotation-large-dark.svg":
-/*!*************************************************!*\
-  !*** ./images/sprites/Quotation-large-dark.svg ***!
-  \*************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-      id: "Quotation-large-dark-usage",
-      viewBox: "0 0 64 50",
-      url: __webpack_require__.p + "sprites.svg#Quotation-large-dark",
-      toString: function () {
-        return this.url;
-      }
-    });
-
-/***/ }),
-
-/***/ "./images/sprites/Quotation-large-light.svg":
-/*!**************************************************!*\
-  !*** ./images/sprites/Quotation-large-light.svg ***!
-  \**************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-      id: "Quotation-large-light-usage",
-      viewBox: "0 0 100 79",
-      url: __webpack_require__.p + "sprites.svg#Quotation-large-light",
-      toString: function () {
-        return this.url;
-      }
-    });
-
-/***/ }),
-
-/***/ "./images/sprites/Quotation-small-dark.svg":
-/*!*************************************************!*\
-  !*** ./images/sprites/Quotation-small-dark.svg ***!
-  \*************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-      id: "Quotation-small-dark-usage",
-      viewBox: "0 0 32 25",
-      url: __webpack_require__.p + "sprites.svg#Quotation-small-dark",
-      toString: function () {
-        return this.url;
-      }
-    });
-
-/***/ }),
-
-/***/ "./images/sprites/Quotation-small-light.svg":
-/*!**************************************************!*\
-  !*** ./images/sprites/Quotation-small-light.svg ***!
-  \**************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-      id: "Quotation-small-light-usage",
-      viewBox: "0 0 56 44",
-      url: __webpack_require__.p + "sprites.svg#Quotation-small-light",
       toString: function () {
         return this.url;
       }
