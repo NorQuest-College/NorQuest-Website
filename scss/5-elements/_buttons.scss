@@ -1,3 +1,8 @@
+// TODO: not prod code
+.button-styles-wrapper {
+  display: grid
+}
+// TODO: not prod code
 .btn,
 .button,
 button,
@@ -16,6 +21,7 @@ input[type="submit"] {
   font-weight: 600;
   margin: 2rem 0;
   cursor: pointer;
+  max-width: 308px;
 
   &:link,
   &:visited {

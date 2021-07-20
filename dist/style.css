@@ -374,7 +374,7 @@ small {
 
 b,
 strong {
-  font-weight: 700; }
+  font-weight: 600; }
 
 em {
   font-style: italic; }
@@ -386,6 +386,10 @@ s {
   text-decoration: line-through; }
 
 /* Define styles for raw HTML elements. Use of class names for targeting within this directory should be minimal. */
+.button-styles-wrapper {
+  display: -ms-grid;
+  display: grid; }
+
 .btn,
 .button,
 button,
@@ -402,7 +406,8 @@ input[type="submit"] {
   letter-spacing: normal;
   font-weight: 600;
   margin: 2rem 0;
-  cursor: pointer; }
+  cursor: pointer;
+  max-width: 308px; }
   .btn:link, .btn:visited,
   .button:link,
   .button:visited,
@@ -552,7 +557,7 @@ input[type="radio"]:checked + label::after {
   content: "";
   background-color: #424242; }
 
-.header-search input {
+.header-search input, .footer-search input {
   height: 4rem;
   max-width: 100%; }
 
@@ -585,7 +590,9 @@ main {
   display: -ms-grid;
   display: grid;
   max-width: 120rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-right: 2rem;
+  padding-left: 2rem; }
 
 .container-flex {
   -webkit-box-sizing: content-box;
@@ -776,17 +783,17 @@ header.header {
         background: transparent; }
         header.header .header-search.active {
           width: 26.8rem; } }
-  header.header .header-search-icon {
+  header.header .search-icon {
     height: 18px;
     cursor: pointer;
     -webkit-transform: translate(50%, 50%);
             transform: translate(50%, 50%); }
-  header.header .header-search-form {
+  header.header .search-form {
     display: block; }
     @media (min-width: 53.75em) {
-      header.header .header-search-form {
+      header.header .search-form {
         display: none; }
-        header.header .header-search-form.active {
+        header.header .search-form.active {
           display: block; } }
   header.header .header-search-icon-wrapper {
     width: 40px;
@@ -884,7 +891,9 @@ header.header {
           right: 1.4rem;
           padding: 0;
           background: transparent;
-          border: transparent; }
+          border: transparent;
+          margin: 0;
+          min-height: auto; }
           @media (min-width: 53.75em) {
             header.header nav.menu-primary-nav ul.menu__primary > li button.menu-close {
               display: none; } }
@@ -1078,15 +1087,68 @@ footer {
       footer nav ul[class^="menu__"] li a {
         color: white; } }
   footer .container-grid {
-    -ms-grid-columns: 1fr 3.2rem 1fr 3.2rem 1fr 3.2rem 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 100%;
+    grid-template-columns: 100%;
     grid-gap: 3.2rem; }
+    @media (min-width: 53.75em) {
+      footer .container-grid {
+        -ms-grid-columns: 1fr 3.2rem 1fr 3.2rem 1fr 3.2rem 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr; } }
+  footer p {
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    padding: 0; }
   footer h4 {
-    color: white; }
-  footer .bottom-footer-content {
+    color: white;
+    margin: 0; }
+  @media (min-width: 53.75em) {
+    footer .bottom-footer-content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
+  footer .bottom-footer-content * {
+    line-height: 1.4;
+    margin: 0; }
+  footer .bottom-footer-content .menu__footer-bottom {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  footer .bottom-footer-content p {
+    margin-right: 3.2rem; }
+  footer .footer-logo {
+    width: 5rem;
+    margin: 4.8rem 0 5.8rem auto; }
+  footer .footer-social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    grid-gap: 1.2rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    footer .footer-social ul li {
+      width: 2.4rem; }
+  footer .footer-search {
+    position: relative; }
+  footer .search-icon {
+    height: 18px;
+    cursor: pointer;
+    -webkit-transform: translate(50%, 50%);
+            transform: translate(50%, 50%); }
+  footer .search-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    top: 0; }
 
 /* Styles for components of the UI. */
 .table-wrapper {

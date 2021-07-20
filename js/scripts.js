@@ -16,7 +16,7 @@ window.addEventListener("scroll", function () {
 
 // search icon toggle
 const searchBtn = document.querySelector(".header-search-icon-wrapper");
-const searchInput = document.querySelector(".header-search-form");
+const searchInput = document.querySelector(".search-form");
 const searchWrapper = document.querySelector(".header-search");
 document.querySelector(".header-search-icon-wrapper").onclick = function searchIcon() {
   searchBtn.classList.toggle("active");

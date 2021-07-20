@@ -12,7 +12,16 @@ var map = {
 	"./NorQuest-badge-light.svg": "./images/sprites/NorQuest-badge-light.svg",
 	"./NorQuest-badge-white.svg": "./images/sprites/NorQuest-badge-white.svg",
 	"./NorQuest-logo.svg": "./images/sprites/NorQuest-logo.svg",
+	"./Quotation-large-dark.svg": "./images/sprites/Quotation-large-dark.svg",
+	"./Quotation-large-light.svg": "./images/sprites/Quotation-large-light.svg",
+	"./Quotation-small-dark.svg": "./images/sprites/Quotation-small-dark.svg",
+	"./Quotation-small-light.svg": "./images/sprites/Quotation-small-light.svg",
 	"./header-search-icon.svg": "./images/sprites/header-search-icon.svg",
+	"./icon-white-facebook.svg": "./images/sprites/icon-white-facebook.svg",
+	"./icon-white-instagram.svg": "./images/sprites/icon-white-instagram.svg",
+	"./icon-white-linkedin.svg": "./images/sprites/icon-white-linkedin.svg",
+	"./icon-white-twitter.svg": "./images/sprites/icon-white-twitter.svg",
+	"./icon-white-youtube.svg": "./images/sprites/icon-white-youtube.svg",
 	"./menu-close.svg": "./images/sprites/menu-close.svg",
 	"./menu-open.svg": "./images/sprites/menu-open.svg",
 	"./norquest-logo-horizontal-edit.svg": "./images/sprites/norquest-logo-horizontal-edit.svg",
@@ -73,7 +82,7 @@ window.addEventListener("scroll", function () {
 // search icon toggle
 
 var searchBtn = document.querySelector(".header-search-icon-wrapper");
-var searchInput = document.querySelector(".header-search-form");
+var searchInput = document.querySelector(".search-form");
 var searchWrapper = document.querySelector(".header-search");
 
 document.querySelector(".header-search-icon-wrapper").onclick = function searchIcon() {
@@ -204,6 +213,82 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./images/sprites/Quotation-large-dark.svg":
+/*!*************************************************!*\
+  !*** ./images/sprites/Quotation-large-dark.svg ***!
+  \*************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "Quotation-large-dark-usage",
+      viewBox: "0 0 64 50",
+      url: __webpack_require__.p + "sprites.svg#Quotation-large-dark",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/Quotation-large-light.svg":
+/*!**************************************************!*\
+  !*** ./images/sprites/Quotation-large-light.svg ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "Quotation-large-light-usage",
+      viewBox: "0 0 100 79",
+      url: __webpack_require__.p + "sprites.svg#Quotation-large-light",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/Quotation-small-dark.svg":
+/*!*************************************************!*\
+  !*** ./images/sprites/Quotation-small-dark.svg ***!
+  \*************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "Quotation-small-dark-usage",
+      viewBox: "0 0 32 25",
+      url: __webpack_require__.p + "sprites.svg#Quotation-small-dark",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/Quotation-small-light.svg":
+/*!**************************************************!*\
+  !*** ./images/sprites/Quotation-small-light.svg ***!
+  \**************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "Quotation-small-light-usage",
+      viewBox: "0 0 56 44",
+      url: __webpack_require__.p + "sprites.svg#Quotation-small-light",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
 /***/ "./images/sprites/header-search-icon.svg":
 /*!***********************************************!*\
   !*** ./images/sprites/header-search-icon.svg ***!
@@ -216,6 +301,101 @@ __webpack_require__.r(__webpack_exports__);
       id: "header-search-icon-usage",
       viewBox: "0 0 18 18",
       url: __webpack_require__.p + "sprites.svg#header-search-icon",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/icon-white-facebook.svg":
+/*!************************************************!*\
+  !*** ./images/sprites/icon-white-facebook.svg ***!
+  \************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon-white-facebook-usage",
+      viewBox: "0 0 24 24",
+      url: __webpack_require__.p + "sprites.svg#icon-white-facebook",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/icon-white-instagram.svg":
+/*!*************************************************!*\
+  !*** ./images/sprites/icon-white-instagram.svg ***!
+  \*************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon-white-instagram-usage",
+      viewBox: "0 0 24 24",
+      url: __webpack_require__.p + "sprites.svg#icon-white-instagram",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/icon-white-linkedin.svg":
+/*!************************************************!*\
+  !*** ./images/sprites/icon-white-linkedin.svg ***!
+  \************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon-white-linkedin-usage",
+      viewBox: "0 0 24 24",
+      url: __webpack_require__.p + "sprites.svg#icon-white-linkedin",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/icon-white-twitter.svg":
+/*!***********************************************!*\
+  !*** ./images/sprites/icon-white-twitter.svg ***!
+  \***********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon-white-twitter-usage",
+      viewBox: "0 0 24 24",
+      url: __webpack_require__.p + "sprites.svg#icon-white-twitter",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/icon-white-youtube.svg":
+/*!***********************************************!*\
+  !*** ./images/sprites/icon-white-youtube.svg ***!
+  \***********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "icon-white-youtube-usage",
+      viewBox: "0 0 24 24",
+      url: __webpack_require__.p + "sprites.svg#icon-white-youtube",
       toString: function () {
         return this.url;
       }

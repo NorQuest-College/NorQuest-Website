@@ -64,13 +64,13 @@
         <?php include('source/_navigation.php'); ?>
 
         <div class="header-search">
-          <div id="siteSearch" class="header-search-form">
+          <div id="siteSearch" class="search-form">
             <form action="search">
               <input type="text" placeholder="Type your keyword">
             </form>
           </div>
-          <div class="header-search-icon-wrapper">
-            <svg viewbox="0 0 16 16" class="header-search-icon">
+          <div class="header-search-icon-wrapper search-icon-wrapper">
+            <svg viewbox="0 0 16 16" class="search-icon">
               <use xlink:href="#header-search-icon"></use>
             </svg>
           </div>
@@ -125,24 +125,27 @@
         <li>Ordered list item 5</li>
       </ol>
     </div>
-    <hr>
+
     <div class="container">
+      <hr>
+
       <div class="button-styles">
-        <div class="button-light-bg light-bg">
+        <div class="button-styles-wrapper light-bg">
           <h6>Buttons on light background</h6>
           <button class='btn btn-primary'>Primary button</button>
-          <button class='btn btn-secondary'>Secondary button</button>
+          <button class='btn btn-secondary'>Secondary button text with a lengthy label</button>
           <button class='btn btn-special'>Apply Now</button>
           <button class='btn btn-primary disabled'>Disabled button</button>
         </div>
-        <hr>
-        <div class="button-dark-bg dark-bg">
-          <h6>Buttons on dark background</h6>
+        <div class="button-styles-wrapper dark-bg">
+          <h6 style='color: white'>Buttons on dark background</h6>
           <button class='btn btn-primary__reverse'>Primary button</button>
-          <button class='btn btn-secondary__reverse'>Secondary button</button>
+          <button class='btn btn-secondary__reverse'>Secondary button text with a lengthy label</button>
           <button class='btn btn-special__reverse'>Apply Now</button>
         </div>
       </div>
+
+      <hr>
     </div>
   </main>
 

@@ -13,13 +13,71 @@ footer {
     }
   }
   .container-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 100%;
     grid-gap: 3.2rem;
+    @include breakpoint(mlarge) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  p {
+    color: white;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    padding: 0;
   }
   h4 {
     color: white;
+    margin: 0;
   }
   .bottom-footer-content {
-    display: flex;
+    @include breakpoint(mlarge) {
+      display: flex;
+      align-items: center;
+    }
+    * {
+      line-height: 1.4;
+      margin: 0;
+    }
+    .menu__footer-bottom {
+      align-items: center;
+    }
+    p {
+      margin-right: 3.2rem;
+    }
+  }
+  .footer-logo {
+    width: 5rem;
+    margin: 4.8rem 0 5.8rem auto;
+  }
+  .footer-social {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      grid-gap: 1.2rem;
+      justify-content: flex-end;
+      li {
+        width: 2.4rem;
+        a {
+        }
+      }
+    }
+  }
+  .footer-search {
+    position: relative;
+  }
+  .search-icon {
+    height: 18px;
+    cursor: pointer;
+    transform: translate(50%, 50%);
+  }
+  .search-icon-wrapper {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    pointer-events: none;
+    right: 0;
+    top: 0;
   }
 }
