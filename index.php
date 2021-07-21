@@ -30,10 +30,11 @@
 	<!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="dist/style.css">
   <link rel="stylesheet" type="text/css" href="dist/print.css">
-  <?php // echo $additionalStylesheet; ?>
 
 	<!-- Fonts -->
-  <link rel="stylesheet" href="https://use.typekit.net/iwo6xnq.css">
+  <link rel="stylesheet" href="https://use.typekit.net/yod3huw.css">
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/ab5f7d63e8.js" crossorigin="anonymous"></script>
 
 	<!--[if IE]>
   	<link rel="stylesheet" type="text/css" href="/css/ie.css" />
@@ -79,9 +80,10 @@
             </form>
           </div>
           <div class="header-search-icon-wrapper search-icon-wrapper">
-            <svg viewbox="0 0 16 16" class="search-icon">
+            <i class="fas fa-search search-icon"></i>
+            <!-- <svg viewbox="0 0 16 16" class="search-icon">
               <use xlink:href="#header-search-icon"></use>
-            </svg>
+            </svg> -->
           </div>
         </div>
       </div>
@@ -217,6 +219,7 @@
       </div>
       <!-- END Table styles and layout -->
     </div>
+    <hr>
     <div class="container">
       <div class="accordion-wrapper">
         <!-- Accordion markup -->
@@ -243,12 +246,35 @@
           </details>
         </div>
         <!-- END Accordion markup -->
+      </div>
+    </div>
+    <hr>
+    <div class="container">
 
+      <div class="tabs-wrapper">
+        <nav class="tabs">
+          <ul class="tab-list">
+            <li class="is-active"><a href="#tab-one">Optional tabs</a></li>
+            <li><a href="#tab-two">Another tab of content</a></li>
+            <li><a href="#tab-three">Another tab of content three</a></li>
+          </ul>
+        </nav>
+
+        <section class="tab-content is-active" id="tab-one">
+          <h4>Business Continuity Plan</h4>
+          <p>NorQuest College will use business continuity planning to work towards restoring core business operations during and recovery from a major disruption.</p>
+        </section>
+        <section class="tab-content" id="tab-two">
+          <h4>Section two content title</h4>
+          <p>NorQuest College offers professional and confidential counselling at no cost to registered students. Our educational counsellors, also known as success partners, are psychologists and possess a wide range of expertise and knowledge.</p>
+        </section>
+        <section class="tab-content" id="tab-three">
+          <h4>Section 3hree content title</h4>
+          <p>Pat too strong flavor the Spanish tapar, or dried leaves. The original word tzilpoctli tzilli means smoke to cover that's because. Filo and spices, in variations across the modern processors use.</p>
+        </section>
 
       </div>
     </div>
-
-
 
   </main>
 

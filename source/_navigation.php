@@ -47,7 +47,6 @@
           <img src="https://picsum.photos/286/128" alt="image">
           <div class="menu__content-wrapper">
             <h4>Optional featured content in the open mega menu</h4>
-            <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
             <button class="btn btn-secondary__reverse">Apply now</button>
           </div>
         </span>
@@ -325,7 +324,6 @@
           <div class="menu__content-wrapper">
             <h4>Optional featured content in the open mega menu</h4>
             <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
-            <button class="btn btn-secondary__reverse">Apply now</button>
           </div>
         </span>
       </ul>

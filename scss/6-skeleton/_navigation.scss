@@ -140,7 +140,6 @@ header.header {
   }
   .search-icon {
     height: 18px;
-    cursor: pointer;
     transform: translate(50%, 50%);
   }
   .search-form {
@@ -159,6 +158,7 @@ header.header {
     right: 2.4rem;
     top: 1.7rem;
     pointer-events: none;
+    cursor: pointer;
     @include breakpoint(mlarge) {
       position: relative;
       pointer-events: unset;
@@ -257,7 +257,7 @@ header.header {
             border: 1px solid $rouge;
             .menu-close-icon {
               fill: $rouge !important;
-              transform:rotate(315deg)
+              transform: rotate(315deg);
             }
           }
         }

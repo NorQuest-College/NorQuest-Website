@@ -26,10 +26,11 @@
             <input type="text" placeholder="Type your keyword">
           </form>
         </div>
-        <div class="search-icon-wrapper">
-          <svg viewbox="0 0 16 16" class="search-icon">
+        <div class="search-icon-wrapper" style="color:#424242">
+          <i class="fas fa-search search-icon"></i>
+          <!-- <svg viewbox="0 0 16 16" class="search-icon">
             <use xlink:href="#header-search-icon"></use>
-          </svg>
+          </svg> -->
         </div>
       </div>
       <div class="footer-logo">
@@ -37,32 +38,33 @@
           <use xlink:href="#NorQuest-badge-white"></use>
         </svg>
       </div>
+      <!-- Footer social links and icons -->
       <div class="footer-social">
       <ul>
         <li><a href="">
-          <svg viewbox="0 0 16 16" class="icon-white-facebook">
-            <use xlink:href="#icon-white-facebook"></use>
-          </svg>
+          <span style='font-size:24px'>
+            <i class="fab fa-facebook-square"></i>
+          </span>
         </a></li>
         <li><a href="">
-          <svg viewbox="0 0 16 16" class="icon-white-twitter">
-            <use xlink:href="#icon-white-twitter"></use>
-          </svg>
+          <span style='font-size:24px'>
+            <i class="fab fa-twitter-square"></i>
+          </span>
         </a></li>
         <li><a href="">
-          <svg viewbox="0 0 16 16" class="icon-white-instagram">
-            <use xlink:href="#icon-white-instagram"></use>
-          </svg>
+          <span style='font-size:24px'>
+            <i class="fab fa-instagram-square"></i>
+          </span>
         </a></li>
         <li><a href="">
-          <svg viewbox="0 0 16 16" class="icon-white-youtube">
-            <use xlink:href="#icon-white-youtube"></use>
-          </svg>
+          <span style='font-size:24px'>
+            <i class="fab fa-youtube-square"></i>
+          </span>
         </a></li>
         <li><a href="">
-          <svg viewbox="0 0 16 16" class="icon-white-linkedin">
-            <use xlink:href="#icon-white-linkedin"></use>
-          </svg>
+          <span style='font-size:24px'>
+            <i class="fab fa-linkedin"></i>
+          </span>
         </a></li>
       </ul>
       </div>

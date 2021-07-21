@@ -13,11 +13,6 @@ var map = {
 	"./NorQuest-badge-white.svg": "./images/sprites/NorQuest-badge-white.svg",
 	"./NorQuest-logo.svg": "./images/sprites/NorQuest-logo.svg",
 	"./header-search-icon.svg": "./images/sprites/header-search-icon.svg",
-	"./icon-white-facebook.svg": "./images/sprites/icon-white-facebook.svg",
-	"./icon-white-instagram.svg": "./images/sprites/icon-white-instagram.svg",
-	"./icon-white-linkedin.svg": "./images/sprites/icon-white-linkedin.svg",
-	"./icon-white-twitter.svg": "./images/sprites/icon-white-twitter.svg",
-	"./icon-white-youtube.svg": "./images/sprites/icon-white-youtube.svg",
 	"./menu-close.svg": "./images/sprites/menu-close.svg",
 	"./menu-open.svg": "./images/sprites/menu-open.svg",
 	"./norquest-logo-horizontal-edit.svg": "./images/sprites/norquest-logo-horizontal-edit.svg",
@@ -130,6 +125,34 @@ function lvl3Toggle(e) {
     e.target.nextElementSibling.classList.toggle("active");
   }
 } // -- END -- Mobile sub nav toggle button
+// tab section
+
+
+var tabs = document.querySelectorAll(".tabs-wrapper .tabs li");
+var sections = document.querySelectorAll(".tabs-wrapper .tab-content");
+tabs.forEach(function (tab) {
+  tab.addEventListener("click", function (e) {
+    e.preventDefault();
+    removeActiveTab();
+    addActiveTab(tab);
+  });
+});
+
+var removeActiveTab = function removeActiveTab() {
+  tabs.forEach(function (tab) {
+    tab.classList.remove("is-active");
+  });
+  sections.forEach(function (section) {
+    section.classList.remove("is-active");
+  });
+};
+
+var addActiveTab = function addActiveTab(tab) {
+  tab.classList.add("is-active");
+  var href = tab.querySelector("a").getAttribute("href");
+  var matchingSection = document.querySelector(href);
+  matchingSection.classList.add("is-active");
+};
 
 /***/ }),
 
@@ -221,101 +244,6 @@ __webpack_require__.r(__webpack_exports__);
       id: "header-search-icon-usage",
       viewBox: "0 0 18 18",
       url: __webpack_require__.p + "sprites.svg#header-search-icon",
-      toString: function () {
-        return this.url;
-      }
-    });
-
-/***/ }),
-
-/***/ "./images/sprites/icon-white-facebook.svg":
-/*!************************************************!*\
-  !*** ./images/sprites/icon-white-facebook.svg ***!
-  \************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-      id: "icon-white-facebook-usage",
-      viewBox: "0 0 24 24",
-      url: __webpack_require__.p + "sprites.svg#icon-white-facebook",
-      toString: function () {
-        return this.url;
-      }
-    });
-
-/***/ }),
-
-/***/ "./images/sprites/icon-white-instagram.svg":
-/*!*************************************************!*\
-  !*** ./images/sprites/icon-white-instagram.svg ***!
-  \*************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-      id: "icon-white-instagram-usage",
-      viewBox: "0 0 24 24",
-      url: __webpack_require__.p + "sprites.svg#icon-white-instagram",
-      toString: function () {
-        return this.url;
-      }
-    });
-
-/***/ }),
-
-/***/ "./images/sprites/icon-white-linkedin.svg":
-/*!************************************************!*\
-  !*** ./images/sprites/icon-white-linkedin.svg ***!
-  \************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-      id: "icon-white-linkedin-usage",
-      viewBox: "0 0 24 24",
-      url: __webpack_require__.p + "sprites.svg#icon-white-linkedin",
-      toString: function () {
-        return this.url;
-      }
-    });
-
-/***/ }),
-
-/***/ "./images/sprites/icon-white-twitter.svg":
-/*!***********************************************!*\
-  !*** ./images/sprites/icon-white-twitter.svg ***!
-  \***********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-      id: "icon-white-twitter-usage",
-      viewBox: "0 0 24 24",
-      url: __webpack_require__.p + "sprites.svg#icon-white-twitter",
-      toString: function () {
-        return this.url;
-      }
-    });
-
-/***/ }),
-
-/***/ "./images/sprites/icon-white-youtube.svg":
-/*!***********************************************!*\
-  !*** ./images/sprites/icon-white-youtube.svg ***!
-  \***********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ({
-      id: "icon-white-youtube-usage",
-      viewBox: "0 0 24 24",
-      url: __webpack_require__.p + "sprites.svg#icon-white-youtube",
       toString: function () {
         return this.url;
       }
