@@ -19,11 +19,19 @@ ul.tab-list {
 
   a {
     display: block;
-    padding: 0.5rem 1rem;
+    padding: 1.2rem 1.4rem;
     border: 0.1rem solid $orange;
     border-radius: 0.4rem 0.4rem 0 0;
     color: $black;
     text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.13;
+    @include breakpoint(mlarge) {
+      padding: 1.5rem 2.3rem;
+      font-size: 2rem;
+      line-height: 1.2;
+    }
   }
 }
 section.tab-content {
@@ -33,6 +41,14 @@ section.tab-content {
   padding: 3.2rem 4rem;
   &.is-active {
     display: block;
+  }
+  p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    @include breakpoint(mlarge) {
+      font-size: 1.8rem;
+      line-height: 1.56;
+    }
   }
 }
 

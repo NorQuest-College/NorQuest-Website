@@ -17,6 +17,7 @@ h1 {
   // pass line height in units relative to font-size of parent element (ems)
   @include interpolate(line-height, $xs, $xxlarge, 1.2em, 1.1em);
   font-weight: bold;
+  margin-bottom: 4rem;
   @include breakpoint(mlarge) {
     margin-bottom: 8rem;
   }
@@ -25,7 +26,7 @@ h1 {
 h2 {
   font-size: 3.2rem;
   font-weight: 600;
-  line-height: 1.19;
+  line-height: 1.2;
   @include breakpoint(mlarge) {
     font-size: 4.8rem;
     font-weight: 600;
@@ -37,7 +38,7 @@ h2 {
 h3 {
   font-size: 2.6rem;
   font-weight: bold;
-  line-height: 1.1;
+  line-height: 1.2;
   @include breakpoint(mlarge) {
     font-size: 3.2rem;
     font-weight: bold;

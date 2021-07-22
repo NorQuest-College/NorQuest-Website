@@ -7,10 +7,10 @@
 main {
   flex-grow: 1;
   position: relative;
-  padding-top: 0;
+  padding-top: 3.2rem;
   background-image: $background-gradient;
   @include breakpoint(mlarge) {
-    padding-top: 100px;
+    padding-top: 18rem;
   }
 }
 .container-grid {

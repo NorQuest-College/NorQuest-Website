@@ -1,31 +1,47 @@
 .call-to-action {
-  display: flex;
+  @include breakpoint(smedium) {
+    display: flex;
+  }
   .cta-copy {
-    max-width: 42.4rem;
+    max-width: 100%;
     padding: 2.4rem 3.2rem;
     background-color: $ivory;
     flex: 1;
+    @include breakpoint(smedium) {
+      max-width: 42.4rem;
+    }
      p {
-       font-size: 2rem;
-       font-weight: 600;
-       line-height: 1.2;
+      font-size: 1.6rem;
+      line-height: 1.5;
+      font-weight: 600;
+       @include breakpoint(mlarge) {
+        font-size: 2rem;
+        line-height: 1.2;
+       }
      }
   }
   .cta-btn {
     display: flex;
-    max-width: 28.6rem;
+    max-width: 100%;
     background-color: $red;
     padding: 2.4rem 3.2rem;
     flex: 1;
+    @include breakpoint(smedium) {
+      max-width: 28.6rem;
+    }
     a {
       display: flex;
       color: white;
       align-items: center;
-      font-size: 2.4rem;
       font-weight: bold;
-      line-height: 1.17;
       text-align: center;
       text-decoration: none;
+      font-size: 1.8rem;
+      line-height: 1.33;
+      @include breakpoint(mlarge) {
+        font-size: 2.4rem;
+        line-height: 1.17;
+      }
     }
   }
 }

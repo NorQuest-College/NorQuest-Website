@@ -289,17 +289,17 @@
             <h3>H3: Contact us</h3>
             <div class="contact-location">
               <i class="fas fa-map-marker-alt"></i>
-              <p>Singhmar Centre for Learning <br>
-                Room 1-165, 10215 108 Street NW <br>
-                Edmonton, AB  T5J 1L6</p>
+              <p>Singhmar Centre for Learning</p>
+              <p>Room 1-165, 10215 108 Street NW</p>
+              <p>Edmonton, AB  T5J 1L6</p>
             </div>
             <a href="mailto:childcare@norquest.ca" clss='link-mailto'><i class="fas fa-envelope"></i>childcare@norquest.ca</a>
             <a href="tel:780-644-6029" class='link-tel'><i class="fas fa-phone"></i>(780)644-6029</a>
             <div class="contact-time">
               <i class="fas fa-clock"></i>
-              <p>Monday – Friday (year-round) <br>
-                7:00AM – 5:30PM <br>
-                Closed on statutory holidays and when NorQuest College is closed.</p>
+              <p>Monday – Friday (year-round)</p>
+              <p>7:00AM – 5:30PM</p>
+              <p>Closed on statutory holidays and when NorQuest College is closed.</p>
             </div>
           </div>
         </div>
