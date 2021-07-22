@@ -1,0 +1,29 @@
+.contact-wrapper {
+  .contact-block {
+    position: relative;
+    padding: 6rem 0;
+    &:after {
+      content: '';
+      background: url('/images/contact-block.svg') no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 0;
+      left: -82px;
+      height: 100%;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+  .contact-block-content {
+    position: relative;
+    background-color: white;
+    padding: 3.2rem 3rem;
+    box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
+    z-index: 2;
+  }
+  .contact-block-feather {
+    height: 372px;
+    position: relative;
+    left: -128.5px;
+  }
+}

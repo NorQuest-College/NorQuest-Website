@@ -12,6 +12,7 @@ var map = {
 	"./NorQuest-badge-light.svg": "./images/sprites/NorQuest-badge-light.svg",
 	"./NorQuest-badge-white.svg": "./images/sprites/NorQuest-badge-white.svg",
 	"./NorQuest-logo.svg": "./images/sprites/NorQuest-logo.svg",
+	"./contact-block.svg": "./images/sprites/contact-block.svg",
 	"./header-search-icon.svg": "./images/sprites/header-search-icon.svg",
 	"./menu-close.svg": "./images/sprites/menu-close.svg",
 	"./menu-open.svg": "./images/sprites/menu-open.svg",
@@ -225,6 +226,25 @@ __webpack_require__.r(__webpack_exports__);
       id: "NorQuest-logo-usage",
       viewBox: "0 0 749.2 186.7",
       url: __webpack_require__.p + "sprites.svg#NorQuest-logo",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/contact-block.svg":
+/*!******************************************!*\
+  !*** ./images/sprites/contact-block.svg ***!
+  \******************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "contact-block-usage",
+      viewBox: "0 0 354 512",
+      url: __webpack_require__.p + "sprites.svg#contact-block",
       toString: function () {
         return this.url;
       }

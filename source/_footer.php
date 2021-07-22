@@ -28,9 +28,6 @@
         </div>
         <div class="search-icon-wrapper" style="color:#424242">
           <i class="fas fa-search search-icon"></i>
-          <!-- <svg viewbox="0 0 16 16" class="search-icon">
-            <use xlink:href="#header-search-icon"></use>
-          </svg> -->
         </div>
       </div>
       <div class="footer-logo">

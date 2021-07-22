@@ -1,15 +1,9 @@
 /* Styles for components of the UI. */
-@import 'tables';
-
-/* system-level components */
-// @import 'messages';
-@import 'tabs';
-
-/* theme-level components */
-// @import 'ajax-loader';
-@import 'menu-toggle';
-// @import 'breadcrumbs';
 // @import 'hero';
+@import 'tables';
+@import 'tabs';
+@import 'menu-toggle';
 @import 'accordions';
-// @import 'progress-bar';
-// @import 'scroll-top';
+@import 'contact-block';
+@import 'call-to-action';
+

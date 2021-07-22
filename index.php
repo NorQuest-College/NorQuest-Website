@@ -81,9 +81,6 @@
           </div>
           <div class="header-search-icon-wrapper search-icon-wrapper">
             <i class="fas fa-search search-icon"></i>
-            <!-- <svg viewbox="0 0 16 16" class="search-icon">
-              <use xlink:href="#header-search-icon"></use>
-            </svg> -->
           </div>
         </div>
       </div>
@@ -250,7 +247,7 @@
     </div>
     <hr>
     <div class="container">
-
+      <!-- Tabs markup -->
       <div class="tabs-wrapper">
         <nav class="tabs">
           <ul class="tab-list">
@@ -272,9 +269,54 @@
           <h4>Section 3hree content title</h4>
           <p>Pat too strong flavor the Spanish tapar, or dried leaves. The original word tzilpoctli tzilli means smoke to cover that's because. Filo and spices, in variations across the modern processors use.</p>
         </section>
-
+      </div>
+      <!-- END Tabs markup -->
+    </div>
+    <hr>
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-block">
+          <div class="contact-block-content">
+            <h3>H3: Contact block</h3>
+            <h4>H4: Contact Shaun Ellithorpe</h4>
+            <a href="mailto:Shaun.Ellithorpe@norquest.ca" clss='link-mailto'><i class="fas fa-envelope"></i>Shaun.Ellithorpe@norquest.ca</a>
+            <a href="tel:780-288-3651" class='link-tel'><i class="fas fa-phone"></i>(780)288-3651</a>
+            <a href="https:linkedin.com" class='link-social'><i class="fab fa-linkedin"></i>LinkedIn</a>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-content">
+            <h3>H3: Contact us</h3>
+            <div class="contact-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Singhmar Centre for Learning <br>
+                Room 1-165, 10215 108 Street NW <br>
+                Edmonton, AB  T5J 1L6</p>
+            </div>
+            <a href="mailto:childcare@norquest.ca" clss='link-mailto'><i class="fas fa-envelope"></i>childcare@norquest.ca</a>
+            <a href="tel:780-644-6029" class='link-tel'><i class="fas fa-phone"></i>(780)644-6029</a>
+            <div class="contact-time">
+              <i class="fas fa-clock"></i>
+              <p>Monday – Friday (year-round) <br>
+                7:00AM – 5:30PM <br>
+                Closed on statutory holidays and when NorQuest College is closed.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    <hr>
+    <div class="container">
+      <div class="call-to-action">
+        <div class="cta-copy">
+          <p>Thinking of taking an online course? See if online learning is right for you with our self-assessment tool.</p>
+        </div>
+        <div class="cta-btn">
+          <a href="#">Start your self-assessment »</a>
+        </div>
+      </div>
+    </div>
+    <hr>
 
   </main>
 
