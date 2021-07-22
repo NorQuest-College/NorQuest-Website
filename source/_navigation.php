@@ -43,13 +43,13 @@
           </ul>
         </li>
         <li><a href="">Information sessions</a></li>
-        <span class="menu__content">
+        <li class="menu__content">
           <img src="https://picsum.photos/286/128" alt="image">
           <div class="menu__content-wrapper">
             <h4>Optional featured content in the open mega menu</h4>
             <button class="btn btn-secondary__reverse">Apply now</button>
           </div>
-        </span>
+        </li>
       </ul>
     </li>
     <li>
@@ -228,14 +228,14 @@
         </li>
         <li><a href="">Student experience</a></li>
         <li><a href="">Student handbooks</a></li>
-        <span class="menu__content">
+        <li class="menu__content">
           <img src="https://picsum.photos/286/128" alt="image">
           <div class="menu__content-wrapper">
             <h4>Optional featured content in the open mega menu</h4>
             <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
             <button class="btn btn-secondary__reverse">Apply now</button>
           </div>
-        </span>
+        </li>
       </ul>
     </li>
     <li>
@@ -319,13 +319,13 @@
             <li><a href="">Strategic plan</a></li>
           </ul>
         </li>
-        <span class="menu__content">
+        <li class="menu__content">
           <img src="https://picsum.photos/286/128" alt="image">
           <div class="menu__content-wrapper">
             <h4>Optional featured content in the open mega menu</h4>
             <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
           </div>
-        </span>
+        </li>
       </ul>
     </li>
   </ul>
