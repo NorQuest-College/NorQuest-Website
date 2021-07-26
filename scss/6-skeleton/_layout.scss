@@ -13,13 +13,26 @@ main {
     padding-top: 18rem;
   }
 }
+.container-text {
+  max-width: 498px;
+  padding-right: 0;
+  padding-left: 0;
+}
 .container-grid {
-  box-sizing: content-box;
   display: grid;
+  grid-template-columns: auto;
+  box-sizing: content-box;
   max-width: $container;
   margin: 0 auto;
   padding-right: $space_sm;
   padding-left: $space_sm;
+  @include breakpoint(mlarge) {
+    grid-template-columns: auto auto;
+  }
+  .container & {
+    padding-right: 0;
+    padding-left: 0;
+  }
 
 }
 .container-flex {

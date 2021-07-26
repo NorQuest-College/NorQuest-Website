@@ -13,12 +13,14 @@ h6 {
 h1 {
   // viewport min/max must be in ems for proper rendering, so font size min/max must also be passed as ems
   // 40px = 2.5em, 64px = 4em
-  @include interpolate(font-size, $xs, $xxlarge, 2.5em, 4em);
+  // // @include interpolate(font-size, $xs, $xxlarge, 3.8rem, 5.6rem);
   // pass line height in units relative to font-size of parent element (ems)
-  @include interpolate(line-height, $xs, $xxlarge, 1.2em, 1.1em);
+  // // @include interpolate(line-height, $xs, $xxlarge, 1.05, 1);
+  font-size: 3.8rem;
   font-weight: bold;
   margin-bottom: 4rem;
   @include breakpoint(mlarge) {
+    font-size: 5.6rem;
     margin-bottom: 8rem;
   }
 }

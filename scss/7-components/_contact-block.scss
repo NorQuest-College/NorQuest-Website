@@ -8,10 +8,25 @@
   .link-social {
     display: block;
   }
+  a {
+    display: block;
+    margin-bottom: 0.8rem;
+  }
+  i[class*="fa-"] { color: $rouge; }
+
+  .contact-location,
+  .contact-time {
+    margin-bottom: 0.8rem;
+    i[class*="fa-"] {
+      display: inline-block;
+    }
+    p { display: inline-block; }
+  }
   p { margin-bottom: 0; }
   .contact-block {
     position: relative;
     padding: 6rem 0;
+    max-width: 498px;
     &:after {
       content: '';
       background: url('/images/contact-block.svg') no-repeat;
@@ -28,7 +43,7 @@
     position: relative;
     background-color: white;
     padding: 3.2rem 3rem;
-    box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
+    box-shadow: $box-shadow-default;
     z-index: 2;
   }
   .contact-block-feather {

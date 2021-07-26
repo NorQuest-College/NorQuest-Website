@@ -1,0 +1,61 @@
+.testimonial {
+  box-shadow: $box-shadow-default;
+  display: block;
+  max-width: 71rem;
+  @include breakpoint(medium) {
+    display: grid;
+    grid-template-columns: 317px auto;
+    grid-gap: 3.3rem;
+
+  }
+  .testimonial-img {
+    img {
+      width: 100%;
+      @include breakpoint(medium) {
+        display: block;
+      }
+    }
+  }
+  .testimonial-copy {
+    max-width: 393px;
+    padding: 2.4rem;
+    position: relative;
+    z-index: 2;
+    @include breakpoint(medium) {
+      padding: 5.7rem 3.3rem 3.2rem;
+    }
+    > p {
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.38;
+      color: $rouge;
+      @include breakpoint(medium) {
+        font-size: 2rem;
+        line-height: 1.3;
+      }
+    }
+    &:before {
+      content: '';
+      background: url('/images/quotation-small-light.svg');
+      font-size: 3.2rem;
+      position: absolute;
+      top: 1.6rem;
+      left: 0.8rem;
+      color: $rouge;
+      width: 9.6rem;
+      height: 6.8rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      z-index: -1;
+      @include breakpoint(medium) {
+        background: url('/images/quotation-large-light.svg');
+        background-repeat: no-repeat;
+        width: 10.3rem;
+        height: 7.4rem;
+        font-size: 6.4rem;
+        background-size: contain;
+        left: 0;
+    }
+  }
+  }
+}

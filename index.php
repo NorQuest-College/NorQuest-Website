@@ -42,6 +42,7 @@
 </head>
 <body>
 
+  <!-- Image SVG sprite -->
   <?php include('dist/sprites.svg'); ?>
 
   <header class="header">
@@ -66,12 +67,354 @@
       <!-- END mobile toggle icon -->
 
       <!-- Top Navigation -->
-      <?php include('source/_top-nav.php'); ?>
+      <nav class="menu-top-nav" aria-label='Top navigation'>
+        <ul class="menu__top-nav">
+          <li><a href="">Login</a></li>
+          <li><a href="">Library</a></li>
+          <li><a href="">Bookstore</a></li>
+          <li><a href="">Donate</a></li>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Contact us</a></li>
+          <li><a href="">Chat now</a></li>
+        </ul>
+      </nav>
       <!-- END Top Navigation -->
 
       <!-- Main navigation and search -->
       <div class="nav-search">
-        <?php include('source/_navigation.php'); ?>
+        <nav class="menu-primary-nav" id="primary-nav" aria-label="Primary navigation">
+          <ul class="menu__primary lvl-1">
+            <li>
+              <a href="">Programs and courses</a>
+              <button class="menu-close">
+                <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
+                  <use xlink:href="#menu-close"></use>
+                </svg>
+              </button>
+              <ul class="menu__subnav lvl-2">
+                <li>
+                  <a href="">Program and course listing</a>
+                </li>
+                <li>
+                  <a href="">Continuing education</a>
+                  <button class="menu-close">
+                    <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
+                      <use xlink:href="#menu-close"></use>
+                    </svg>
+                  </button>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Browse programs and courses</a></li>
+                    <li><a href="">Colbourne Institute for Inclusive Leadership</a></li>
+                    <li><a href="">Edmonton Oilers Community Foundation Hospitality Institute</a></li>
+                    <li><a href="">Custom training</a></li>
+                    <li><a href="">Indigenous awareness training</a></li>
+                    <li><a href="">ed2go online learning</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Dual credit programs</a></li>
+                <li>
+                  <a href="">Learning at NorQuest</a>
+                  <button class="menu-close">
+                    <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
+                      <use xlink:href="#menu-close"></use>
+                    </svg>
+                  </button>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Definitions</a></li>
+                    <li><a href="">Open Admissions Pathways</a></li>
+                    <li><a href="">Online learning</a></li>
+                    <li><a href="">Bring your own device</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Information sessions</a></li>
+                <li class="menu__content">
+                  <img src="https://via.placeholder.com/286x128" alt="image">
+                  <div class="menu__content-wrapper">
+                    <h4>Optional featured content in the open mega menu</h4>
+                    <button class="btn btn-secondary__reverse">Apply now</button>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Applying to NorQuest</a>
+              <button class="menu-close">
+                <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
+                  <use xlink:href="#menu-close"></use>
+                </svg>
+              </button>
+              <ul class="menu__subnav lvl-2">
+                <li>
+                  <a href="">How to apply</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Application process</a></li>
+                    <li>
+                      <a href="">Admission requirements</a>
+                      <ul class="menu__subnav lvl-4">
+                        <li><a href="">Equivalencies</a></li>
+                        <li><a href="">English language proficiency requirements</a></li>
+                        <li><a href="">Work, practicum, and clinical requirements</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="">Talk to a student advisor</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Get help with your application</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Attend an info session</a></li>
+                    <li><a href="">Talk to a student advisor</a></li>
+                    <li><a href="">Ready to apply</a></li>
+                    <li><a href="">Waiting for a response</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Funding your education</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Learner Income Support</a></li>
+                    <li><a href="">Student loans</a></li>
+                    <li><a href="">Scholarships, bursaries, and awards</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">International students</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Browse programs and courses</a></li>
+                    <li><a href="">Equivalencies</a></li>
+                    <li><a href="">English language proficiency requirements</a></li>
+                    <li><a href="">Immigration</a></li>
+                    <li><a href="">Agents</a></li>
+                    <li><a href="">International projects</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Next steps for accepted students</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Registering in classes</a></li>
+                    <li><a href="">Completing work, practicum, and clinical requirements</a></li>
+                    <li><a href="">Orientation</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Testing and assessment services</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Academic and placement assessments</a></li>
+                    <li><a href="">Accessibility services</a></li>
+                    <li><a href="">Challenge exams</a></li>
+                    <li><a href="">Eproctor testing services</a></li>
+                    <li><a href="">Equivalency and GED testing</a></li>
+                    <li><a href="">External testing</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Transcripts and transfers</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Within Alberta</a></li>
+                    <li><a href="">Within Canada</a></li>
+                    <li><a href="">International transcripts</a></li>
+                    <li><a href="">Transfer credits</a></li>
+                    <li><a href="">Prior learning and recognition</a></li>
+                    <li><a href="">Document translation</a></li>
+                    <li><a href="">Foreign document assessment</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Tuition and fees</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Tuition estimator</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Forms and documents</a></li>
+                <li><a href="">Academic schedule</a></li>
+                  <!-- No optional block  on this listing-->
+              </ul>
+            </li>
+            <li>
+              <a href="">Student resources</a>
+              <button class="menu-close">
+                <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
+                  <use xlink:href="#menu-close"></use>
+                </svg>
+              </button>
+              <ul class="menu__subnav lvl-2">
+                <li>
+                  <a href="">Academic support</a>
+                  <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Academic schedule</a></li>
+                    <li><a href="">Accessibility services</a></li>
+                    <li><a href="">Office of Student Judicial Affairs</a></li>
+                    <li><a href="">Office of the Registrar</a></li>
+                    <li><a href="">Registering in classes</a></li>
+                    <li><a href="">Student policies</a></li>
+                    <li><a href="">Tutorial and academic coaching services</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Health and wellness supports</a>
+                  <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Mental health</a></li>
+                    <li><a href="">Services for students in crisis</a></li>
+                    <li><a href="">Sexual violence</a></li>
+                    <li><a href="">Reflection room</a></li>
+                    <li><a href="">Community resources</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Funding your education</a></li>
+                <li>
+                  <a href="">Career support</a>
+                  <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Career coaching</a></li>
+                    <li><a href="">Connections to the industry</a></li>
+                    <li><a href="">NorQuest WILworks</a></li>
+                    <li><a href="">Employer information</a></li>
+                    <li><a href="">Instructor information</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Campus services</a>
+                  <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Safety and emergency</a></li>
+                    <li><a href="">ID cards</a></li>
+                    <li><a href="">Lockers</a></li>
+                    <li><a href="">Computer services and technology</a></li>
+                    <li><a href="">Library</a></li>
+                    <li><a href="">Health simulation centre</a></li>
+                    <li><a href="">Innovation studio</a></li>
+                    <li><a href="">Child care centre</a></li>
+                    <li><a href="">Food services</a></li>
+                    <li><a href="">Transportation and parking</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">International student services</a>
+                  <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Financial support</a></li>
+                    <li><a href="">Get involved</a></li>
+                    <li><a href="">Travel safe</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Indigenous student services</a></li>
+                <li><a href="">Convocation</a></li>
+                <li>
+                  <a href="">After graduation</a>
+                  <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Alumni</a></li>
+                    <ul class="menu__subnav lvl-4">
+                      <li><a href="">Online networking and mentorship</a></li>
+                    </ul>
+                  </ul>
+                </li>
+                <li><a href="">Student experience</a></li>
+                <li><a href="">Student handbooks</a></li>
+                <li class="menu__content">
+                  <img src="https://via.placeholder.com/286x128" alt="image">
+                  <div class="menu__content-wrapper">
+                    <h4>Optional featured content in the open mega menu</h4>
+                    <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+                    <button class="btn btn-secondary__reverse">Apply now</button>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="">About</a>
+              <button class="menu-close">
+                <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
+                  <use xlink:href="#menu-close"></use>
+                </svg>
+              </button>
+              <ul class="menu__subnav lvl-2">
+                <li>
+                  <a href="">About NorQuest Collegevc</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">NorQuest's history</a></li>
+                    <li>
+                      <a href="">Awards and recognition</a>
+                      <ul class="menu__subnav lvl-4">
+                        <li><a href="">Jaye Fredrickson Award for Teaching Excellence</a></li>
+                        <li><a href="">Honorary diploma</a></li>
+                        <li><a href="">NorQuest College President's Medal</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="">NorQuest's brand</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Governance</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Executive</a></li>
+                    <li><a href="">Board of governors</a></li>
+                    <li><a href="">Academic council/a></li>
+                    <li><a href="">Expense reports</a></li>
+                    <li><a href="">Compensation disclosure</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">News and events</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">News</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">Stories</a></li>
+                    <li><a href="">Podcasts</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Campuses and maps</a></li>
+                <li>
+                  <a href="">Facilities</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Safety and emergency</a></li>
+                    <li><a href="">Parking</a></li>
+                    <li><a href="">Facility rentals</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Centres and Institutes</a></li>
+                <li>
+                  <a href="">Research and innovation</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Information for researchers</a></li>
+                    <li><a href="">Research Support Fund</a></li>
+                    <li><a href="">Research projects at NorQuest</a></li>
+                    <li><a href="">Innovation studio</a></li>
+                  </ul>
+                </li>
+                <li><a href="">Community partnerships</a></li>
+                <li>
+                  <a href="">Resources</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Resources for educators</a></li>
+                    <li><a href="">Resources for high school counselors and community organizations</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Policies and procedures</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Freedom of Information Act</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="">Publications and reports</a>
+                  <ul class="menu__subnav lvl-3">
+                    <li><a href="">Strategic plan</a></li>
+                  </ul>
+                </li>
+                <li class="menu__content">
+                  <img src="https://via.placeholder.com/286x128" alt="image">
+                  <div class="menu__content-wrapper">
+                    <h4>Optional featured content in the open mega menu</h4>
+                    <p>This is a short blurb about the mega menu section to help students select the right menu item.</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <!-- END main navigation -->
 
         <div class="header-search">
           <div id="siteSearch" class="search-form">
@@ -89,62 +432,90 @@
   </header>
 
   <main>
-    <div class="container">
-      <!-- Typeography -->
-      <!-- Headings -->
+    <section class="container">
+      <!-- H1 page title -->
       <h1>This is a heading 1. Below it is all of the other typography styles.</h1>
-      <h2>h2 - header</h2>
-      <h3>h3 - header</h3>
-      <h4>h4 - header</h4>
-      <h5>h5 - header</h5>
+      <!-- text area with a sidebar -->
+      <div class="container-grid">
+        <article class="container-text container-2-col">
+          <!-- Typeography -->
+          <!-- Headings -->
+          <h2>h2 - header</h2>
+          <h3>h3 - header</h3>
+          <h4>h4 - header</h4>
+          <h5>h5 - header</h5>
 
-      <!-- Links -->
-      <a href="#">Link text</a>
-      <a href="#" class='btn btn-primary'>Link with Button styles</a>
+          <!-- Links -->
+          <a href="#">Link text</a>
+          <a href="#" class='btn btn-primary'>Link with Button styles</a>
 
-      <!-- Paragraph styles -->
-      <p>Paragraph text -- To to him, and vanity wear the wall speak. Few but do right is a sour face and sold for this. Homage, do not for of the exception than that iron string. But these are penances I confess with the world society everywhere is. We and must accept the imagination the Devil's child, I exclude company.</p>
-      <p><em>Italiac -- To only right I live ever took flesh to it, spread your genuine.</em></p>
-      <p><u>Underline -- World you have done his being, as a certain alienated majesty of art have.</u></p>
-      <p><strong>Strong -- The they set at the future if you do not the outmost.</strong></p>
+          <!-- Paragraph styles -->
+          <p>Paragraph text -- To to him, and vanity wear the wall speak. Few but do right is a sour face and sold for this. Homage, do not for of the exception than that iron string. But these are penances I confess with the world society everywhere is. We and must accept the imagination the Devil's child, I exclude company.</p>
+          <p><em>Italiac -- To only right I live ever took flesh to it, spread your genuine.</em></p>
+          <p><u>Underline -- World you have done his being, as a certain alienated majesty of art have.</u></p>
+          <p><strong>Strong -- The they set at the future if you do not the outmost.</strong></p>
 
-      <!-- Horizontal rule -->
-      <hr>
+          <!-- Horizontal rule -->
+          <hr>
 
-      <!-- Blockquote -->
-      <blockquote>
-        <p>NorQuest College is a fantastic example of how a community organization can work with the Government of Canada to create long-lasting change in the lives of young people on the autism spectrum.</p>
-      </blockquote>
+          <!-- Blockquote -->
+          <blockquote>
+            <p>NorQuest College is a fantastic example of how a community organization can work with the Government of Canada to create long-lasting change in the lives of young people on the autism spectrum.</p>
+          </blockquote>
 
-      <!-- List items -->
-      <ul>
-        <li>Unordered list item 1</li>
-        <li>Unordered list item 2</li>
-        <li>Unordered list item 3</li>
-        <ul>
-          <li>Unordered list item 1b</li>
-          <li>Unordered list item 2b</li>
-        </ul>
-        <li>Unordered list item 4</li>
-        <li>Unordered list item 5</li>
-      </ul>
+          <!-- List items -->
+          <ul>
+            <li>Unordered list item 1</li>
+            <li>Unordered list item 2</li>
+            <li>Unordered list item 3</li>
+            <ul>
+              <li>Unordered list item 1b</li>
+              <li>Unordered list item 2b</li>
+            </ul>
+            <li>Unordered list item 4</li>
+            <li>Unordered list item 5</li>
+          </ul>
 
-      <ol>
-        <li>Ordered list item 1</li>
-        <li>Ordered list item 2</li>
-        <li>Ordered list item 3</li>
-        <ol>
-          <li>Ordered list item 1b</li>
-          <li>Ordered list item 2b</li>
-        </ol>
-        <li>Ordered list item 4</li>
-        <li>Ordered list item 5</li>
-      </ol>
-    </div>
+          <ol>
+            <li>Ordered list item 1</li>
+            <li>Ordered list item 2</li>
+            <li>Ordered list item 3</li>
+            <ol>
+              <li>Ordered list item 1b</li>
+              <li>Ordered list item 2b</li>
+            </ol>
+            <li>Ordered list item 4</li>
+            <li>Ordered list item 5</li>
+          </ol>
+
+        </article> <!-- end text-container -->
+        <aside>
+          <div class="related-card-wrapper">
+            <h4>Related content: card</h4>
+            <div class="related-card">
+              <h4>Page title</h4>
+              <p>This intro will help students select the right related info.</p>
+            </div>
+            <div class="related-card">
+              <h4>Page title</h4>
+              <p>This is a short blurb about the related section to help students select the right item.</p>
+            </div>
+            <div class="related-card">
+              <h4>Page title</h4>
+              <p>This intro will help students select the right related info.</p>
+            </div>
+            <div class="related-card">
+              <h4>Page title</h4>
+              <p>This is a short blurb about the related section to help students select the right item.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
     <hr>
 
-    <div class="container">
+    <section class="container">
       <h2>This is a heading 2. Below it is a variety of button styles.</h2>
       <div class="button-styles">
         <div class="button-styles-wrapper light-bg">
@@ -167,9 +538,9 @@
       </div>
 
       <hr>
-    </div>
+    </section>
 
-    <div class="container">
+    <setion class="container">
       <h3>H3: Other grades in a HTML Table</h3>
       <!-- Table styles and layout -->
       <div class="table-wrapper">
@@ -215,9 +586,9 @@
         </table>
       </div>
       <!-- END Table styles and layout -->
-    </div>
+    </setion>
     <hr>
-    <div class="container">
+    <section class="container">
       <div class="accordion-wrapper">
         <!-- Accordion markup -->
         <div class="accordion">
@@ -244,9 +615,9 @@
         </div>
         <!-- END Accordion markup -->
       </div>
-    </div>
+    </section>
     <hr>
-    <div class="container">
+    <section class="container">
       <!-- Tabs markup -->
       <div class="tabs-wrapper">
         <nav class="tabs">
@@ -271,9 +642,10 @@
         </section>
       </div>
       <!-- END Tabs markup -->
-    </div>
+    </section>
     <hr>
-    <div class="container">
+    <section class="container">
+      <!-- Contact block markup -->
       <div class="contact-wrapper">
         <div class="contact-block">
           <div class="contact-block-content">
@@ -304,9 +676,11 @@
           </div>
         </div>
       </div>
-    </div>
+      <!-- END Contact block markup -->
+    </section>
     <hr>
-    <div class="container">
+    <section class="container">
+      <!-- Call to action -->
       <div class="call-to-action">
         <div class="cta-copy">
           <p>Thinking of taking an online course? See if online learning is right for you with our self-assessment tool.</p>
@@ -315,12 +689,159 @@
           <a href="#">Start your self-assessment »</a>
         </div>
       </div>
+      <!-- END Call to action -->
+    </section>
+    <hr>
+    <div class="container">
+      <!-- testimonial -->
+      <div class="testimonial">
+        <div class="testimonial-img">
+           <img src="https://via.placeholder.com/317x317" alt="image">
+        </div>
+        <div class="testimonial-copy">
+          <p>My whole goal is to one day continue my education and earn my registered nurse degree. I now know that is something that can happen. NorQuest helped with my confidence. I will always remember what NorQuest did for me.</p>
+          <div class="testimonial-footer">
+            <p><strong>Clark Castello</strong></p>
+            <p>Practical Nursing, 2016</p>
+          </div>
+        </div>
+      </div>
+      <!-- END testimonial -->
+    </div>
+    <hr>
+    <div class="container">
+      <!-- Optional featured, linked content -->
+      <div class="featured-linked-content">
+        <h3>Optional featured, linked content</h3>
+        <div class="featured-linked-content-wrapper">
+          <div class="featured-linked-content-item">
+            <img src="https://via.placeholder.com/160x160" alt="image">
+            <h4>Brian Hesje</h4>
+            <p>Strategic thinking at its best</p>
+          </div>
+          <div class="featured-linked-content-item">
+            <img src="https://via.placeholder.com/160x160" alt="image">
+            <h4>Blaine LaBonte and Irene Mertz-LaBonte</h4>
+            <p>A gift for the future</p>
+          </div>
+          <div class="featured-linked-content-item">
+            <img src="https://via.placeholder.com/160x160" alt="image">
+            <h4>Dr. S. Ann Colbourne</h4>
+            <p>A new era in modern workplace culture</p>
+          </div>
+          <div class="featured-linked-content-item">
+            <img src="https://via.placeholder.com/160x160" alt="image">
+            <h4>Oshinique Williams</h4>
+          </div>
+          <div class="featured-linked-content-item">
+            <img src="https://via.placeholder.com/160x160" alt="image">
+            <h4>Steven and Day LePoole</h4>
+          </div>
+          <div class="featured-linked-content-item">
+            <img src="https://via.placeholder.com/160x160" alt="image">
+            <h4>Tammy Kaglik</h4>
+          </div>
+          <div class="featured-linked-content-item">
+            <img src="https://via.placeholder.com/160x160" alt="image">
+            <h4>Natasha Korosi</h4>
+            <p>Strategic thinking at its best</p>
+          </div>
+          <div class="featured-linked-content-item">
+            <img src="https://via.placeholder.com/160x160" alt="image">
+            <h4>Brett Funk</h4>
+          </div>
+        </div>
+      </div>
+      <!-- END Optional featured, linked content -->
     </div>
     <hr>
 
   </main>
-
-  <?php include('source/_footer.php'); ?>
+  <!-- END of main content markup -->
+  <!-- Footer markup -->
+  <footer>
+    <div class="container-grid">
+      <div>
+        <p><b>We acknowledge that we are on the traditional lands, referred to as Treaty 6 Territory and that the City of Edmonton and all the people here are beneficiaries of this peace and friendship treaty.</b></p>
+      </div>
+      <div>
+        <p>NorQuest College <br>
+          10215 108 Street NW <br>
+          Edmonton, Alberta, Canada <br>
+          T5J 1L6</p>
+        <a href="">Campus map</a>
+        <a href="">Contact us</a>
+      </div>
+      <div>
+        <ul>
+          <li><a href="">Programs and courses</a></li>
+          <li><a href="">Applying to NorQuest</a></li>
+          <li><a href="">Student resources</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-search">
+          <div id="siteSearch" class="search-form">
+            <form action="search">
+              <input type="text" placeholder="Type your keyword">
+            </form>
+          </div>
+          <div class="search-icon-wrapper" style="color:#424242">
+            <i class="fas fa-search search-icon"></i>
+          </div>
+        </div>
+        <div class="footer-logo">
+          <svg viewbox="0 0 16 16" class="NorQuest-badge-white">
+            <use xlink:href="#NorQuest-badge-white"></use>
+          </svg>
+        </div>
+        <!-- Footer social links and icons -->
+        <div class="footer-social">
+        <ul>
+          <li><a href="">
+            <span style='font-size:24px'>
+              <i class="fab fa-facebook-square"></i>
+            </span>
+          </a></li>
+          <li><a href="">
+            <span style='font-size:24px'>
+              <i class="fab fa-twitter-square"></i>
+            </span>
+          </a></li>
+          <li><a href="">
+            <span style='font-size:24px'>
+              <i class="fab fa-instagram-square"></i>
+            </span>
+          </a></li>
+          <li><a href="">
+            <span style='font-size:24px'>
+              <i class="fab fa-youtube-square"></i>
+            </span>
+          </a></li>
+          <li><a href="">
+            <span style='font-size:24px'>
+              <i class="fab fa-linkedin"></i>
+            </span>
+          </a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-flex">
+      <div class="bottom-footer-content">
+        <p>© 2021 NorQuest College. All rights reserved.</p>
+        <nav>
+          <ul class="menu__footer-bottom">
+            <li><a href="">Terms of service</a></li>
+            <span>&nbsp;|&nbsp;</span>
+            <li><a href="">Privacy statemente</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
+  <!-- END footer -->
 
   <script type="text/javascript" src="dist/main.js"></script>
 

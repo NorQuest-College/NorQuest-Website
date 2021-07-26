@@ -62,17 +62,21 @@ a {
     box-shadow: 0 0 0.1rem 0.2rem $yellow;
   }
 
-  @include breakpoint(medium) {
-    &[href^='tel'] {
-      pointer-events: none;
-
-      &:link,
-      &:visited {
-        color: $black;
-        text-decoration: none;
-      }
-    }
+  i[class*="fa-"] {
+    margin-right: 1rem;
   }
+
+  // @include breakpoint(medium) {
+  //   &[href^='tel'] {
+  //     pointer-events: none;
+
+  //     &:link,
+  //     &:visited {
+  //       color: $red;
+  //       text-decoration: none;
+  //     }
+  //   }
+  // }
 }
 
 main a {
