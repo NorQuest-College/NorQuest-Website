@@ -755,6 +755,27 @@
       <!-- END Optional featured, linked content -->
     </div>
     <hr>
+    <div class="container">
+      <!-- Images (Featured, Left text, right text) -->
+      <div class="image-alignment">
+        <div class="text-media img-left">
+          <div class="left-aligned">
+            <img src="https://via.placeholder.com/392x294" alt="image">
+          </div>
+          <p>NorQuest College offers professional and confidential counselling at no cost to registered students. Our educational counsellors, also known as success partners, are psychologists and possess a wide range of expertise.</p>
+        </div>
+        <div class="full-width-img">
+          <img src="https://via.placeholder.com/710x532" alt="image">
+        </div>
+        <div class="text-media img-right">
+          <div class="right-aligned">
+            <img src="https://via.placeholder.com/392x294" alt="image">
+          </div>
+          <p>NorQuest College offers professional and confidential counselling at no cost to registered students. Our educational counsellors, also known as success partners, are psychologists and possess a wide range of expertise.</p>
+        </div>
+      </div>
+      <!-- END Images (Featured, Left text, right text) -->
+    </div>
 
   </main>
   <!-- END of main content markup -->

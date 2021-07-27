@@ -230,15 +230,16 @@ header.header {
         }
         &:last-child { padding-right: 5rem; }
         a {
-          margin: 0 2rem;
           font-size: 1.6rem;
-          font-weight: 500;
+          font-weight: 600;
           line-height: 1.33;
           color: $black;
           display: block;
           padding: 2rem 0;
           text-decoration: none;
+          margin: 0 6rem 0 2rem;
           @include breakpoint(large) {
+            margin: 0 2rem;
             font-size: 1.8rem;
           }
         }
@@ -247,7 +248,7 @@ header.header {
           height: 3.2rem;
           width: 3.2rem;
           top: 1.6rem;
-          right: 1.4rem;
+          right: 2.4rem;
           padding: 0;
           background: transparent;
           border: transparent;
@@ -268,7 +269,7 @@ header.header {
           height: 1.2em;
           width: 1.2em;
           display: block;
-          margin: 0.6rem auto;
+          margin: 0 auto;
           pointer-events: none;
           transition-duration: 0.3s;
           transition-property: transform;
@@ -285,7 +286,7 @@ header.header {
               border-width: 0 2rem 1.2rem 2rem;
               border-color: transparent transparent $red;
               position: relative;
-              bottom: 12px;
+              bottom: 9px;
               margin: 0 auto;
               display: block;
             }
@@ -326,7 +327,7 @@ header.header {
         }
         &.menu__subnav{
           li {
-            margin: .6rem 1.2rem;
+            margin: .6rem 0 1.2rem 1.2rem;
             @media screen and (max-width: $mlarge-down) {
               position: relative;
             }
@@ -347,9 +348,9 @@ header.header {
               }
             }
             a {
-              font-size: 1.8rem;
+              font-size: 1.6rem;
               line-height: 1.11;
-              margin: 0;
+              margin: 0 6rem 0 0;
             }
           }
           &.lvl-3 {
@@ -358,6 +359,7 @@ header.header {
               &.active {
                 display: block;
                 border-left: 1.2rem solid $red;
+                margin-left: -1.2rem;
               }
             }
           }
@@ -380,14 +382,15 @@ header.header {
         margin: .6rem 1.2rem;
         max-width: 286px;
         width: 100%;
-        background-color: $rouge;
+        background-image: linear-gradient(to left, $red, $rouge);
         height: fit-content;
+        border-radius: 4px;
         h4, p {
           color: white;
         }
         h4 {
           font-size: 1.8rem;
-          font-weight: bold;
+          font-weight: 600;
           line-height: 1.11;
         }
         p {
@@ -397,6 +400,7 @@ header.header {
         .menu__content-wrapper {
           padding: 2.4rem;
         }
+        button.btn { background-color: $rouge; }
       }
     }
   }

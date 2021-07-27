@@ -1,0 +1,76 @@
+.full-width-img {
+  position: relative;
+  z-index: 1;
+  max-width: 71rem;
+  margin: 4rem 0;
+  &:after {
+    content: '';
+    background: url('/images/full-width-img-bg.svg') no-repeat bottom right;
+    background-size: contain;
+    position: absolute;
+    bottom: -3rem;
+    right: -143px;
+    height: 100%;
+    min-width: 286px;
+    z-index: -1
+  }
+  img {}
+}
+.image-alignment {
+  .text-media {
+    margin-bottom: 2rem;
+    display: flex;
+    max-width: 71rem;
+    align-items: center;
+    flex-direction: column;
+    @include breakpoint(smedium) {
+      flex-direction: row;
+    }
+  }
+  .img-right {
+    @include breakpoint(smedium) {
+      flex-flow: row-reverse;
+    }
+  }
+  .right-aligned {
+    margin: 1rem 0;
+    width: 100%;
+    order: 1;
+    text-align: right;
+    @include breakpoint(smedium) {
+      flex: 1 0 224px;
+      order: unset;
+      margin: 0 0 1rem 2rem;
+    }
+    @include breakpoint(mlarge) {
+      flex: 1 0 392px;
+      margin: 0 0 2rem 4rem;
+    }
+    img{
+      max-width: 224px;
+      width: 100%;
+      @include breakpoint(smedium) {
+        max-width: 368px;
+      }
+    }
+  }
+  .left-aligned {
+    margin: 0 2rem 1rem 0;
+    width: 100%;
+    flex: 1;
+    @include breakpoint(smedium) {
+      flex: 1 0 224px;
+    }
+    @include breakpoint(mlarge) {
+      flex: 1 0 392px;
+      margin: 0 4rem 2rem 0;
+    }
+    img{
+      max-width: 224px;
+      width: 100%;
+      @include breakpoint(smedium) {
+        max-width: 368px;
+      }
+    }
+  }
+}
