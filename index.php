@@ -58,6 +58,8 @@
 
       <!-- mobile toggle icon -->
       <div class="mobile_toggle__wrapper">
+        <!-- <i class="fas fa-shopping-cart" style="color:#e71321"></i> -->
+        <i class="menu-shopping-cart fas fa-shopping-cart"></i>
         <button id="menuToggle" class="mobile_toggle">
           <div class="mobile_toggle__inner">
             <div class="mobile_toggle__icon"></div>
@@ -540,7 +542,7 @@
       <hr>
     </section>
 
-    <setion class="container">
+    <section class="container">
       <h3>H3: Other grades in a HTML Table</h3>
       <!-- Table styles and layout -->
       <div class="table-wrapper">
@@ -586,7 +588,7 @@
         </table>
       </div>
       <!-- END Table styles and layout -->
-    </setion>
+    </section>
     <hr>
     <section class="container">
       <div class="accordion-wrapper">

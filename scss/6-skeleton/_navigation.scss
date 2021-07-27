@@ -28,16 +28,6 @@ nav {
 }
 
 .mobile_toggle {
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -$space_xs;
-    width: 11rem;
-    height: 11rem;
-    background-color: transparent;
-    transition: background-color 0.2s ease;
-  }
   &:hover,
   &:active {
     background-color: transparent;

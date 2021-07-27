@@ -665,17 +665,6 @@ nav ul[class^="menu__"] {
     .mobile_toggle__wrapper {
       display: none; } }
 
-.mobile_toggle::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -1rem;
-  width: 11rem;
-  height: 11rem;
-  background-color: transparent;
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease; }
-
 .mobile_toggle:hover, .mobile_toggle:active {
   background-color: transparent; }
 
@@ -1293,7 +1282,6 @@ section.tab-content {
 .mobile_toggle {
   overflow: visible;
   margin: 0;
-  margin-right: -1rem;
   padding: 1rem;
   border: 0;
   background-color: transparent;
