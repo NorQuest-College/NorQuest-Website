@@ -65,18 +65,6 @@ a {
   i[class*="fa-"] {
     margin-right: 1rem;
   }
-
-  // @include breakpoint(medium) {
-  //   &[href^='tel'] {
-  //     pointer-events: none;
-
-  //     &:link,
-  //     &:visited {
-  //       color: $red;
-  //       text-decoration: none;
-  //     }
-  //   }
-  // }
 }
 
 main a {

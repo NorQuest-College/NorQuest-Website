@@ -1,3 +1,6 @@
+.cta-full-width {
+
+}
 .call-to-action {
   @include breakpoint(smedium) {
     display: flex;
@@ -7,8 +10,10 @@
     padding: 2.4rem 3.2rem;
     background-color: $ivory;
     flex: 1;
+    border-radius: 4px 4px 0 0;
     @include breakpoint(smedium) {
       max-width: 42.4rem;
+      border-radius: 4px 0 0 4px;
     }
      p {
       font-size: 1.6rem;
@@ -26,8 +31,10 @@
     background-color: $red;
     padding: 2.4rem 3.2rem;
     flex: 1;
+    border-radius:  0 0 4px 4px;
     @include breakpoint(smedium) {
       max-width: 28.6rem;
+      border-radius: 0 4px 4px 0 ;
     }
     a {
       display: flex;

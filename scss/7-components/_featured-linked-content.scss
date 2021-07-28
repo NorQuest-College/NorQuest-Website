@@ -9,24 +9,19 @@
   }
   &:before {
     content: '';
-    display: block;
-    width: 60%;
-    height: 2px;
-    position: absolute;
-    left: calc(-50vw + 50%);
-    top: 0;
-    background-color: $orange;
-  }
-  &:after {
-    content: '';
-    background: url('/images/optional-linked-content.svg') no-repeat bottom;
+    background: url('/images/optional-linked-content.svg') no-repeat top left;
     background-size: contain;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     z-index: -1;
+  }
+
+  .featured-linked-content-item {
+    width: 176px;
+    padding: 0.8rem;
   }
 
   .featured-linked-content-wrapper {

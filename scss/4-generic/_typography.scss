@@ -95,7 +95,12 @@ p.lead {
   font-family: $primary_font;
   line-height: $line_height;
 }
-
+.intro-text {
+  p {
+    font-size: 2.4rem;
+    line-height: 1.33;
+  }
+}
 blockquote {
   margin-bottom: 1.5rem;
   padding: 1rem;

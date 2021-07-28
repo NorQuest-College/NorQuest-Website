@@ -1,11 +1,4 @@
 // TODO: not prod code
-// .button-styles { display: flex;}
-.button-styles-wrapper {
-  // display: grid;
-  // align-content: baseline;
-  // justify-content: center;
-}
-// TODO: not prod code
 .btn,
 .button,
 button,
@@ -14,7 +7,6 @@ input[type="submit"] {
   display: inline-block;
   width: auto;
   height: auto;
-  // min-height: 5.6rem;
   padding: $space_xs $space_md;
   border: solid 0.1rem $black;
   border-radius: 0.4rem;
@@ -53,6 +45,9 @@ input[type="submit"] {
     background-color: white;
     color: $red;
     border: solid 0.2rem white;
+  }
+  &:hover {
+    color: white;
   }
 }
 .btn-secondary {

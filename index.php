@@ -58,8 +58,9 @@
 
       <!-- mobile toggle icon -->
       <div class="mobile_toggle__wrapper">
-        <!-- <i class="fas fa-shopping-cart" style="color:#e71321"></i> -->
-        <i class="menu-shopping-cart fas fa-shopping-cart"></i>
+        <a href="#" class="menu-shopping-cart" style='color:#424242' data-count="5">
+          <i class="fas fa-shopping-cart"></i>
+        </a>
         <button id="menuToggle" class="mobile_toggle">
           <div class="mobile_toggle__inner">
             <div class="mobile_toggle__icon"></div>
@@ -78,6 +79,9 @@
           <li><a href="">Careers</a></li>
           <li><a href="">Contact us</a></li>
           <li><a href="">Chat now</a></li>
+          <li><a href="#" class="menu-shopping-cart" data-count="5">
+            <i class="fas fa-shopping-cart"></i></a>
+          </li>
         </ul>
       </nav>
       <!-- END Top Navigation -->
@@ -452,13 +456,16 @@
           <a href="#" class='btn btn-primary'>Link with Button styles</a>
 
           <!-- Paragraph styles -->
+          <div class="intro-text">
+            <p>This is intro text. NorQuest College’s first priority is to work with response agencies to manage a crisis and minimize the impact it has on our students, faculty and staff, our property and the community.</p>
+          </div>
           <p>Paragraph text -- To to him, and vanity wear the wall speak. Few but do right is a sour face and sold for this. Homage, do not for of the exception than that iron string. But these are penances I confess with the world society everywhere is. We and must accept the imagination the Devil's child, I exclude company.</p>
           <p><em>Italiac -- To only right I live ever took flesh to it, spread your genuine.</em></p>
           <p><u>Underline -- World you have done his being, as a certain alienated majesty of art have.</u></p>
           <p><strong>Strong -- The they set at the future if you do not the outmost.</strong></p>
 
           <!-- Horizontal rule -->
-          <hr>
+
 
           <!-- Blockquote -->
           <blockquote>
@@ -515,7 +522,7 @@
       </div>
     </section>
 
-    <hr>
+
 
     <section class="container">
       <h2>This is a heading 2. Below it is a variety of button styles.</h2>
@@ -539,7 +546,7 @@
         </div>
       </div>
 
-      <hr>
+
     </section>
 
     <section class="container">
@@ -589,7 +596,7 @@
       </div>
       <!-- END Table styles and layout -->
     </section>
-    <hr>
+
     <section class="container">
       <div class="accordion-wrapper">
         <!-- Accordion markup -->
@@ -618,7 +625,7 @@
         <!-- END Accordion markup -->
       </div>
     </section>
-    <hr>
+
     <section class="container">
       <!-- Tabs markup -->
       <div class="tabs-wrapper">
@@ -645,7 +652,7 @@
       </div>
       <!-- END Tabs markup -->
     </section>
-    <hr>
+
     <section class="container">
       <!-- Contact block markup -->
       <div class="contact-wrapper">
@@ -680,7 +687,7 @@
       </div>
       <!-- END Contact block markup -->
     </section>
-    <hr>
+
     <section class="container">
       <!-- Call to action -->
       <div class="call-to-action">
@@ -693,8 +700,8 @@
       </div>
       <!-- END Call to action -->
     </section>
-    <hr>
-    <div class="container">
+
+    <section class="container">
       <!-- testimonial -->
       <div class="testimonial">
         <div class="testimonial-img">
@@ -709,9 +716,9 @@
         </div>
       </div>
       <!-- END testimonial -->
-    </div>
-    <hr>
-    <div class="container">
+    </section>
+
+    <section class="container">
       <!-- Optional featured, linked content -->
       <div class="featured-linked-content">
         <h3>Optional featured, linked content</h3>
@@ -755,9 +762,9 @@
         </div>
       </div>
       <!-- END Optional featured, linked content -->
-    </div>
-    <hr>
-    <div class="container">
+    </section>
+
+    <section class="container">
       <!-- Images (Featured, Left text, right text) -->
       <div class="image-alignment">
         <div class="text-media img-left">
@@ -777,7 +784,18 @@
         </div>
       </div>
       <!-- END Images (Featured, Left text, right text) -->
+    </section>
+
+    <!-- call-to-action__full-width -->
+    <div class="call-to-action call-to-action__full-width">
+      <div class="cta-copy">
+        <p>Thinking of taking an online course? See if online learning is right for you with our self-assessment tool.</p>
+      </div>
+      <div class="cta-btn">
+        <a href="#">Start your self-assessment »</a>
+      </div>
     </div>
+    <!-- END call-to-action__full-width -->
 
   </main>
   <!-- END of main content markup -->
@@ -792,16 +810,19 @@
           10215 108 Street NW <br>
           Edmonton, Alberta, Canada <br>
           T5J 1L6</p>
-        <a href="">Campus map</a>
-        <a href="">Contact us</a>
+        <a href=""><i class="fas fa-map-marker-alt"></i>Campus map</a>
+        <br>
+        <a href=""><i class="fas fa-phone"></i>Contact us</a>
       </div>
       <div>
-        <ul>
-          <li><a href="">Programs and courses</a></li>
-          <li><a href="">Applying to NorQuest</a></li>
-          <li><a href="">Student resources</a></li>
-          <li><a href="">About</a></li>
-        </ul>
+        <nav>
+          <ul class='menu__footer-block'>
+            <li><a href="">Programs and courses</a></li>
+            <li><a href="">Applying to NorQuest</a></li>
+            <li><a href="">Student resources</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </nav>
       </div>
       <div>
         <div class="footer-search">

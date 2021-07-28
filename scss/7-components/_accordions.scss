@@ -13,6 +13,9 @@ details {
       }
     }
   }
+  > summary::-webkit-details-marker {
+    display: none;
+  }
   > summary {
     cursor: pointer;
     list-style: none;

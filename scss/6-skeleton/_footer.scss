@@ -6,9 +6,14 @@ footer {
   @media screen and (max-width: 64rem) {
     nav ul[class^="menu__"] {
       li {
-        padding-top: $space_xs;
+        padding-top: 0;
         padding-bottom: $space_xs;
-        a { color: white; }
+        a {
+          color: white;
+          font-size: 1.6rem;
+          font-weight: 500;
+          line-height: 1.25;
+        }
       }
     }
   }
@@ -28,6 +33,11 @@ footer {
   h4 {
     color: white;
     margin: 0;
+  }
+  a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.25;
   }
   .bottom-footer-content {
     @include breakpoint(mlarge) {
