@@ -786,16 +786,18 @@
       <!-- END Images (Featured, Left text, right text) -->
     </section>
 
-    <!-- call-to-action__full-width -->
-    <div class="call-to-action call-to-action__full-width">
-      <div class="cta-copy">
-        <p>Thinking of taking an online course? See if online learning is right for you with our self-assessment tool.</p>
+    <section class="container">
+      <!-- call-to-action__full-width -->
+      <div class="call-to-action call-to-action__full-width">
+        <div class="cta-copy">
+          <p>Thinking of taking an online course? See if online learning is right for you with our self-assessment tool.</p>
+        </div>
+        <div class="cta-btn">
+          <a href="#">Start your self-assessment »</a>
+        </div>
       </div>
-      <div class="cta-btn">
-        <a href="#">Start your self-assessment »</a>
-      </div>
-    </div>
-    <!-- END call-to-action__full-width -->
+      <!-- END call-to-action__full-width -->
+    </section>
 
   </main>
   <!-- END of main content markup -->

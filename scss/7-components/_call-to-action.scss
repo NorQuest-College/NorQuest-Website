@@ -1,5 +1,61 @@
-.cta-full-width {
-
+.call-to-action.call-to-action__full-width {
+  .cta-copy {
+    border-radius: 0;
+    padding: 2.4rem 2.4rem 2.4rem 0;
+    max-width: 100%;
+    @include breakpoint(mlarge) {
+      max-width: 70%;
+    }
+    &:after {
+      content: "";
+          position: absolute;
+          width: 100vw;
+          background: $ivory;
+          right: 100%;
+          top: 0;
+          z-index: -1;
+          height: 100%;
+          left: calc(-50vw + 50%);
+          @include breakpoint(smedium) {
+            left: unset;
+          }
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 1.5;
+      font-weight: 600;
+        @include breakpoint(mlarge) {
+          font-size: 3.2rem;
+          line-height: 1.25;
+        }
+    }
+  }
+  .cta-btn {
+    border-radius: 0;
+    &:after {
+      content: "";
+          position: absolute;
+          width: 100vw;
+          background: $red;
+          top: 0;
+          z-index: -1;
+          height: 100%;
+          left: calc(-50vw + 50%);
+          @include breakpoint(smedium) {
+            left: 100%;
+            right: unset;
+          }
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 1.5;
+      font-weight: 600;
+        @include breakpoint(mlarge) {
+          font-size: 3.2rem;
+          line-height: 1.25;
+        }
+    }
+  }
 }
 .call-to-action {
   @include breakpoint(smedium) {
@@ -11,6 +67,8 @@
     background-color: $ivory;
     flex: 1;
     border-radius: 4px 4px 0 0;
+    position: relative;
+    z-index: 1;
     @include breakpoint(smedium) {
       max-width: 42.4rem;
       border-radius: 4px 0 0 4px;
@@ -19,22 +77,25 @@
       font-size: 1.6rem;
       line-height: 1.5;
       font-weight: 600;
-       @include breakpoint(mlarge) {
-        font-size: 2rem;
-        line-height: 1.2;
-       }
+        @include breakpoint(mlarge) {
+          font-size: 2rem;
+          line-height: 1.2;
+        }
      }
   }
   .cta-btn {
     display: flex;
     max-width: 100%;
     background-color: $red;
-    padding: 2.4rem 3.2rem;
+    padding: 2.4rem 2.4rem 2.4rem 0;
     flex: 1;
     border-radius:  0 0 4px 4px;
+    position: relative;
+    z-index: 1;
     @include breakpoint(smedium) {
       max-width: 28.6rem;
       border-radius: 0 4px 4px 0 ;
+      padding: 2.4rem 3.2rem;
     }
     a {
       display: flex;
