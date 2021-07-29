@@ -81,9 +81,18 @@ document.querySelector(".header-search-icon-wrapper").onclick = function searchI
   searchBtn.classList.toggle("active");
   searchInput.classList.toggle("active");
   searchWrapper.classList.toggle("active");
-}; // -- END -- search icon toggle
-// mobile hamburger toggle
+}; // Detect all clicks on the document
 
+
+document.addEventListener("click", function (event) {
+  // If user clicks inside the element, do nothing
+  if (event.target.closest(".active")) return; // If user clicks outside the element, hide it!
+
+  searchBtn.classList.remove("active");
+  searchInput.classList.remove("active");
+  searchWrapper.classList.remove("active");
+}); // -- END -- search icon toggle
+// mobile hamburger toggle
 
 var mobileToggle = document.querySelector(".mobile_toggle");
 var menuTopNav = document.querySelector(".menu-top-nav");

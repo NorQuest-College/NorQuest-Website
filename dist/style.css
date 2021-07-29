@@ -119,6 +119,12 @@ body {
   body.mobile-menu-open {
     position: fixed; }
 
+.HiddenButton {
+  visibility: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px); }
+
 .svg_sprite {
   display: none; }
 
@@ -436,6 +442,19 @@ input[type="submit"] {
     opacity: 40%;
     cursor: not-allowed;
     pointer-events: none; }
+
+.btn-search-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  border: none; }
+  .btn-search-icon i {
+    display: contents; }
 
 .btn-primary {
   background-color: #e71321;
@@ -806,7 +825,9 @@ header.header {
     -webkit-transform: translate(50%, 50%);
             transform: translate(50%, 50%); }
   header.header .search-form {
-    display: block; }
+    display: block;
+    z-index: 1;
+    position: relative; }
     @media (min-width: 53.75em) {
       header.header .search-form {
         display: none; }

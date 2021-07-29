@@ -135,6 +135,8 @@ header.header {
   }
   .search-form {
     display: block;
+    z-index: 1;
+    position: relative;
     @include breakpoint(mlarge) {
       display: none;
       &.active {

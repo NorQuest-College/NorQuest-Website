@@ -37,6 +37,21 @@ input[type="submit"] {
   }
 }
 
+.btn-search-icon {
+  position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border: none;
+    i {
+      display: contents;
+    }
+}
+
 .btn-primary {
   background-color: $red;
   color: white;

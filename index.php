@@ -473,6 +473,7 @@
           <div id="siteSearch" class="search-form">
             <form action="search">
               <input type="text" placeholder="Type your keyword">
+              <button type="button" class="btn btn-search-icon"><i class="fas fa-search btn-search-icon"></i></button>
             </form>
           </div>
           <div class="header-search-icon-wrapper search-icon-wrapper">
@@ -486,6 +487,15 @@
 
   <main>
     <section class="container">
+      <!-- breadcrumb -->
+      <div class="breadcrumb-wrapper">
+        <div class="beadcrumb">
+          <ul>
+            <li><a href="">«  Programs and courses</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- END -- breadcrumb -->
       <!-- H1 page title -->
       <h1>This is a heading 1. Below it is all of the other typography styles.</h1>
       <!-- text area with a sidebar -->
@@ -875,13 +885,11 @@
       </div>
       <div>
         <div class="footer-search">
-          <div id="siteSearch" class="search-form">
+          <div id="siteSearchFooter" class="search-form">
             <form action="search">
               <input type="text" placeholder="Type your keyword">
+              <button type="button" class="btn btn-search-icon"><i class="fas fa-search search-icon"></i></button>
             </form>
-          </div>
-          <div class="search-icon-wrapper" style="color:#424242">
-            <i class="fas fa-search search-icon"></i>
           </div>
         </div>
         <div class="footer-logo">
