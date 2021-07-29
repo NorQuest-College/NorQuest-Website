@@ -120,7 +120,7 @@
                 <li><a href="">Dual credit programs</a></li>
                 <li>
                   <a href="">Learning at NorQuest</a>
-                  <button class="menu-close">
+                  <button class="menu-close" type="button">
                     <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
                       <use xlink:href="#menu-close"></use>
                     </svg>
@@ -144,7 +144,7 @@
             </li>
             <li>
               <a href="">Applying to NorQuest</a>
-              <button class="menu-close">
+              <button class="menu-close" type="button">
                 <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
                   <use xlink:href="#menu-close"></use>
                 </svg>
@@ -237,7 +237,7 @@
             </li>
             <li>
               <a href="">Student resources</a>
-              <button class="menu-close">
+              <button class="menu-close" type="button">
                 <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
                   <use xlink:href="#menu-close"></use>
                 </svg>
@@ -330,7 +330,7 @@
             </li>
             <li>
               <a href="">About</a>
-              <button class="menu-close">
+              <button class="menu-close" type="button">
                 <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
                   <use xlink:href="#menu-close"></use>
                 </svg>
