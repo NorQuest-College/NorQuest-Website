@@ -32,6 +32,8 @@
   }
   .cta-btn {
     border-radius: 0;
+    @include breakpoint(smedium) {
+    }
     &:after {
       content: "";
           position: absolute;

@@ -84,27 +84,27 @@ header.header {
     height: 100%;
     flex-flow: column;
     order: 1;
-    &:after {
-      position: absolute;
-      width: 100vw;
-      height: 100%;
-      background: $ivory;
-      left: calc(-50vw + 100%);
-      top: 0;
-      content: "";
-      z-index: -1;
-    }
     @media screen and (max-width: $mlarge-down) {
       max-height: 0;
       transition: all .3s ease;
       overflow:hidden;
       &.is-active {
-       display: flex;
-       max-height: 5000px;
-       transition: all 1s ease;
-     }
+        display: flex;
+        max-height: 5000px;
+        transition: all 1s ease;
+      }
     }
-    @include breakpoint(mlarge){
+    @include breakpoint(mlarge) {
+      &:after {
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        background: $ivory;
+        left: calc(-50vw + 100%);
+        top: 0;
+        content: "";
+        z-index: -1;
+      }
       align-items: center;
       justify-content: flex-end;
       flex-flow: row;
