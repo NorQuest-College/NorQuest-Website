@@ -61,7 +61,7 @@
         <a href="#" class="menu-shopping-cart" style='color:#424242' data-count="5">
           <i class="fas fa-shopping-cart"></i>
         </a>
-        <button id="menuToggle" class="mobile_toggle">
+        <button id="menuToggle" class="mobile_toggle" type="button">
           <div class="mobile_toggle__inner">
             <div class="mobile_toggle__icon"></div>
           </div>
@@ -92,7 +92,7 @@
           <ul class="menu__primary lvl-1">
             <li>
               <a href="">Programs and courses</a>
-              <button class="menu-close">
+              <button class="menu-close" type="button">
                 <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
                   <use xlink:href="#menu-close"></use>
                 </svg>
@@ -103,7 +103,7 @@
                 </li>
                 <li>
                   <a href="">Continuing education</a>
-                  <button class="menu-close">
+                  <button class="menu-close" type="button">
                     <svg fill="#424242" viewbox="0 0 16 16" class="menu-close-icon" tabindex="-1" focusable="false" aria-hidden="true">
                       <use xlink:href="#menu-close"></use>
                     </svg>
