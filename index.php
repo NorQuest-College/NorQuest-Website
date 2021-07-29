@@ -553,7 +553,7 @@
       <h3>H3: Other grades in a HTML Table</h3>
       <!-- Table styles and layout -->
       <div class="table-wrapper">
-        <table>
+        <table class='table-content'>
           <tbody>
             <tr>
               <td>Grade</td>
