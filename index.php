@@ -79,10 +79,10 @@
           <li><a href="">Careers</a></li>
           <li><a href="">Contact us</a></li>
           <li><a href="">Chat now</a></li>
-          <li><a href="#" class="menu-shopping-cart" data-count="5">
-            <i class="fas fa-shopping-cart"></i></a>
-          </li>
         </ul>
+        <div class='menu-shopping-cart-wrapper'><a href="#" class="menu-shopping-cart" data-count="5">
+          <i class="fas fa-shopping-cart"></i></a>
+        </div>
       </nav>
       <!-- END Top Navigation -->
 

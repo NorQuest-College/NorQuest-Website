@@ -47,18 +47,15 @@ header.header {
     &.stick {
       background-color: $ivory;
       transform: translate3d(0,-48px,0);
-      // @extend %transition;
       .site-logo {
         align-self: center;
       }
       #NorquestLogo {
         height: 2em;
         margin-top: 2rem;
-        // @extend %transition;
       }
       #logo-text {
         visibility: hidden;
-        // @extend %transition;
       }
     }
   }

@@ -5,23 +5,22 @@ $mobile_toggle-layer-width: 3.2rem !default;
 $mobile_toggle-layer-height: 0.5rem !default;
 $mobile_toggle-layer-spacing: 0.4rem !default;
 $mobile_toggle-layer-border-radius: 0.4rem !default;
-.menu__top-nav {
+.menu-shopping-cart-wrapper {
   .menu-shopping-cart {
     display: none;
     @include breakpoint(mlarge) {
-      top: 0.5rem;
+      margin-left: 3rem;
       height: 100%;
       display: block;
       &:after {
         background-color: $black;
       }
-      &:hover {
-        i {
-          color: $orange
-        }
-      }
       i[class*="fa-"] {
         margin: 0;
+        color: white;
+        &:hover {
+          color: ivory;
+        }
       }
     }
   }
