@@ -37,7 +37,7 @@ https://www.madebymike.com.au/writing/fluid-type-calc-examples/
 .page__content a, a, a:hover, a:active, .btn,
 .button,
 button,
-input[type="submit"], header.header, header.header.stick, header.header.stick #NorquestLogo, header.header.stick #logo-text, header.header #NorquestLogo, header.header nav.menu-primary-nav.is-active, .menu-shopping-cart, .menu-shopping-cart i {
+input[type="submit"], header.header, header.header #NorquestLogo, header.header nav.menu-primary-nav.is-active, .menu-shopping-cart, .menu-shopping-cart i {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
@@ -704,20 +704,20 @@ header.header {
   @media (min-width: 53.75em) {
     header.header {
       position: fixed;
-      height: 10rem; } }
-  header.header.stick {
-    background-color: #fff7e9;
-    -webkit-transform: translate3d(0, -48px, 0);
-            transform: translate3d(0, -48px, 0); }
-    header.header.stick .site-logo {
-      -ms-flex-item-align: center;
-          -ms-grid-row-align: center;
-          align-self: center; }
-    header.header.stick #NorquestLogo {
-      height: 2em;
-      margin-top: 2rem; }
-    header.header.stick #logo-text {
-      visibility: hidden; }
+      height: 10rem; }
+      header.header.stick {
+        background-color: #fff7e9;
+        -webkit-transform: translate3d(0, -48px, 0);
+                transform: translate3d(0, -48px, 0); }
+        header.header.stick .site-logo {
+          -ms-flex-item-align: center;
+              -ms-grid-row-align: center;
+              align-self: center; }
+        header.header.stick #NorquestLogo {
+          height: 2em;
+          margin-top: 2rem; }
+        header.header.stick #logo-text {
+          visibility: hidden; } }
   header.header .container {
     display: -webkit-box;
     display: -ms-flexbox;
