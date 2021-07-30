@@ -489,13 +489,15 @@
     <section class="container">
       <!-- breadcrumb -->
       <div class="breadcrumb-wrapper">
-        <div class="beadcrumb">
+         <!-- Add class `breadcrumb-light` for white text on dark backgrounds -->
+        <div class="breadcrumb">
           <ul>
             <li><a href="">«  Programs and courses</a></li>
           </ul>
         </div>
       </div>
       <!-- END -- breadcrumb -->
+
       <!-- H1 page title -->
       <h1>This is a heading 1. Below it is all of the other typography styles.</h1>
       <!-- text area with a sidebar -->
@@ -854,6 +856,42 @@
         </div>
       </div>
       <!-- END call-to-action__full-width -->
+    </section>
+
+    <section class="container">
+      <!-- in page alerts -->
+      <div class="alert alert--warning">
+        <!-- <i class="fas fa-exclamation-circle"> -->
+        <span class="fa-stack fa-lg">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fa fa-exclamation fa-stack-1x fa-inverse"></i>
+        </span>
+        <p>This is an <a href="#">in-page alert</a> component.</p>
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="alert alert--error">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fas fa-calendar fa-stack-1x"></i>
+        </span>
+        <p>This is an <a href="#">in-page alert</a> component.</p>
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="alert alert--status">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+        </span>
+        <p>This is an <a href="#">in-page alert</a> component.</p>
+        <i class="fas fa-times"></i>
+      </div>
+      <!-- END in page alerts -->
+    </section>
+
+    <section class="container">
+      <div class="download-docs">
+
+      </div>
     </section>
 
   </main>

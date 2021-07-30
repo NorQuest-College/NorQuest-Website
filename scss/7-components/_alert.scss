@@ -1,0 +1,69 @@
+.alert {
+  border-radius: 4px;
+  border: 1px solid;
+  margin: 5rem 0;
+  padding: 1.4rem 2.4rem;
+  max-width: 498px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .fa-stack {
+    margin-right: 1.2rem;
+  }
+  .fa-times {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem;
+  }
+  &--warning {
+    color: white;
+    background-color: $rouge;
+    border-color: $rouge;
+    p {
+      color: white;
+      font-size: 2rem;
+      margin: 0;
+    }
+    a {
+      color: white;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .fa-exclamation {
+      color: $rouge;
+    }
+  }
+  &--error {
+    color: white;
+    background-color: $black;
+    border-color: $black;
+    p {
+      color: white;
+      font-size: 2rem;
+      margin: 0;
+    }
+    a {
+      color: white;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+    .fa-calendar {
+      color: $black;
+    }
+  }
+  &--status {
+    color: $red;
+    background-color: white;
+    border-color: $red;
+    p {
+      color: $black;
+      font-size: 2rem;
+      margin: 0;
+    }
+    a {
+      color: $red;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+  }
+}

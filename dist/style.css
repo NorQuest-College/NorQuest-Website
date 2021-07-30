@@ -1340,7 +1340,7 @@ section.tab-content {
         margin: 0;
         color: white; }
         .menu-shopping-cart-wrapper .menu-shopping-cart i[class*="fa-"]:hover {
-          color: ivory; } }
+          color: #fff7e9; } }
 
 .menu-shopping-cart {
   width: 36px;
@@ -1737,6 +1737,76 @@ details {
           font-size: 6.4rem;
           background-size: contain;
           left: 0; } }
+
+.breadcrumb-wrapper .breadcrumb ul li {
+  list-style-type: none; }
+
+.breadcrumb-wrapper .breadcrumb a {
+  text-decoration: none;
+  color: #e71321; }
+
+.breadcrumb-wrapper .breadcrumb.breadcrumb-light a {
+  color: white; }
+
+.alert {
+  border-radius: 4px;
+  border: 1px solid;
+  margin: 5rem 0;
+  padding: 1.4rem 2.4rem;
+  max-width: 498px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative; }
+  .alert .fa-stack {
+    margin-right: 1.2rem; }
+  .alert .fa-times {
+    position: absolute;
+    top: 0.7rem;
+    right: 0.7rem; }
+  .alert--warning {
+    color: white;
+    background-color: #ae2830;
+    border-color: #ae2830; }
+    .alert--warning p {
+      color: white;
+      font-size: 2rem;
+      margin: 0; }
+    .alert--warning a {
+      color: white;
+      font-weight: bold;
+      font-size: 2rem; }
+    .alert--warning .fa-exclamation {
+      color: #ae2830; }
+  .alert--error {
+    color: white;
+    background-color: #424242;
+    border-color: #424242; }
+    .alert--error p {
+      color: white;
+      font-size: 2rem;
+      margin: 0; }
+    .alert--error a {
+      color: white;
+      font-weight: bold;
+      font-size: 2rem; }
+    .alert--error .fa-calendar {
+      color: #424242; }
+  .alert--status {
+    color: #e71321;
+    background-color: white;
+    border-color: #e71321; }
+    .alert--status p {
+      color: #424242;
+      font-size: 2rem;
+      margin: 0; }
+    .alert--status a {
+      color: #e71321;
+      font-weight: bold;
+      font-size: 2rem; }
 
 .featured-linked-content {
   position: relative;
