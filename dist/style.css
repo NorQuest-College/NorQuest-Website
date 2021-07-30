@@ -406,9 +406,9 @@ input[type="submit"] {
   width: auto;
   height: auto;
   padding: 1rem 3rem;
-  border: solid 0.1rem #424242;
+  border: solid 0.2rem #e71321;
   border-radius: 0.4rem;
-  background-color: #6e7371;
+  background-color: white;
   line-height: inherit;
   letter-spacing: normal;
   font-weight: 600;
@@ -428,7 +428,8 @@ input[type="submit"] {
   button:hover,
   input[type="submit"]:hover {
     -webkit-box-shadow: 0 2px 20px 0 rgba(66, 66, 66, 0.2);
-            box-shadow: 0 2px 20px 0 rgba(66, 66, 66, 0.2); }
+            box-shadow: 0 2px 20px 0 rgba(66, 66, 66, 0.2);
+    color: currentColor; }
   .btn:focus,
   .button:focus,
   button:focus,

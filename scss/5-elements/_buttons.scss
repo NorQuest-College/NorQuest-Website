@@ -8,9 +8,9 @@ input[type="submit"] {
   width: auto;
   height: auto;
   padding: $space_xs $space_md;
-  border: solid 0.1rem $black;
+  border: solid 0.2rem $red;
   border-radius: 0.4rem;
-  background-color: $grey;
+  background-color: white;
   line-height: inherit;
   letter-spacing: normal;
   font-weight: 600;
@@ -25,6 +25,7 @@ input[type="submit"] {
 
   &:hover {
     box-shadow: 0 2px 20px 0 rgba(66, 66, 66, 0.2);
+    color: currentColor;
   }
 
   &:focus {

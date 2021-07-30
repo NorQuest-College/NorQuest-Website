@@ -844,20 +844,6 @@
       </div>
       <!-- END Images (Featured, Left text, right text) -->
     </section>
-
-    <section class="container">
-      <!-- call-to-action__full-width -->
-      <div class="call-to-action call-to-action__full-width">
-        <div class="cta-copy">
-          <p>Thinking of taking an online course? See if online learning is right for you with our self-assessment tool.</p>
-        </div>
-        <div class="cta-btn">
-          <a href="#">Start your self-assessment »</a>
-        </div>
-      </div>
-      <!-- END call-to-action__full-width -->
-    </section>
-
     <section class="container">
       <!-- in page alerts -->
       <div class="alert alert--warning">
@@ -889,10 +875,31 @@
     </section>
 
     <section class="container">
+      <!-- Download document links -->
       <div class="download-docs">
-
+        <h4>H4: Optional related documents available for download</h4>
+        <a href="#" class="btn btn-dl-docs">Academic schedule</a>
+        <a href="#" class="btn btn-dl-docs">Request for transcript</a>
+        <a href="#" class="btn btn-dl-docs">Tuition schedule</a>
+        <a href="#" class="btn btn-dl-docs">2021/2022 Fees</a>
       </div>
+      <!-- END Download document links -->
     </section>
+
+    <!-- Stays at bottom -->
+    <section class="container">
+      <!-- call-to-action__full-width -->
+      <div class="call-to-action call-to-action__full-width">
+        <div class="cta-copy">
+          <p>Thinking of taking an online course? See if online learning is right for you with our self-assessment tool.</p>
+        </div>
+        <div class="cta-btn">
+          <a href="#">Start your self-assessment »</a>
+        </div>
+      </div>
+      <!-- END call-to-action__full-width -->
+    </section>
+
 
   </main>
   <!-- END of main content markup -->
