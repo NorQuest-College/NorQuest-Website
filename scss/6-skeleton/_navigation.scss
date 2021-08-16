@@ -57,6 +57,9 @@ header.header {
       #logo-text {
         visibility: hidden;
       }
+      .nav-search {
+        padding-top: .5rem;
+      }
     }
   }
 
@@ -97,7 +100,7 @@ header.header {
         width: 100vw;
         height: 100%;
         background: $ivory;
-        left: calc(-50vw + 100%);
+        left: calc(-20vw + 100%);
         top: 0;
         content: "";
         z-index: -1;
@@ -165,7 +168,7 @@ header.header {
     grid-column: 1;
     grid-row: 2;
     height: 6.4rem;
-    padding: 2rem 2.4rem;
+    padding: 1.5rem 2.4rem;
     background-color: white;
     @include breakpoint(mlarge) {
       padding: 0 3.6rem 0 0;

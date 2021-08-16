@@ -61,6 +61,9 @@ input[type="submit"] {
     background-color: white;
     color: $red;
     border: solid 0.2rem white;
+    &:hover {
+      color: $red;
+    }
   }
   &:hover {
     color: white;
@@ -75,6 +78,9 @@ input[type="submit"] {
     color: white;
     border: solid 0.2rem white;
   }
+  &:hover {
+    color: $red;
+  }
 }
 .btn-special {
   background-color: $purple;
@@ -88,5 +94,11 @@ input[type="submit"] {
     border: solid 0.2rem $yellow;
     font-size: 2.4rem;
     font-weight: bold;
+    &:hover {
+      color: $black;
+    }
+  }
+  &:hover {
+    color: white;
   }
 }

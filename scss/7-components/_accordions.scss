@@ -21,6 +21,7 @@ details {
     list-style: none;
     position: relative;
     padding-bottom: 1.4rem;
+    padding-right: 3.5rem;
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 1.22;
@@ -32,8 +33,10 @@ details {
       content: url('/images/menu-close.svg');
       position: absolute;
       right: 0;
+      top: 0;
       transition-duration: 0.3s;
       transition-property: transform;
+      font-size: 1.8rem;
     }
   }
   p {

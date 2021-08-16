@@ -95,8 +95,8 @@ p.lead {
   font-family: $primary_font;
   line-height: $line_height;
 }
-.intro-text {
-  p {
+p {
+  &.intro-text {
     font-size: 2.4rem;
     line-height: 1.33;
   }

@@ -1,11 +1,13 @@
 .breadcrumb-wrapper {
   .breadcrumb {
     ul {
+      padding-left: 0;
       li {
         list-style-type: none;
       }
     }
     a {
+      font-variant: all-small-caps;
       text-decoration: none;
       color: $red;
     }

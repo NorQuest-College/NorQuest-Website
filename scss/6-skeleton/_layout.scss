@@ -35,7 +35,6 @@ main {
     padding-right: 0;
     padding-left: 0;
   }
-
 }
 .container-flex {
   box-sizing: content-box;
@@ -56,4 +55,10 @@ main {
   box-sizing: content-box;
   padding-right: $space_sm;
   padding-left: $space_sm;
+  &.margin-top {
+    margin: 5rem auto 0;
+  }
+  &.margin-bottom {
+    margin: 0 auto 5rem;
+  }
 }

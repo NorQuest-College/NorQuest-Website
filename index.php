@@ -502,7 +502,7 @@
       <h1>This is a heading 1. Below it is all of the other typography styles.</h1>
       <!-- text area with a sidebar -->
       <div class="container-grid">
-        <article class="container-text container-2-col">
+        <article class="container-text">
           <!-- Typeography -->
           <!-- Headings -->
           <h2>h2 - header</h2>
@@ -515,9 +515,7 @@
           <a href="#" class='btn btn-primary'>Link with Button styles</a>
 
           <!-- Paragraph styles -->
-          <div class="intro-text">
-            <p>This is intro text. NorQuest College’s first priority is to work with response agencies to manage a crisis and minimize the impact it has on our students, faculty and staff, our property and the community.</p>
-          </div>
+          <p class="intro-text">This is intro text. NorQuest College’s first priority is to work with response agencies to manage a crisis and minimize the impact it has on our students, faculty and staff, our property and the community.</p>
           <p>Paragraph text -- To to him, and vanity wear the wall speak. Few but do right is a sour face and sold for this. Homage, do not for of the exception than that iron string. But these are penances I confess with the world society everywhere is. We and must accept the imagination the Devil's child, I exclude company.</p>
           <p><em>Italiac -- To only right I live ever took flesh to it, spread your genuine.</em></p>
           <p><u>Underline -- World you have done his being, as a certain alienated majesty of art have.</u></p>
@@ -535,11 +533,12 @@
           <ul>
             <li>Unordered list item 1</li>
             <li>Unordered list item 2</li>
-            <li>Unordered list item 3</li>
-            <ul>
-              <li>Unordered list item 1b</li>
-              <li>Unordered list item 2b</li>
-            </ul>
+            <li>Unordered list item 3
+              <ul>
+                <li>Unordered list item 1b</li>
+                <li>Unordered list item 2b</li>
+              </ul>
+            </li>
             <li>Unordered list item 4</li>
             <li>Unordered list item 5</li>
           </ul>
@@ -547,11 +546,12 @@
           <ol>
             <li>Ordered list item 1</li>
             <li>Ordered list item 2</li>
-            <li>Ordered list item 3</li>
-            <ol>
-              <li>Ordered list item 1b</li>
-              <li>Ordered list item 2b</li>
-            </ol>
+            <li>Ordered list item 3
+              <ol>
+                <li>Ordered list item 1b</li>
+                <li>Ordered list item 2b</li>
+              </ol>
+            </li>
             <li>Ordered list item 4</li>
             <li>Ordered list item 5</li>
           </ol>
@@ -593,7 +593,7 @@
           <button class='btn btn-primary'>Primary button</button>
           <button class='btn btn-secondary'>Secondary button text with a lengthy label</button>
           <button class='btn btn-special'>Apply Now »</button>
-          <button class='btn btn-primary disabled'>Disabled button</button>
+          <button class='btn btn-primary disabled' disabled>Disabled button</button>
         </div>
         <div class="button-styles-wrapper dark-bg">
           <h6 style='color: white'>Buttons on dark background</h6>
@@ -602,6 +602,7 @@
           <button class='btn btn-primary__reverse'>Primary button</button>
           <button class='btn btn-secondary__reverse'>Secondary button text with a lengthy label</button>
           <button class='btn btn-special__reverse'>Apply Now</button>
+          <button class='btn btn-primary__reverse disabled' disabled>Disabled Primary button</button>
         </div>
       </div>
 
@@ -874,7 +875,7 @@
       <!-- END in page alerts -->
     </section>
 
-    <section class="container">
+    <section class="container margin-bottom">
       <!-- Download document links -->
       <div class="download-docs">
         <h4>H4: Optional related documents available for download</h4>
@@ -887,7 +888,7 @@
     </section>
 
     <!-- Stays at bottom -->
-    <section class="container">
+    <section class="container margin-top">
       <!-- call-to-action__full-width -->
       <div class="call-to-action call-to-action__full-width">
         <div class="cta-copy">
