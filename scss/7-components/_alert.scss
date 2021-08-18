@@ -14,6 +14,7 @@
     position: absolute;
     top: 0.7rem;
     right: 0.7rem;
+    cursor: pointer;
   }
   &--warning {
     color: white;
@@ -66,4 +67,17 @@
       font-size: 2rem;
     }
   }
+}
+
+.alert-container {
+  contain: paint;
+  max-height: auto;
+}
+
+.alert-container-slide-up {
+  max-height: 0;
+  transition: max-height 500ms ease-out;
+}
+.alert-content-slide-up {
+  transition: top 500ms ease-out;
 }

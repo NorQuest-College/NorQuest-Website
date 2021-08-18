@@ -78,29 +78,58 @@ function lvl3Toggle(e) {
 // -- END -- Mobile sub nav toggle button
 
 // tab section
-const tabs = document.querySelectorAll(".tabs-wrapper .tabs li");
-const sections = document.querySelectorAll(".tabs-wrapper .tab-content");
+const tabs = document.querySelectorAll(".tabs-wrapper");
 
 tabs.forEach((tab) => {
-  tab.addEventListener("click", (e) => {
-    e.preventDefault();
-    removeActiveTab();
-    addActiveTab(tab);
-  });
+  let tabButtons = tab.querySelectorAll(".tabs li");
+  tabButtons.forEach((button) => {
+    button.addEventListener("click", (e) => {
+      e.preventDefault();
+      removeActiveTab(tab)
+      addActiveTab(button, tab)
+    })
+  })
 });
 
-const removeActiveTab = () => {
-  tabs.forEach((tab) => {
-    tab.classList.remove("is-active");
-  });
-  sections.forEach((section) => {
+const removeActiveTab = (tab) => {
+  let tabButtons = tab.querySelectorAll(".tabs li");
+  tabButtons.forEach((button) => {
+    button.classList.remove("is-active");
+  })
+  let tabSections = tab.querySelectorAll(".tab-content");
+  tabSections.forEach((section) => {
     section.classList.remove("is-active");
-  });
+  })
 };
 
-const addActiveTab = (tab) => {
-  tab.classList.add("is-active");
-  const href = tab.querySelector("a").getAttribute("href");
-  const matchingSection = document.querySelector(href);
+const addActiveTab = (button, tab) => {
+  button.classList.add("is-active")
+  const href = button.querySelector("a").getAttribute("href");
+  const matchingSection = tab.querySelector(href);
   matchingSection.classList.add("is-active");
 };
+
+// dismiss alerts
+const alerts = document.querySelectorAll(".alert-container");
+
+alerts.forEach((alert) => {
+  let dismiss = alert.querySelector(".fa-times");
+  if (dismiss) {
+
+    alert.setAttribute("style", "max-height:" + alert.offsetHeight + "px")
+    let alertContent = alert.querySelector(".alert");
+    alertContent.setAttribute("style", "top: " + alert.offsetHeight + "px; transform: translateY(-" + alert.offsetHeight +"px)")
+    dismiss.addEventListener("click", (e) => {
+      e.preventDefault();
+      dismissAlert(alert)
+    })
+  }
+})
+
+const dismissAlert = (alert) => {
+  let alertContent = alert.querySelector(".alert");
+  alert.classList.add("alert-container-slide-up");
+  alert.setAttribute("style", "max-height:0px")
+  alertContent.setAttribute("style", "top:0px; transform: translateY(-" + alert.offsetHeight +"px)")
+  alertContent.classList.add("alert-content-slide-up");
+}
