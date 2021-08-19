@@ -1,0 +1,53 @@
+.overview {
+  margin: 5rem 0;
+  ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 2.4rem 0 0 0;
+      // TEMP: Look at replacing this with a repeatable style
+      h4 {
+        a {
+          color: $red;
+        }
+      }
+      &.feature {
+        background: linear-gradient(to left, $red, $rouge);
+        padding: $space_md;
+        border-radius: 4px;
+        h3,
+        h4,
+        p {
+          color: $white;
+        }
+        p {
+          font-size: 2.4rem;
+          line-height: 1.33;
+        }
+        @include breakpoint(medium) {
+          grid-column: 1 / span 2;
+        }
+      }
+    }
+
+    @include breakpoint(medium) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 2.4rem;
+      li {
+        padding: 2.4rem 0 0 0;
+      }
+    }
+
+    @include breakpoint(mlarge) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 3.6rem;
+      li {
+        padding: 3.6rem 0 0 0;
+      }
+    }
+  }
+}
