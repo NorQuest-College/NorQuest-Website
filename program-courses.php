@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<title>Norquest College</title>
+	<title>Norquest College | Programs & Courses</title>
 	<meta name="description" content="page meta-description">
 	<meta name="keywords" content="page meta-keyword">
 
@@ -91,7 +91,7 @@
         <nav class="menu-primary-nav" id="primary-nav" aria-label="Primary navigation">
          <ul class="menu__primary lvl-1">
     <li>
-        <a href="program-courses.php">Programs and courses</a>
+        <a href="">Programs and courses</a>
         <button class="menu-close" type="button"><svg aria-hidden="true" class="menu-close-icon" fill="#424242" focusable="false" tabindex="-1" viewbox="0 0 16 16"> <use xlink:href="#menu-close"></use> </svg></button>
         <ul class="menu__subnav lvl-2">
             <li>
@@ -922,7 +922,7 @@
       <div>
         <nav>
           <ul class='menu__footer-block'>
-            <li><a href="program-courses.php">Programs and courses</a></li>
+            <li><a href="">Programs and courses</a></li>
             <li><a href="">Applying to NorQuest</a></li>
             <li><a href="">Student resources</a></li>
             <li><a href="">About</a></li>

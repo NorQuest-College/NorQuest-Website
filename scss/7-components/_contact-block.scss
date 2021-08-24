@@ -17,15 +17,17 @@
   .contact-location,
   .contact-time {
     margin-bottom: 0.8rem;
+    padding-left: 2rem;
     i[class*="fa-"] {
       display: inline-block;
+      margin-left: -2rem;
     }
     p { display: inline-block; }
   }
   p { margin-bottom: 0; }
   .contact-block {
     position: relative;
-    padding: 6rem 0;
+    margin: $space_xxl 0;
     max-width: 498px;
     &:after {
       content: '';

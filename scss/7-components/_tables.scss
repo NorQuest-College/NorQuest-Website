@@ -2,11 +2,11 @@
   overflow-x: auto;
   width: 100%;
   -ms-overflow-style: -ms-autohiding-scrollbar;
+  margin: $space_xxl 0;
 }
 
 table.table-content {
   width: 100%;
-  margin-bottom: $space_sm;
   border-collapse: collapse;
   @media screen and (max-width: $medium-down) {
     & * {

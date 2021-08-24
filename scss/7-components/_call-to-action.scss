@@ -1,24 +1,27 @@
 .call-to-action.call-to-action__full-width {
+  margin: 0;
   .cta-copy {
     border-radius: 0;
     padding: 2.4rem 2.4rem 2.4rem 0;
     max-width: 100%;
     @include breakpoint(mlarge) {
       max-width: 70%;
+      display: flex;
+      align-items: center;
     }
     &:after {
       content: "";
-          position: absolute;
-          width: 100vw;
-          background: $ivory;
-          right: 100%;
-          top: 0;
-          z-index: -1;
-          height: 100%;
-          left: calc(-50vw + 50%);
-          @include breakpoint(smedium) {
-            left: unset;
-          }
+      position: absolute;
+      width: 100vw;
+      background: $ivory;
+      right: 100%;
+      top: 0;
+      z-index: -1;
+      height: 100%;
+      left: calc(-50vw + 50%);
+      @include breakpoint(smedium) {
+        left: unset;
+      }
     }
     p {
       font-size: 1.6rem;
@@ -60,6 +63,7 @@
   }
 }
 .call-to-action {
+  margin: $space_xxl 0;
   @include breakpoint(smedium) {
     display: flex;
   }
@@ -89,7 +93,7 @@
     display: flex;
     max-width: 100%;
     background-color: $red;
-    padding: 2.4rem 2.4rem 2.4rem 0;
+    padding: 2.4rem 3.2rem;
     flex: 1;
     border-radius:  0 0 4px 4px;
     position: relative;
