@@ -22,7 +22,7 @@
     position: relative;
     z-index: 2;
     @include breakpoint(medium) {
-      padding: 5.7rem 3.3rem 3.2rem;
+      padding: 5.7rem 3.2rem 3.2rem 0;
     }
     > p {
       font-size: 1.6rem;
@@ -54,8 +54,11 @@
         height: 7.4rem;
         font-size: 6.4rem;
         background-size: contain;
-        left: 0;
+        left: -2.9rem;
+      }
     }
   }
+  .testimonial-footer {
+    p { margin: 0; }
   }
 }

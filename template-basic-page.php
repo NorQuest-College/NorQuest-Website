@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<title>Norquest College</title>
+	<title>Norquest College | Basic Page</title>
 	<meta name="description" content="page meta-description">
 	<meta name="keywords" content="page meta-keyword">
 
@@ -98,6 +98,7 @@
                         <a href="template-program-course.php">Program and Course</a>
                         <p>Program and Course</p>
                     </li>
+
                     <li>
                         <a href="template-credit-course-detail.php">Credit course detail</a>
                         <p>Credit course detail</p>
@@ -465,20 +466,28 @@
 
   <main>
     <section class="container">
+      <!-- breadcrumb -->
+      <div class="breadcrumb-wrapper">
+         <!-- Add class `breadcrumb-light` for white text on dark backgrounds -->
+        <div class="breadcrumb">
+          <ul>
+            <li><a href="index.php">«  home</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- END -- breadcrumb -->
 
       <!-- H1 page title -->
-      <h1>Home page</h1>
-      <!-- text area with a sidebar -->
+      <h1>Basic page</h1>
 
-        <article class="container-text">
-          <!-- Typeography -->
-          <!-- Headings -->
-          <h2>h2 - Home page</h2>
-          <h3>h3 - Home page</h3>
-          <h4>h4 - Home page</h4>
-          <h5>h5 - Home page</h5>
-        </article>
     </section>
+
+    <section class="container">
+      <hr>
+
+    </section>
+
+
 
 
   </main>

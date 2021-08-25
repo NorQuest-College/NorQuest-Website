@@ -2,23 +2,13 @@
   position: relative;
   padding-top: 4rem;
   padding-bottom: 5.6rem;
+  margin: $space_xxl 0;
   z-index: 2;
+  background: $ivory;
   @include breakpoint(mlarge) {
     padding-top: 6.4rem;
     padding-bottom: 10.4rem;
   }
-  &:before {
-    content: '';
-    background: url('/images/optional-linked-content.svg') no-repeat top left;
-    background-size: contain;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-  }
-
   .featured-linked-content-item {
     width: 176px;
     padding: 0.8rem;

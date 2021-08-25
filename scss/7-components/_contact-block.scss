@@ -27,16 +27,16 @@
   p { margin-bottom: 0; }
   .contact-block {
     position: relative;
-    margin: $space_xxl 0;
+    margin: 12rem 0;
     max-width: 498px;
     &:after {
       content: '';
-      background: url('/images/contact-block.svg') no-repeat;
+      background: url('/images/contact-block-lg.svg') no-repeat;
       background-size: contain;
       position: absolute;
-      top: 0;
+      top: -4rem;
       left: -82px;
-      height: 100%;
+      height: calc(100% + 8rem);
       width: 100%;
       z-index: 0;
     }
