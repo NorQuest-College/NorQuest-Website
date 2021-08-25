@@ -1,0 +1,111 @@
+main {
+  &.media-centre-article {
+    article {
+      display: grid;
+
+      grid-template-columns: 1em 1fr 1em;
+      grid-row-gap: 2rem;
+
+      header {
+        grid-area: 1 / 2 / 2 / 3;
+        .event-details {
+          background: $black;
+          border-radius: 4px;
+          padding: 1em;
+          p {
+            color: $white;
+          }
+          .event-details-item {
+            p {
+              position: relative;
+              padding: 0 0 0 24px;
+              &::before {
+                display: block;
+                font-family: "Font Awesome 5 Free";
+                font-weight: 600;
+                width: 30px;
+                position: absolute;
+                top: 0;
+                left: 0;
+              }
+            }
+            &.time {
+              p {
+                &::before {
+                  content: '\f133';
+                }
+              }
+            }
+            &.location {
+              p {
+                &::before {
+                  content: '\f3c5';
+                }
+              }
+            }
+          }
+        }
+        h1 {
+          line-height: 1.2em;
+        }
+      }
+      img {
+        grid-area: 2 / 1 / 3 / 4;
+        width: 100%;
+        height: auto;
+        max-height: 300px;
+        object-fit: cover;
+      }
+      section {
+        grid-column: 2;
+      }
+
+      @include breakpoint(small) {
+        grid-template-columns: 2em 1fr 2em;
+        img {
+          max-height: 400px;
+        }
+      }
+
+      @include breakpoint(medium) {
+        grid-template-columns: 1fr $small 1fr;
+        grid-row-gap: 2rem;
+        header {
+          .event-details {
+            display: flex;
+            .event-details-item {
+              flex-grow: 1;
+            }
+          }
+        }
+        img {
+          max-height: 500px;
+        }
+
+      }
+
+      @include breakpoint(mlarge) {
+        grid-template-columns: 1fr 5em $smedium 5em 1fr;
+        grid-row-gap: 2rem;
+        header {
+          grid-area: 1 / 3 / 2 / 4;
+
+          h1 {
+            margin-bottom: 2rem;
+            line-height: 1em;
+          }
+        }
+
+        img {
+          grid-area: 2 / 2 / 3 / 5;
+          max-height: 600px;
+        }
+
+        section {
+          grid-column: 3;
+        }
+
+      }
+    }
+  }
+}

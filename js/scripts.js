@@ -133,3 +133,19 @@ const dismissAlert = (alert) => {
   alertContent.setAttribute("style", "top:0px; transform: translateY(-" + alert.offsetHeight +"px)")
   alertContent.classList.add("alert-content-slide-up");
 }
+
+// video player
+
+const videos = document.querySelectorAll(".video-player");
+
+console.log(videos);
+/*
+videos.forEach((video) => {
+  let play = video.querySelector(".controls .play");
+  let source = video.querySelector("video")
+  play.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("video play")
+  })
+})
+*/

@@ -1,0 +1,38 @@
+.video-player {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  .controls, video {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    a {
+      display: block;
+      width: 60px;
+      height: 60px;
+      border-radius: 30px;
+      &:hover {
+        box-shadow: 0 2px 20px 0 rgba(66, 66, 66, 0.2);
+      }
+    }
+    .play {
+      background: url('../images/play-button.svg');
+    }
+  }
+  video {
+    z-index: 90;
+  }
+  @include breakpoint(medium) {
+    .controls {
+      a {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+      }
+    }
+  }
+}

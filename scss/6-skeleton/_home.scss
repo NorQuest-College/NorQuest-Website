@@ -1,0 +1,271 @@
+main {
+  &.home {
+    article {
+    header {
+      grid-area: 1 / 1 / 2 / 4;
+      display: grid;
+      grid-template-columns: 1fr;
+      .title {
+        grid-area: 1 / 1 / 2 / 2;
+        z-index: 100;
+        display: flex;
+        align-items: flex-end;
+        padding: 2em;
+        h1 {
+          text-transform: uppercase;
+          color: $white;
+          font-weight: 900;
+          margin: 0;
+          font-size: 5rem;
+          line-height: 0.9em;
+        }
+      }
+      .media {
+        grid-area: 1 / 1 / 2 / 2;
+        z-index: 90;
+        overflow: hidden;
+        min-height: 600px;
+        picture {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          img {
+            object-fit: cover;
+            height: auto;
+            width: 100%;
+            object-position: top center;
+          }
+        }
+      }
+    }
+    nav {
+      grid-area: 2 / 1 / 3 / 4;
+      background: linear-gradient(to left, $red, $rouge);
+      z-index: 200;
+      padding: 2em;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          h3  , p {
+            color: $white;
+          }
+        }
+      }
+    }
+    section {
+      padding: 2em;
+      &:last-child {
+        margin: 0 0 3em;
+      }
+      &.campaign {
+        picture, video, img {
+          border-radius: 4px;
+          overflow: hidden;
+          width: 100%;
+          height: auto;
+        }
+        .content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .media {
+          padding: 2em 0 0 0;
+        }
+      }
+      &.explore {
+        .item {
+          background: $rouge;
+          padding: 1.5em;
+          border-radius: 4px;
+          margin: 0 0 1em 0;
+          box-shadow: 0 2px 20px 0 rgba(66, 66, 66, 0.2);
+          &:last-child {
+            margin: 0;
+          }
+          h4, p {
+            color: $white;
+          }
+        }
+      }
+      &.news {
+        padding: 0;
+        .header {
+          padding: 2em;
+        }
+      }
+    }
+
+    // Typography overrides
+    h2 {
+      font-weight: 700;
+      font-size: 4rem;
+      line-height: 4.5rem;
+    }
+    h3 {
+      font-size: 3rem;
+    }
+    h4 {
+      font-size: 2.25rem;
+    }
+    @include breakpoint(small) { // 425
+      header {
+        .title {
+          h1 {
+            font-size: 8rem;
+          }
+        }
+      }
+    }
+    @include breakpoint(smedium) { // 640
+      display: grid;
+      grid-template-columns: 2em 1fr 2em;
+      grid-template-rows: 500px 2em repeat(3, auto);
+      header {
+        grid-area: 1 / 1 / 3 / 4;
+        height: auto;
+        max-height: auto;
+        .title {
+          padding: 4em 2em;
+          h1 {
+            font-size: 10rem;
+          }
+        }
+        .media {
+          min-height: calc(500px + 2em);
+        }
+      }
+      nav {
+        grid-area: 2 / 2 / 4 / 3;
+        border-radius: 4px;
+        box-shadow: 0 2px 20px 0 rgba(66, 66, 66, 0.2);
+      }
+      section {
+        display: grid;
+        grid-column: 2;
+        padding: 3em 0 0 0;
+        .header {
+          text-align: center;
+        }
+        &.news {
+          grid-column: 1 / span 3;
+          padding: 0;
+          .header {
+            padding: 2em;
+          }
+        }
+      }
+    }
+    @include breakpoint(mlarge) { // 860
+      grid-template-columns: 3em 1fr 3em;
+      grid-template-rows: 500px 96px minmax(96px, auto) repeat(3, auto);
+      header {
+        grid-area: 1 / 1 / 3 / 4;
+        grid-template-columns: 3em 1fr 3em;
+        grid-template-rows: 1fr;
+        .title {
+          grid-area: 1 / 2 / 2 / 3;
+          align-items: center;
+          padding: 0;
+
+          h1 {
+            font-size: 10rem;
+            line-height: 0.9em;
+          }
+        }
+        .media {
+          grid-area: 1 / 1 / 3 / 4;
+        }
+      }
+      nav {
+        padding: 1.5em;
+        grid-area: 2 / 2 / 4 / 3;
+        ul {
+          display: grid;
+
+          grid-template-columns: repeat(3,1fr);
+          grid-column-gap: 1.5em;
+        }
+      }
+      section {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        padding: 6em 0 0 0;
+        grid-column-gap: 1.5em;
+        &.campaign {
+          grid-area: 4 / 2 / 5 / 3;
+          grid-template-columns: 1fr;
+        }
+        &.explore {
+          grid-area: 5 / 2 / 6 / 3;
+        }
+        &.news {
+          grid-area: 6 / 2 / 7 / 3;
+          padding: 6em 0;
+          grid-template-columns: 1fr;
+          .header {
+            padding: 0;
+          }
+          .horizontal-scroll-container {
+            overflow: inherit;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 1.5em;
+            .item {
+              margin: 0;
+              width: auto;
+            }
+          }
+        }
+        &.explore {
+          .header {
+            grid-column: 1 / span 3;
+          }
+        }
+      }
+
+    }
+    @include breakpoint(lxlarge) { // 1024
+      grid-template-columns: 1fr $medium 1fr;
+      grid-template-rows: 600px 96px minmax(96px, auto) repeat(3, auto);
+      header {
+        grid-template-columns: 1fr $medium 1fr;
+        .title {
+          h1 {
+            font-size: 7em;
+            line-height: 0.9em;
+          }
+        }
+      }
+      section {
+        &.campaign {
+          grid-template-columns: repeat(3, 1fr);
+          .content {
+            grid-area: 1 / 1 / 2 / 2;
+          }
+          .media {
+            grid-area: 1 / 2 / 2 / 4;
+            padding: 0;
+          }
+        }
+      }
+    }
+    @include breakpoint(xxlarge) { // 1200 +
+      grid-template-columns:1fr $lxlarge 1fr;
+      grid-template-rows: 740px 96px minmax(96px, auto) repeat(3, auto);
+      header {
+        grid-template-columns: 1fr $lxlarge 1fr;
+        .title {
+          h1 {
+            font-size: 8em;
+            line-height: 0.9em;
+          }
+        }
+      }
+
+    }
+  }
+}
+}

@@ -1,4 +1,4 @@
-.layout-container {
+r.layout-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -11,10 +11,8 @@ main {
   position: relative;
   padding-top: 3.2rem;
   background-image: $background-gradient;
-  @include breakpoint(mlarge) {
-    padding-top: 18rem;
-  }
 }
+
 .container-text {
   max-width: 498px;
   padding-right: 0;
