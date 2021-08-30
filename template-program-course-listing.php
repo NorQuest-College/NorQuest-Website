@@ -478,7 +478,7 @@
       <!-- END -- breadcrumb -->
 
       <!-- H1 page title -->
-      <h1>Programs and course listing</h1>
+      <h1>Browse our programs and courses</h1>
       <!-- text area with a sidebar -->
         <article class="container-text">
           <!-- Typeography -->
