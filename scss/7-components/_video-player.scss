@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  .controls, video {
+  .controls, .preview, .video {
     grid-area: 1 / 1 / 2 / 2;
   }
   .controls {
@@ -15,6 +15,7 @@
       width: 60px;
       height: 60px;
       border-radius: 30px;
+      text-decoration: none;
       &:hover {
         box-shadow: 0 2px 20px 0 rgba(66, 66, 66, 0.2);
       }
@@ -23,8 +24,26 @@
       background: url('../images/play-button.svg');
     }
   }
-  video {
+  .preview {
     z-index: 90;
+    &.fade-out {
+      opacity: 1;
+      animation: fade-out 500ms ease-out forwards;
+    }
+    &.fade-in {
+      opacity: 0;
+      animation: fade-in 500ms ease-out forwards;
+    }
+  }
+  .video {
+    z-index: 80;
+    height: 100%;
+  }
+  img, picture, video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
   }
   @include breakpoint(medium) {
     .controls {
@@ -34,5 +53,23 @@
         border-radius: 40px;
       }
     }
+  }
+}
+
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0
+  }
+  to {
+    opacity: 1;
   }
 }

@@ -3,21 +3,24 @@ r.layout-container {
   flex-direction: column;
   min-height: 100vh;
 }
+body {
+  background-image: $background-gradient;
 
+}
 main {
-  width: 100%;
   overflow: hidden;
-  flex-grow: 1;
+  //flex-grow: 1;
   position: relative;
   padding-top: 3.2rem;
-  background-image: $background-gradient;
 }
 
+// Deperciate
 .container-text {
   max-width: 498px;
   padding-right: 0;
   padding-left: 0;
 }
+
 .container-grid {
   display: grid;
   grid-template-columns: auto;
@@ -58,5 +61,45 @@ main {
   }
   &.margin-bottom {
     margin: 0 auto 5rem;
+  }
+}
+
+
+
+main {
+  margin: 0 auto;
+  //padding: 18rem $space_sm 0 $space_sm;
+  display: grid;
+  header {
+    padding: 0 $space_sm;
+  }
+  article {
+    section {
+      margin: $space_lg 0;
+      padding: 0 $space_sm;
+      &:first-child {
+        margin: 0 0 $space_lg 0;
+      }
+    }
+  }
+  @include breakpoint(xlarge) {
+    padding: 18rem $space_lg 0 $space_lg;
+    display: grid;
+    max-width: $xlarge;
+    header {
+      grid-column: 2 / span 2;
+      padding: 0;
+    }
+    article {
+      grid-column: 2;
+      section {
+        margin: $space_xxl 0;
+        padding: 0;
+      }
+    }
+    aside {
+      grid-column: 3;
+      margin: 0 0 0 $space_xxl;
+    }
   }
 }

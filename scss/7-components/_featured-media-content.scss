@@ -1,0 +1,68 @@
+// Two column block with text and image/videos
+
+.featured-media-content {
+  picture, video, img {
+    border-radius: 4px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .content {
+    &.centered {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  .media {
+    padding: $space_sm 0 0 0;
+  }
+
+  @include breakpoint(smedium) {
+    .image-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1.5em;
+      margin-bottom: 1.5em;
+      &:last-child {
+        margin-bottom: 0em;
+      }
+      img, picture, .video {
+        grid-column: 1;
+        height: 100%;
+        object-fit: cover;
+
+      }
+      .details {
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+  }
+  @include breakpoint(mlarge) { // 860
+    display: grid;
+    grid-area: 4 / 2 / 5 / 3;
+    grid-template-columns: 1fr;
+    .image-content {
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+  @include breakpoint(lxlarge) { // 1024
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5em;
+    .media {
+      grid-column: 2 / span 2;
+      padding: 0;
+    }
+    .image-content {
+      display: block;
+      img {
+        max-height: 300px;
+        width: 100%;
+      }
+    }
+  }
+}
