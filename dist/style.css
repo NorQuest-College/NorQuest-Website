@@ -685,21 +685,23 @@ main {
       padding: 18rem 4rem 0 4rem;
       display: -ms-grid;
       display: grid;
+      -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
       max-width: 71.25em; }
       main header {
-        -ms-grid-column: 2;
+        -ms-grid-column: 1;
         -ms-grid-column-span: 2;
-        grid-column: 2 / span 2;
+        grid-column: 1 / span 2;
         padding: 0; }
       main article {
-        -ms-grid-column: 2;
-        grid-column: 2; }
+        -ms-grid-column: 1;
+        grid-column: 1; }
         main article section {
           margin: 6rem 0;
           padding: 0; }
       main aside {
-        -ms-grid-column: 3;
-        grid-column: 3;
+        -ms-grid-column: 2;
+        grid-column: 2;
         margin: 0 0 0 6rem; } }
 
 nav ul[class^="menu__"] {

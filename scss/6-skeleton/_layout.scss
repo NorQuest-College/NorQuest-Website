@@ -85,20 +85,21 @@ main {
   @include breakpoint(xlarge) {
     padding: 18rem $space_lg 0 $space_lg;
     display: grid;
+    grid-template-columns: 1fr auto;
     max-width: $xlarge;
     header {
-      grid-column: 2 / span 2;
+      grid-column: 1 / span 2;
       padding: 0;
     }
     article {
-      grid-column: 2;
+      grid-column: 1;
       section {
         margin: $space_xxl 0;
         padding: 0;
       }
     }
     aside {
-      grid-column: 3;
+      grid-column: 2;
       margin: 0 0 0 $space_xxl;
     }
   }
