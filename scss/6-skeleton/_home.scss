@@ -1,46 +1,13 @@
 main {
   &.home {
-    max-width: 100%;
-    padding: 18rem 0 $space_lg 0;
-    @include breakpoint(small) { // 425
-
-    }
     @include breakpoint(smedium) { // 640
-      display: grid;
-      grid-template-columns: $space_sm 1fr $space_sm;
-      grid-template-rows: 500px 2em repeat(3, auto);
       padding: 0;
       margin: 0;
-      header {
-        grid-area: 1 / 1 / 3 / 4;
-      }
-      nav {
-        grid-area: 2 / 2 / 4 / 3;
-      }
-      article {
-        grid-area: 4 / 1 / 5 / 4;
-      }
     }
-    @include breakpoint(mlarge) { // 860
-      grid-template-columns: 3em 1fr 3em;
-      grid-template-rows: 500px 96px minmax(96px, auto) auto;
-      article {
-        grid-area: 4 / 2 / 5 / 3;
-      }
-    }
-    @include breakpoint(lxlarge) { // 1024
-      grid-template-rows: 600px 96px minmax(96px, auto) auto;
-    }
-    @include breakpoint(xxlarge) { // 1200
-      grid-template-columns:1fr $lxlarge 1fr;
-      grid-template-rows: 740px 96px minmax(96px, auto) auto;
-    }
-
     header {
       display: grid;
       grid-template-columns: 1fr;
       padding: 0;
-
       .title {
         grid-area: 1 / 1 / 2 / 2;
         z-index: 100;
