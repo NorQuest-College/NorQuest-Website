@@ -22,6 +22,30 @@ body {
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
 }
+
+.full-width {
+  position: relative;
+  &:before {
+    position: absolute;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    right: 100%;
+    top: 0;
+    content: "";
+    height: 101%;
+  }
+  &:after {
+    content: "";
+    height: 100%;
+  }
+  &__ivory {
+    background: $ivory;
+    &:before {
+      background: $ivory;
+    }
+  }
+}
+
 // hide SVG sprites
 .svg_sprite {
   display: none;
@@ -83,14 +107,17 @@ main a {
 }
 
 // list styles
+ol li:before {
+  content: '';
+  margin-right: 12px;
+}
 ul,
 ol {
   margin-top: 1.2rem;
   margin-bottom: 3.2rem;
   margin-left: 0;
   padding-left: 0;
-  padding-left: $space_sm;
-  list-style-position: outside;
+  list-style-position: inside;
   line-height: 1.6;
 
   ul,

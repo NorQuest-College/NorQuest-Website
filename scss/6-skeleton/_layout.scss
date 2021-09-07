@@ -19,6 +19,9 @@ main {
   max-width: 498px;
   padding-right: 0;
   padding-left: 0;
+  &.margin-md h3 {
+    margin-bottom: 2.4rem;
+  }
 }
 
 .container-grid {
@@ -35,6 +38,9 @@ main {
   .container & {
     padding-right: 0;
     padding-left: 0;
+  }
+  .margin-md {
+    margin: 6.4rem 0;
   }
 }
 .container-flex {

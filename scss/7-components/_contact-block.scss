@@ -17,24 +17,26 @@
   .contact-location,
   .contact-time {
     margin-bottom: 0.8rem;
+    padding-left: 2rem;
     i[class*="fa-"] {
       display: inline-block;
+      margin-left: -2rem;
     }
     p { display: inline-block; }
   }
   p { margin-bottom: 0; }
   .contact-block {
     position: relative;
-    padding: 6rem 0;
+    margin: 12rem 0;
     max-width: 498px;
     &:after {
       content: '';
-      background: url('/images/contact-block.svg') no-repeat;
+      background: url('/images/contact-block-lg.svg') no-repeat;
       background-size: contain;
       position: absolute;
-      top: 0;
+      top: -4rem;
       left: -82px;
-      height: 100%;
+      height: calc(100% + 8rem);
       width: 100%;
       z-index: 0;
     }

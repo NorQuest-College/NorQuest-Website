@@ -7,7 +7,7 @@
 <head>
   <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<title>Norquest College</title>
+	<title>Norquest College | Pattern Library</title>
 	<meta name="description" content="page meta-description">
 	<meta name="keywords" content="page meta-keyword">
 
@@ -98,6 +98,7 @@
                         <a href="template-program-course.php">Program and Course</a>
                         <p>Program and Course</p>
                     </li>
+
                     <li>
                         <a href="template-credit-course-detail.php">Credit course detail</a>
                         <p>Credit course detail</p>
@@ -445,8 +446,9 @@
             </li>
           </ul>
         </nav>
+<!-- ------------------------ -->
         <!-- END main navigation -->
-
+<!-- ------------------------ -->
         <div class="header-search">
           <div id="siteSearch" class="search-form">
             <form action="search">
@@ -465,19 +467,434 @@
 
   <main>
     <section class="container">
+      <!-- breadcrumb -->
+      <div class="breadcrumb-wrapper">
+         <!-- Add class `breadcrumb-light` for white text on dark backgrounds -->
+        <div class="breadcrumb">
+          <ul>
+            <li><a href="">«  Programs and courses</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- END -- breadcrumb -->
 
       <!-- H1 page title -->
-      <h1>Home page</h1>
+      <h1>Pattern Library</h1>
       <!-- text area with a sidebar -->
-
+      <div class="container-grid">
         <article class="container-text">
+          <hr>
+          <p class="intro-text">This is the Pattern Library. It has all the components that live across all templates. Some you will see here and there and others only on specific pages. This page will always be in development and the default for all components. This is intro text.</p>
+          <hr>
           <!-- Typeography -->
           <!-- Headings -->
-          <h2>h2 - Home page</h2>
-          <h3>h3 - Home page</h3>
-          <h4>h4 - Home page</h4>
-          <h5>h5 - Home page</h5>
-        </article>
+          <h2>h2 - header</h2>
+          <h3>h3 - header</h3>
+          <h4>h4 - header</h4>
+          <h5>h5 - header</h5>
+
+          <!-- Links -->
+          <a href="#">Link text</a>
+          <a href="#" class='btn btn-primary'>Link with Button styles</a>
+
+          <!-- Paragraph styles -->
+          <p>Paragraph text -- To to him, and vanity wear the wall speak. Few but do right is a sour face and sold for this. Homage, do not for of the exception than that iron string. But these are penances I confess with the world society everywhere is. We and must accept the imagination the Devil's child, I exclude company.</p>
+          <p><em>Italiac -- To only right I live ever took flesh to it, spread your genuine.</em></p>
+          <p><u>Underline -- World you have done his being, as a certain alienated majesty of art have.</u></p>
+          <p><strong>Strong -- The they set at the future if you do not the outmost.</strong></p>
+
+          <!-- Horizontal rule -->
+
+          <!-- List items -->
+          <ul>
+            <li>Unordered list item 1</li>
+            <li>Unordered list item 2</li>
+            <li>Unordered list item 3
+              <ul>
+                <li>Unordered list item 1b</li>
+                <li>Unordered list item 2b</li>
+              </ul>
+            </li>
+            <li>Unordered list item 4</li>
+            <li>Unordered list item 5</li>
+          </ul>
+
+          <ol>
+            <li>Ordered list item 1</li>
+            <li>Ordered list item 2</li>
+            <li>Ordered list item 3
+              <ol>
+                <li>Ordered list item 1b</li>
+                <li>Ordered list item 2b</li>
+              </ol>
+            </li>
+            <li>Ordered list item 4</li>
+            <li>Ordered list item 5</li>
+          </ol>
+
+          <!-- Blockquote -->
+          <blockquote>
+            <p>NorQuest College is a fantastic example of how a community organization can work with the Government of Canada to create long-lasting change in the lives of young people on the autism spectrum.</p>
+          </blockquote>
+
+        </article> <!-- end text-container -->
+        <aside>
+          <div class="related-card-wrapper">
+            <h4>Related content: card</h4>
+            <div class="related-card">
+              <h4>Page title</h4>
+              <p>This intro will help students select the right related info.</p>
+            </div>
+            <div class="related-card">
+              <h4>Page title</h4>
+              <p>This is a short blurb about the related section to help students select the right item.</p>
+            </div>
+            <div class="related-card">
+              <h4>Page title</h4>
+              <p>This intro will help students select the right related info.</p>
+            </div>
+            <div class="related-card">
+              <h4>Page title</h4>
+              <p>This is a short blurb about the related section to help students select the right item.</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="container">
+      <hr>
+      <div class="container-grid">
+        <div class='container-text margin-md'>
+          <h3>Program and course detail</h3>
+          <p>This professional development health training course will teach you how to provide CPR effectively, how to use an automated external defibrillator (AED), and how to relieve choking in a safe and timely manner. </p>
+        </div>
+        <div class='container-text margin-md'>
+          <h3>Two column text blocks</h3>
+          <p>Certified by the Heart and Stroke Foundations, the Basic Life Support (BLS) for Health-Care Providers is a classroom course that is designed to teach a variety of health-care professionals how to recognize a number of life-threatening emergencies, how to provide CPR, how to use an AED, and how to relieve choking in a safe, timely, and effective manner.</p>
+        </div>
+      </div>
+      <hr>
+    </section>
+
+    <section class="container">
+      <h2>This is a heading 2. Below it is a variety of button styles.</h2>
+      <div class="button-styles">
+        <div class="button-styles-wrapper light-bg">
+          <h6>Buttons on light background</h6>
+
+          <!-- Button Styles -->
+          <button class='btn btn-primary'>Primary button</button>
+          <button class='btn btn-secondary'>Secondary button text with a lengthy label</button>
+          <button class='btn btn-special'>Apply Now »</button>
+          <button class='btn btn-primary disabled' disabled>Disabled button</button>
+        </div>
+        <div class="button-styles-wrapper dark-bg">
+          <h6 style='color: white'>Buttons on dark background</h6>
+
+          <!-- reverse Button styles -->
+          <button class='btn btn-primary__reverse'>Primary button</button>
+          <button class='btn btn-secondary__reverse'>Secondary button text with a lengthy label</button>
+          <button class='btn btn-special__reverse'>Apply Now</button>
+          <button class='btn btn-primary__reverse disabled' disabled>Disabled Primary button</button>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="container">
+      <h3>H3: Other grades in a HTML Table</h3>
+      <!-- Table styles and layout -->
+      <div class="table-wrapper">
+        <table class='table-content'>
+          <tbody>
+            <tr>
+              <td>Grade</td>
+              <td>Explanation</td>
+              <td>Credits</td>
+            </tr>
+            <tr>
+              <td>AVD</td>
+              <td>
+                <p>Advanced Credit</p>
+                <p>This grade is assigned when transfer credit has been granted for a course successfully completed at another post-secondary institution. &ldquo;ADV&rdquo; grades are not calculated within the grade point average (GPA).</p>
+              </td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>AUD</td>
+              <td>
+                <p>Audit</p>
+                <p>Students may be allowed to audit courses and will be charged an audit fee as indicated in the calendar. This grade indicates that the student is registered in the course; however, no credit or grade is expected or provided.</p>
+              </td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>AW</td>
+              <td>Registered as an auditor and withdrew.</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>COM</td>
+              <td>Complete</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>CON</td>
+              <td>Continue</td>
+              <td>4</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- END Table styles and layout -->
+    </section>
+
+    <section class="container">
+      <div class="accordion-wrapper container-text">
+        <!-- Accordion markup -->
+        <div class="accordion">
+          <details>
+            <summary>Here’s an accordion example</summary>
+            <p>In the event of an emergency, NorQuest is committed to ensuring supports and counselling services are readily available for use by our students, faculty and staff.</p>
+            <p>NorQuest College offers professional and confidential counselling at no cost to registered students. Our educational counsellors, also known as success partners, are psychologists and possess a wide range of expertise and knowledge.</p>
+          </details>
+
+          <details>
+            <summary>Accordion title</summary>
+            <p>Tapas devoted to dried, simply substitute half as wine, beer, sangria, sherry,. Introduced loaf bread in the early 1900s by pharmacist Wilbur. Inside are bars and practices from burritos to experience a few.</p>
+          </details>
+
+          <details>
+            <summary>Accordion title</summary>
+            <p>And for example, and political changes, with loaf bread or served. 20Th into a particular pepper, then, but do you are.</p>
+          </details>
+
+          <details>
+            <summary>Accordion title</summary>
+            <p>Always cooking has contributed significantly to prepare many dishes so delectable and green juices.</p>
+          </details>
+        </div>
+        <!-- END Accordion markup -->
+      </div>
+    </section>
+
+    <section class="container">
+      <!-- Tabs markup -->
+      <div class="tabs-wrapper">
+        <nav class="tabs">
+          <ul class="tab-list">
+            <li class="is-active"><a href="#tab-one">Optional tabs</a></li>
+            <li><a href="#tab-two">Another tab of content</a></li>
+            <li><a href="#tab-three">Another tab of content three</a></li>
+          </ul>
+        </nav>
+
+        <section class="tab-content is-active" id="tab-one">
+          <h4>Business Continuity Plan</h4>
+          <p>NorQuest College will use business continuity planning to work towards restoring core business operations during and recovery from a major disruption.</p>
+        </section>
+        <section class="tab-content" id="tab-two">
+          <h4>Section two content title</h4>
+          <p>NorQuest College offers professional and confidential counselling at no cost to registered students. Our educational counsellors, also known as success partners, are psychologists and possess a wide range of expertise and knowledge.</p>
+        </section>
+        <section class="tab-content" id="tab-three">
+          <h4>Section 3hree content title</h4>
+          <p>Pat too strong flavor the Spanish tapar, or dried leaves. The original word tzilpoctli tzilli means smoke to cover that's because. Filo and spices, in variations across the modern processors use.</p>
+        </section>
+      </div>
+      <!-- END Tabs markup -->
+    </section>
+
+    <section class="container">
+      <!-- Contact block markup -->
+      <div class="contact-wrapper">
+        <div class="contact-block">
+          <div class="contact-block-content">
+            <h3>H3: Contact block</h3>
+            <h4>H4: Contact Shaun Ellithorpe</h4>
+            <a href="mailto:Shaun.Ellithorpe@norquest.ca" clss='link-mailto'><i class="fas fa-envelope"></i>Shaun.Ellithorpe@norquest.ca</a>
+            <a href="tel:780-288-3651" class='link-tel'><i class="fas fa-phone"></i>(780)288-3651</a>
+            <a href="https:linkedin.com" class='link-social'><i class="fab fa-linkedin"></i>LinkedIn</a>
+          </div>
+        </div>
+        <div class="contact-block">
+          <div class="contact-block-content">
+            <h3>H3: Contact us</h3>
+            <div class="contact-location">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Singhmar Centre for Learning</p>
+              <p>Room 1-165, 10215 108 Street NW</p>
+              <p>Edmonton, AB  T5J 1L6</p>
+            </div>
+            <a href="mailto:childcare@norquest.ca" clss='link-mailto'><i class="fas fa-envelope"></i>childcare@norquest.ca</a>
+            <a href="tel:780-644-6029" class='link-tel'><i class="fas fa-phone"></i>(780)644-6029</a>
+            <div class="contact-time">
+              <i class="fas fa-clock"></i>
+              <p>Monday – Friday (year-round)</p>
+              <p>7:00AM – 5:30PM</p>
+              <p>Closed on statutory holidays and when NorQuest College is closed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Contact block markup -->
+    </section>
+
+    <section class="container">
+      <!-- Call to action -->
+      <div class="call-to-action">
+        <div class="cta-copy">
+          <p>Thinking of taking an online course? See if online learning is right for you with our self-assessment tool.</p>
+        </div>
+        <div class="cta-btn">
+          <a href="#">Start your self-assessment »</a>
+        </div>
+      </div>
+      <!-- END Call to action -->
+    </section>
+
+    <section class="container">
+      <!-- testimonial -->
+      <div class="testimonial">
+        <div class="testimonial-img">
+           <img src="https://via.placeholder.com/317x317" alt="image">
+        </div>
+        <div class="testimonial-copy">
+          <p>My whole goal is to one day continue my education and earn my registered nurse degree. I now know that is something that can happen. NorQuest helped with my confidence. I will always remember what NorQuest did for me.</p>
+          <div class="testimonial-footer">
+            <p><strong>Clark Castello</strong></p>
+            <p>Practical Nursing, 2016</p>
+          </div>
+        </div>
+      </div>
+      <!-- END testimonial -->
+    </section>
+
+    <section class="container">
+      <!-- Optional featured, linked content -->
+      <div class="full-width__ivory full-width">
+        <div class="featured-linked-content">
+          <h3>Optional featured, linked content</h3>
+          <div class="featured-linked-content-wrapper">
+            <div class="featured-linked-content-item">
+              <img src="https://via.placeholder.com/160x160" alt="image">
+              <h4>Brian Hesje</h4>
+              <p>Strategic thinking at its best</p>
+            </div>
+            <div class="featured-linked-content-item">
+              <img src="https://via.placeholder.com/160x160" alt="image">
+              <h4>Blaine LaBonte and Irene Mertz-LaBonte</h4>
+              <p>A gift for the future</p>
+            </div>
+            <div class="featured-linked-content-item">
+              <img src="https://via.placeholder.com/160x160" alt="image">
+              <h4>Dr. S. Ann Colbourne</h4>
+              <p>A new era in modern workplace culture</p>
+            </div>
+            <div class="featured-linked-content-item">
+              <img src="https://via.placeholder.com/160x160" alt="image">
+              <h4>Oshinique Williams</h4>
+            </div>
+            <div class="featured-linked-content-item">
+              <img src="https://via.placeholder.com/160x160" alt="image">
+              <h4>Steven and Day LePoole</h4>
+            </div>
+            <div class="featured-linked-content-item">
+              <img src="https://via.placeholder.com/160x160" alt="image">
+              <h4>Tammy Kaglik</h4>
+            </div>
+            <div class="featured-linked-content-item">
+              <img src="https://via.placeholder.com/160x160" alt="image">
+              <h4>Natasha Korosi</h4>
+              <p>Strategic thinking at its best</p>
+            </div>
+            <div class="featured-linked-content-item">
+              <img src="https://via.placeholder.com/160x160" alt="image">
+              <h4>Brett Funk</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END Optional featured, linked content -->
+    </section>
+
+    <section class="container">
+      <!-- Images (Featured, Left text, right text) -->
+      <div class="image-alignment">
+        <div class="text-media img-left">
+          <div class="left-aligned">
+            <img src="https://via.placeholder.com/392x294" alt="image">
+          </div>
+          <p>NorQuest College offers professional and confidential counselling at no cost to registered students. Our educational counsellors, also known as success partners, are psychologists and possess a wide range of expertise.</p>
+        </div>
+        <div class="full-width-img">
+          <img src="https://via.placeholder.com/710x532" alt="image">
+        </div>
+        <div class="text-media img-right">
+          <div class="right-aligned">
+            <img src="https://via.placeholder.com/392x294" alt="image">
+          </div>
+          <p>NorQuest College offers professional and confidential counselling at no cost to registered students. Our educational counsellors, also known as success partners, are psychologists and possess a wide range of expertise.</p>
+        </div>
+      </div>
+      <!-- END Images (Featured, Left text, right text) -->
+    </section>
+    <section class="container">
+      <!-- in page alerts -->
+      <div class="alert alert--warning">
+        <!-- <i class="fas fa-exclamation-circle"> -->
+        <span class="fa-stack fa-lg">
+          <i class="fas fa-circle fa-stack-2x"></i>
+          <i class="fa fa-exclamation fa-stack-1x fa-inverse"></i>
+        </span>
+        <p>This is an <a href="#">in-page alert</a> component.</p>
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="alert alert--error">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fas fa-calendar fa-stack-1x"></i>
+        </span>
+        <p>This is an <a href="#">in-page alert</a> component.</p>
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="alert alert--status">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fas fa-flag fa-stack-1x fa-inverse"></i>
+        </span>
+        <p>This is an <a href="#">in-page alert</a> component.</p>
+        <i class="fas fa-times"></i>
+      </div>
+      <!-- END in page alerts -->
+    </section>
+
+    <section class="container margin-bottom">
+      <!-- Download document links -->
+      <div class="download-docs">
+        <h4>H4: Optional related documents available for download</h4>
+        <a href="#" class="btn btn-dl-docs">Academic schedule</a>
+        <a href="#" class="btn btn-dl-docs">Request for transcript</a>
+        <a href="#" class="btn btn-dl-docs">Tuition schedule</a>
+        <a href="#" class="btn btn-dl-docs">2021/2022 Fees</a>
+      </div>
+      <!-- END Download document links -->
+    </section>
+
+    <!-- Stays at bottom -->
+    <section class="container margin-top">
+      <!-- call-to-action__full-width -->
+      <div class="call-to-action call-to-action__full-width">
+        <div class="cta-copy">
+          <p>Thinking of taking an online course? See if online learning is right for you with our self-assessment tool.</p>
+        </div>
+        <div class="cta-btn">
+          <a href="#">Start your self-assessment »</a>
+        </div>
+      </div>
+      <!-- END call-to-action__full-width -->
     </section>
 
 
