@@ -168,7 +168,7 @@ const config = {
         // proxy: path.join("localhost", __dirname),
         files: [
           {
-            match: ["**/*.php", "**/*.twig", "**/*.css"],
+            match: ["**/*.html","**/*.php", "**/*.twig", "**/*.css"],
           },
         ],
         injectChanges: true,

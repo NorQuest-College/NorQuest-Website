@@ -10,7 +10,8 @@ main {
   flex-grow: 1;
   position: relative;
   padding-top: 3.2rem;
-  background-image: $background-gradient;
+  // background-image: $background-gradient;
+  background: blue;
   @include breakpoint(mlarge) {
     padding-top: 18rem;
   }
