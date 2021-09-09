@@ -1,6 +1,17 @@
 // TODO: not prod code
+.button-styles-wrapper {
+  padding-right: 0 important;
+  padding-left: 0 !important;
+}
 .button-styles {
-  margin: $space_xxl 0;
+  &.dark-bg {
+    background-color: $rouge;
+    padding: 4rem 3.2rem .8rem 3.2rem;
+    margin: 3.2rem 0;
+    @include breakpoint(mlarge) {
+      padding: 4rem 6.4rem .8rem 6.4rem;
+    }
+  }
 }
 // TODO  ^^
 .btn,
@@ -18,9 +29,18 @@ input[type="submit"] {
   line-height: inherit;
   letter-spacing: normal;
   font-weight: 600;
-  margin: 2rem 0;
+  margin: 0 2.4rem 2.4rem 0;
   cursor: pointer;
-  max-width: 308px;
+  // max-width: 308px;
+  background-color: $red;
+  color: white;
+  border: solid 0.2rem $red;
+  @include breakpoint(mlarge) {
+    margin: 0 3.2rem 3.2rem 0;
+  }
+  @include breakpoint(xxxlarge) {
+    max-width: 30.8rem;
+  }
 
   &:link,
   &:visited {
@@ -28,13 +48,64 @@ input[type="submit"] {
   }
 
   &:hover {
-    box-shadow: 0 2px 20px 0 rgba(66, 66, 66, 0.2);
-    color: currentColor;
+    box-shadow: 0 8px 16px 0 rgba(66, 66, 66, 0.24);
+    color: $white;
   }
 
   &:focus {
     box-shadow: 0 0 0.1rem 0.2rem $yellow;
   }
+
+  &.secondary {
+    background-color: transparent;
+    color: $red;
+    border: solid 0.2rem $red;
+    &:hover {
+      color: $red;
+      }
+    &__reverse {
+      background-color: transparent;
+      color: $white;
+      border: solid 0.2rem white;
+    &:hover {
+      color: $white;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24);
+      }
+    }
+  }
+
+  &.special {
+    background-color: $purple;
+    color: white;
+    border: solid 0.2rem $purple;
+    font-size: 2.4rem;
+    font-weight: bold;
+    &__reverse {
+      background-color: $yellow;
+      color: $black;
+      border: solid 0.2rem $yellow;
+      font-size: 2.4rem;
+      font-weight: bold;
+      &:hover {
+        color: $black;
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24);
+      }
+    }
+    &:hover {
+      color: white;
+    }
+  }
+
+  &.__reverse {
+    background-color: white;
+    color: $red;
+    border: solid 0.2rem white;
+    &:hover {
+      color: $red;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.24);
+    }
+  }
+
   &.disabled {
     opacity: 40%;
     cursor: not-allowed;
@@ -44,65 +115,20 @@ input[type="submit"] {
 
 .btn-search-icon {
   position: absolute;
-    right: 0;
-    top: 0;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    width: 40px;
-    height: 40px;
-    border: none;
-    i {
-      display: contents;
-    }
-}
-
-.btn-primary {
-  background-color: $red;
-  color: white;
-  border: solid 0.2rem $red;
-  &__reverse {
-    background-color: white;
-    color: $red;
-    border: solid 0.2rem white;
-    &:hover {
-      color: $red;
-    }
-  }
-  &:hover {
-    color: white;
-  }
-}
-.btn-secondary {
+  right: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
   background-color: transparent;
-  color: $red;
-  border: solid 0.2rem $red;
-  &__reverse {
-    background-color: transparent;
-    color: white;
-    border: solid 0.2rem white;
+  width: 40px;
+  height: 40px;
+  border: none;
+  color: $black;
+  i {
+    display: contents;
   }
   &:hover {
-    color: $red;
-  }
-}
-.btn-special {
-  background-color: $purple;
-  color: white;
-  border: solid 0.2rem $purple;
-  font-size: 2.4rem;
-  font-weight: bold;
-  &__reverse {
-    background-color: $yellow;
+    box-shadow: none;
     color: $black;
-    border: solid 0.2rem $yellow;
-    font-size: 2.4rem;
-    font-weight: bold;
-    &:hover {
-      color: $black;
-    }
-  }
-  &:hover {
-    color: white;
   }
 }

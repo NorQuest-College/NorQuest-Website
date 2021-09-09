@@ -3,6 +3,9 @@ footer {
   color: white;
   padding-top :6.4rem;
   padding-bottom: 3.2rem;
+  nav ul[class^="menu__footer-block"] {
+    flex-flow: column;
+  }
   @media screen and (max-width: 64rem) {
     nav ul[class^="menu__"] {
       li {
@@ -45,7 +48,7 @@ footer {
       align-items: center;
     }
     * {
-      line-height: 1.4;
+      // line-height: 1.4;
       margin: 0;
     }
     .menu__footer-bottom {

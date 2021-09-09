@@ -10,6 +10,8 @@ $lxlarge-down: 63.9375em; // 1023px
 $lxlarge: 64em; // 1024px
 $xlarge: 71.25em; // 1140px
 $xxlarge: 75em; // 1200px
+$xxxlarge: 90em; // 1440px
+$xxxxlarge: 112.5em; // 1800px
 
 $screenSizes: (
   xs: $xs,
@@ -20,7 +22,9 @@ $screenSizes: (
   large: $large,
   lxlarge: $lxlarge,
   xlarge: $xlarge,
-  xxlarge: $xxlarge
+  xxlarge: $xxlarge,
+  xxxlarge: $xxxlarge,
+  xxxxlarge: $xxxxlarge
 );
 
 @mixin breakpoint($breakpoint) {

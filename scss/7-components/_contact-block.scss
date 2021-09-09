@@ -1,18 +1,12 @@
 .contact-wrapper {
-  .link-mailto {
-    display: block;
-  }
-  .link-tel {
-    display: block;
-  }
+  .link-mailto,
+  .link-tel,
   .link-social {
     display: block;
   }
-  a {
-    display: block;
-    margin-bottom: 0.8rem;
+  i[class*="fa-"] {
+    color: $rouge;
   }
-  i[class*="fa-"] { color: $rouge; }
 
   .contact-location,
   .contact-time {
@@ -22,13 +16,24 @@
       display: inline-block;
       margin-left: -2rem;
     }
-    p { display: inline-block; }
+    p {
+      display: inline-block;
+      margin-bottom: 0rem;
+      margin-left: 1rem;
+      width: 85%;
+      font-size: 1.4rem;
+      @include breakpoint(small) {
+        width: 90%;
+        font-size: 1.8rem;
+      }
+      @include breakpoint(xxxlarge) {
+        width: 96%;
+      }
+    }
   }
-  p { margin-bottom: 0; }
   .contact-block {
     position: relative;
     margin: 12rem 0;
-    max-width: 498px;
     &:after {
       content: '';
       background: url('/images/contact-block-lg.svg') no-repeat;
@@ -48,6 +53,25 @@
     box-shadow: $box-shadow-default;
     z-index: 2;
     border-radius: 4px;
+    h3 {
+      padding-top: 0;
+    }
+    h4 {
+      padding-top: 0;
+    }
+    a {
+      display: inline-block;
+      margin: 0 0 0.8rem 1rem;
+      width: 85%;
+      font-size: 1.4rem;
+      @include breakpoint(small) {
+        width: 90%;
+        font-size: 1.8rem;
+      }
+      @include breakpoint(xxxlarge) {
+        width: 96%;
+      }
+    }
   }
   .contact-block-feather {
     height: 372px;

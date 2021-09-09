@@ -1,4 +1,8 @@
 .breadcrumb-wrapper {
+  @include breakpoint(mlarge) {
+    margin-top: -5.6rem;
+  }
+
   .breadcrumb {
     ul {
       padding-left: 0;
@@ -10,6 +14,8 @@
       font-variant: all-small-caps;
       text-decoration: none;
       color: $red;
+      font-weight: 700;
+      letter-spacing: 1px;
     }
     &.breadcrumb-light {
       a {

@@ -6,6 +6,7 @@ $mobile_toggle-layer-height: 0.5rem !default;
 $mobile_toggle-layer-spacing: 0.4rem !default;
 $mobile_toggle-layer-border-radius: 0.4rem !default;
 .menu-shopping-cart-wrapper {
+  margin-top: -1rem;
   .menu-shopping-cart {
     display: none;
     @include breakpoint(mlarge) {
@@ -26,23 +27,23 @@ $mobile_toggle-layer-border-radius: 0.4rem !default;
   }
 }
 .menu-shopping-cart {
-  width: 36px;
-  height: 36px;
+  width: 3.6rem;
+  height: 3.6rem;
   position: relative;
   @extend %transition;
   &:after{
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 4px;
+    top: 2px;
     content: attr(data-count);
     font-size: 50%;
-    padding: 3px 0;
+    padding: .2rem 0;
     border-radius: 50%;
     color: white;
     text-align: center;
     background: $red;
-    height: 18px;
-    width: 18px;
+    height: 1.6rem;
+    width: 1.6rem;
   }
   &:hover {
     i {

@@ -1,19 +1,33 @@
 .alert {
-  border-radius: 4px;
   border: 1px solid;
-  margin: 5rem 0;
-  padding: 1.4rem 2.4rem;
-  max-width: 498px;
-  display: flex;
-  align-items: center;
+  margin: 4rem 0;
   position: relative;
   .fa-stack {
-    margin-right: 1.2rem;
+    margin: 1.2rem 1.2rem 1.2rem 2.4rem;
+    border-radius: 50%;
+    width: 3.2rem;
+    height: 3.2rem;
+    float: left;
+    & i {
+      font-size: 1.4rem;
+      top: -0.68rem;
+    }
   }
   .fa-times {
     position: absolute;
-    top: 0.7rem;
-    right: 0.7rem;
+    top: 0.4rem;
+    right: 0.6rem;
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+  p {
+    margin: 1.6rem 3.2rem 1.6rem 6.8rem;
+    max-width: 80%;
+    a {
+      font-weight: 600;
+    }
   }
   &--warning {
     color: white;
@@ -21,16 +35,15 @@
     border-color: $rouge;
     p {
       color: white;
-      font-size: 2rem;
-      margin: 0;
     }
     a {
       color: white;
-      font-weight: bold;
-      font-size: 2rem;
     }
-    .fa-exclamation {
-      color: $rouge;
+    .fa-stack {
+      background-color: white;
+      i {
+        color: $rouge;
+      }
     }
   }
   &--error {
@@ -39,16 +52,15 @@
     border-color: $black;
     p {
       color: white;
-      font-size: 2rem;
-      margin: 0;
     }
     a {
       color: white;
-      font-weight: bold;
-      font-size: 2rem;
     }
-    .fa-calendar {
-      color: $black;
+    .fa-stack {
+      background: white;
+      i {
+        color: $black;
+      }
     }
   }
   &--status {
@@ -57,13 +69,15 @@
     border-color: $red;
     p {
       color: $black;
-      font-size: 2rem;
-      margin: 0;
     }
     a {
       color: $red;
-      font-weight: bold;
-      font-size: 2rem;
+    }
+    .fa-stack {
+      background-color: red;
+      i {
+        color: white;
+      }
     }
   }
 }

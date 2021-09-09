@@ -224,15 +224,21 @@ header.header {
         a {
           font-size: 1.6rem;
           font-weight: 600;
-          line-height: 1.33;
+          line-height: 1;
           color: $black;
           display: block;
-          padding: 2rem 0;
+          padding: 2.4rem 0;
           text-decoration: none;
-          margin: 0 6rem 0 2rem;
-          @include breakpoint(large) {
-            margin: 0 2rem;
+          margin: 0 6.4rem 0 2.4rem;
+          @include breakpoint(mlarge) {
+            margin: 0 1.2rem;
+          }
+          @include breakpoint (large) {
+            margin: 0 1.8rem;
+          }
+          @include breakpoint(xlarge){
             font-size: 1.8rem;
+            margin: 0 2.4rem;
           }
         }
         button.menu-close {
@@ -278,7 +284,7 @@ header.header {
               border-width: 0 2rem 1.2rem 2rem;
               border-color: transparent transparent $red;
               position: relative;
-              bottom: 9px;
+              bottom: 12px;
               margin: 0 auto;
               display: block;
             }
@@ -298,7 +304,9 @@ header.header {
           top: 10rem;
           z-index: 99;
           background: white;
-          padding: 5.6rem 0;
+          padding: 3.2rem 2.4rem;
+          max-height: 64vh;
+          overflow: scroll;
           &:before {
             position: absolute;
             width: 100vw;
@@ -310,7 +318,7 @@ header.header {
             top: 0;
             z-index: -1;
             content: "";
-            height: 100%;
+            // height: 100%;
           }
           &:after {
             content: "";
@@ -319,9 +327,10 @@ header.header {
         }
         &.menu__subnav{
           li {
-            margin: .6rem 0 1.2rem 1.2rem;
+            margin: 0 3.2rem 1.2rem 0;
             @media screen and (max-width: $mlarge-down) {
               position: relative;
+              padding: 1.2rem 0;
             }
           }
           &.lvl-2 {
@@ -336,13 +345,19 @@ header.header {
                 display: none;
                 @include breakpoint(mlarge) {
                   display: block;
+                  font-size: 1.4rem;
                 }
               }
             }
             a {
               font-size: 1.6rem;
               line-height: 1.11;
-              margin: 0 6rem 0 0;
+              margin: 0 3.2rem 0 0;
+              padding: 0 0 .4rem 0;
+              &:hover, &:active {
+                text-decoration: underline;
+                color: $red;
+              }
             }
           }
           &.lvl-3 {
@@ -384,6 +399,7 @@ header.header {
           font-size: 1.8rem;
           font-weight: 600;
           line-height: 1.11;
+          padding-top: 0;
         }
         p {
           font-size: 1.6rem;
@@ -392,7 +408,10 @@ header.header {
         .menu__content-wrapper {
           padding: 2.4rem;
         }
-        button.btn { background-color: $rouge; }
+        button.btn {
+          background-color: $rouge;
+          margin: 0;
+        }
       }
     }
   }

@@ -1,0 +1,32 @@
+.download-docs {
+  border-radius: 4px;
+  background: white;
+  box-shadow: $box-shadow-default;
+  padding: 2.4rem 2.4rem 3.2rem 3.2rem;
+
+  h4 {
+    padding-top: 0;
+  }
+
+  button {
+    padding: 1rem 5rem 1rem 3.2rem;
+    margin: 0 0.8rem 0.8rem 0;
+    flex: 48%;
+    position: relative;
+  }
+
+  i.fas.fa-download {
+    color: white;
+    background-color: $red;
+    padding: 0.6rem;
+    border-radius: 0 0.4rem;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+  }
+}
+
+.download-docs-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}

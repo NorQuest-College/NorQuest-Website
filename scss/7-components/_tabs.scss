@@ -1,6 +1,12 @@
 .tabs-wrapper {
-  margin: $space_xxl 0;
   max-width: 71rem;
+  margin: 0 -2.4rem;
+  @include breakpoint(smedium){
+    margin: 0;
+  }
+  @include breakpoint(xxxlarge) {
+    max-width: 80%;
+  }
 }
 ul.tab-list {
   width: 100%;
@@ -14,17 +20,18 @@ ul.tab-list {
   li {
     display: inline-block;
     margin-bottom: 0;
-    border-bottom: 1px solid transparent;
+    // border-bottom: 1px solid transparent;
     background-color: $light-peach;
       margin-right: 2px;
-      height: 57px;
+      height: fit-content;
     &:last-child {
       margin-right: 0;
     }
     &.is-active {
       background-color: white;
       a {
-        border-bottom: 0;
+        border-bottom: 1px transparent;
+        font-weight: 700;
       }
     }
   }
@@ -36,13 +43,13 @@ ul.tab-list {
     border-radius: 0.4rem 0.4rem 0 0;
     color: $black;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.13;
         text-align: center;
         height: 100%;
     @include breakpoint(mlarge) {
-      padding: 1.5rem 2.3rem;
+      padding: 1.56rem 2.4rem;
       font-size: 2rem;
       line-height: 1.2;
     }
@@ -51,19 +58,28 @@ ul.tab-list {
 section.tab-content {
   display: none;
   border: 1px solid $orange;
-  margin-top: -2px;
-  padding: 3.2rem 4rem;
+  margin-top: -1px;
+  padding: 2.4rem 2.4rem 1.2rem 2.4rem;
   background-color: white;
+  @include breakpoint(mlarge){
+    padding: 4rem 4rem 3.2rem 4rem;
+  }
   &.is-active {
     display: block;
   }
+  h1, h2, h3, h4, h5, h6 {
+    padding-top: 0;
+    margin-bottom: 1.2rem;
+    max-width: 49.8rem;
+  }
   p {
-    font-size: 1.6rem;
-    line-height: 1.5;
-    @include breakpoint(mlarge) {
-      font-size: 1.8rem;
-      line-height: 1.56;
+    @include breakpoint(xxxlarge) {
+      max-width: 80%;
     }
+
+  //   @include breakpoint(mlarge) {
+  //     font-size: 1.8rem;
+  //     line-height: 1.56;
+  //   }
   }
 }
-
