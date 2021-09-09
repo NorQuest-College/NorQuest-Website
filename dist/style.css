@@ -643,7 +643,8 @@ main {
           flex-grow: 1;
   position: relative;
   padding-top: 3.2rem;
-  background: blue; }
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fcfaf5), to(var(--ffffff)));
+  background-image: linear-gradient(to bottom, #fcfaf5, var(--ffffff)); }
   @media (min-width: 53.75em) {
     main {
       padding-top: 18rem; } }
