@@ -27,15 +27,19 @@
       font-size: 1.6rem;
       line-height: 1.5;
       font-weight: 600;
-        @include breakpoint(mlarge) {
-          font-size: 3.2rem;
-          line-height: 1.25;
-        }
+      margin-bottom: 0;
+      @include breakpoint(mlarge) {
+        font-size: 3.2rem;
+        line-height: 1.25;
+        margin-bottom: 0;
+      }
     }
   }
   .cta-btn {
     border-radius: 0;
+    padding: 2.4rem 2.4rem 2.4rem 0;
     @include breakpoint(smedium) {
+      padding: 2.4rem 3.2rem;
     }
     &:after {
       content: "";
@@ -83,6 +87,7 @@
       font-size: 1.6rem;
       line-height: 1.5;
       font-weight: 600;
+      margin-bottom: 0;
         @include breakpoint(mlarge) {
           font-size: 2rem;
           line-height: 1.2;

@@ -28,9 +28,11 @@ nav {
 }
 
 .mobile_toggle {
+  &:focus,
   &:hover,
   &:active {
     background-color: transparent;
+    box-shadow: none;
   }
 }
 

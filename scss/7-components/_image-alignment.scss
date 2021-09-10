@@ -37,7 +37,7 @@
     order: 1;
     text-align: right;
     @include breakpoint(smedium) {
-      flex: 1 0 224px;
+      flex: 1 0 50%;
       order: unset;
       margin: 0 0 1rem 2rem;
     }
@@ -46,7 +46,7 @@
       margin: 0 0 2rem 4rem;
     }
     img{
-      max-width: 224px;
+      max-width: 100%;
       width: 100%;
       @include breakpoint(smedium) {
         max-width: 368px;
@@ -58,14 +58,14 @@
     width: 100%;
     flex: 1;
     @include breakpoint(smedium) {
-      flex: 1 0 224px;
+      flex: 1 0 50%;
     }
     @include breakpoint(mlarge) {
       flex: 1 0 392px;
       margin: 0 4rem 2rem 0;
     }
     img{
-      max-width: 224px;
+      max-width: 100%;
       width: 100%;
       @include breakpoint(smedium) {
         max-width: 368px;

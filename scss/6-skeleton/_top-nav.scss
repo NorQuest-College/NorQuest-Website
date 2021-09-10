@@ -3,23 +3,23 @@
     position: relative;
     background-color: $red;
     order: 2;
-    padding: 1.2rem 0;
     @media screen and (max-width: $mlarge-down) {
       max-height: 0;
       transition: all .3s ease;
       overflow:hidden;
       &.is-active {
-       display: block;
-       max-height: 500px;
-       transition: all 1s ease;
-     }
-   }
+        display: block;
+        max-height: 500px;
+        transition: all 1s ease;
+      }
+    }
     @include breakpoint(mlarge) {
       grid-column: 2;
       grid-row: 1;
       order: unset;
       display: flex;
       justify-content: flex-end;
+      padding: 1.2rem 0;
     }
     &:after {
       position: absolute;
