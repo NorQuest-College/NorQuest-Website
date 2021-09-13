@@ -1,43 +1,67 @@
 .featured-linked-content {
   position: relative;
-  padding-top: 4rem;
-  padding-bottom: 5.6rem;
+  padding-top: 2.4rem;
+  padding-bottom: 2rem;
   margin: $space_xxl 0;
   z-index: 2;
   background: $ivory;
-  @include breakpoint(mlarge) {
+  @include breakpoint(smedium) {
+    padding-top: 4rem;
+    padding-bottom: 4.4rem;
+  }
+  @include breakpoint(medium) {
     padding-top: 6.4rem;
-    padding-bottom: 10.4rem;
+    padding-bottom: 5.2rem;
   }
   .featured-linked-content-item {
-    width: 176px;
+    height: 100%;
     padding: 0.8rem;
+    img {
+      width: 100%;
+      border-radius: 0.4rem;
+    }
+    &:hover {
+      background-color: white;
+      border-radius: 0.4rem;
+    }
+  }
+
+  h3 {
+    padding-top: 0;
   }
 
   .featured-linked-content-wrapper {
     position: relative;
-    max-width: 710px;
+    max-width: 71rem;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-gap: 1.6rem;
+    grid-template-columns: repeat(2, calc(50% - 0.8rem));
+    grid-gap: 0.8rem;
     @include breakpoint(smedium) {
-      grid-template-columns: repeat(3, 33%);
-      grid-gap: 1.6rem;
+      grid-template-columns: repeat(3, calc(33.333% - 0.8rem));
+      grid-gap: 0.8rem;
     }
     @include breakpoint(mlarge) {
-      grid-template-columns: repeat(4, 25%);
-      grid-gap: 2.4rem;
+      grid-template-columns: repeat(4, calc(25% - 0.8rem));
+      grid-gap: 0.8rem;
+    }
+    @include breakpoint(xxxlarge) {
+      max-width: 64%;
     }
     h4 {
       font-size: 1.8rem;
       font-weight: 600;
       line-height: 1.33;
       color: $red;
+      padding-top: 0;
       margin-bottom: 0.5rem;
+      text-decoration: underline;
+      text-decoration-color: $ivory;
     }
     p {
       font-size: 1.6rem;
       line-height: 1.25;
+      text-decoration: underline;
+      text-decoration-color: $ivory;
     }
   }
 }

@@ -8,6 +8,10 @@
       max-width: 70%;
       display: flex;
       align-items: center;
+      padding: 3.2rem 3.2rem 3.2rem 0;
+    }
+    @include breakpoint(xlarge) {
+      padding: 5.6rem 5.6rem 5.6rem 0;
     }
     &:after {
       content: "";
@@ -29,6 +33,9 @@
       font-weight: 600;
       margin-bottom: 0;
       @include breakpoint(mlarge) {
+        font-size: 2.4rem;
+      }
+      @include breakpoint(xlarge) {
         font-size: 3.2rem;
         line-height: 1.25;
         margin-bottom: 0;
@@ -40,6 +47,12 @@
     padding: 2.4rem 2.4rem 2.4rem 0;
     @include breakpoint(smedium) {
       padding: 2.4rem 3.2rem;
+      max-width: 30%;
+    }
+    a {
+      @include breakpoint(xlarge) {
+        font-size: 3.2rem;
+      }
     }
     &:after {
       content: "";
@@ -68,20 +81,28 @@
 }
 .call-to-action {
   margin: $space_xxl 0;
+  max-width: 71rem;
   @include breakpoint(smedium) {
     display: flex;
+  }
+  @include breakpoint(xxxlarge) {
+    max-width: 64%;
   }
   .cta-copy {
     max-width: 100%;
     padding: 2.4rem 3.2rem;
     background-color: $ivory;
+    box-shadow: $box-shadow-default;
     flex: 1;
     border-radius: 4px 4px 0 0;
     position: relative;
     z-index: 1;
     @include breakpoint(smedium) {
-      max-width: 42.4rem;
+      max-width: 60%;
       border-radius: 4px 0 0 4px;
+    }
+    @include breakpoint(mlarge) {
+      padding: 3.2rem 4rem;
     }
      p {
       font-size: 1.6rem;
@@ -98,13 +119,14 @@
     display: flex;
     max-width: 100%;
     background-color: $red;
+    box-shadow: $box-shadow-default;
     padding: 2.4rem 3.2rem;
     flex: 1;
     border-radius:  0 0 4px 4px;
     position: relative;
     z-index: 1;
     @include breakpoint(smedium) {
-      max-width: 28.6rem;
+      max-width: 40%;
       border-radius: 0 4px 4px 0 ;
       padding: 2.4rem 3.2rem;
     }
@@ -123,4 +145,7 @@
       }
     }
   }
+}
+.call-to-action__full-width {
+  max-width: 100%;
 }

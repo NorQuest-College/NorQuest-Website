@@ -231,16 +231,9 @@ header.header {
           display: block;
           padding: 2.4rem 0;
           text-decoration: none;
-          margin: 0 6.4rem 0 2.4rem;
-          @include breakpoint(mlarge) {
-            margin: 0 1.2rem;
-          }
-          @include breakpoint (large) {
-            margin: 0 1.8rem;
-          }
+          margin: 0 2.4rem;
           @include breakpoint(xlarge){
             font-size: 1.8rem;
-            margin: 0 2.4rem;
           }
         }
         button.menu-close {
@@ -307,8 +300,6 @@ header.header {
           z-index: 99;
           background: white;
           padding: 3.2rem 2.4rem;
-          max-height: 64vh;
-          overflow: scroll;
           &:before {
             position: absolute;
             width: 100vw;
@@ -320,7 +311,7 @@ header.header {
             top: 0;
             z-index: -1;
             content: "";
-            // height: 100%;
+            height: 100%;
           }
           &:after {
             content: "";
@@ -329,10 +320,8 @@ header.header {
         }
         &.menu__subnav{
           li {
-            margin: 0 3.2rem 1.2rem 0;
             @media screen and (max-width: $mlarge-down) {
               position: relative;
-              padding: 1.2rem 0;
             }
           }
           &.lvl-2 {
@@ -352,10 +341,8 @@ header.header {
               }
             }
             a {
-              font-size: 1.6rem;
               line-height: 1.11;
-              margin: 0 3.2rem 0 0;
-              padding: 0 0 .4rem 0;
+              margin: 0;
               &:hover, &:active {
                 text-decoration: underline;
                 color: $red;
@@ -393,7 +380,7 @@ header.header {
         width: 100%;
         background-image: linear-gradient(to left, $red, $rouge);
         height: fit-content;
-        border-radius: 4px;
+        border-radius: 0.4rem;
         h4, p {
           color: white;
         }
@@ -409,6 +396,9 @@ header.header {
         }
         .menu__content-wrapper {
           padding: 2.4rem;
+        }
+        img {
+          border-radius: 0.4rem 0.4rem 0 0;
         }
         button.btn {
           background-color: $rouge;

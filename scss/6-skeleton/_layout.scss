@@ -11,21 +11,32 @@ main {
   position: relative;
   padding-top: 3.2rem;
   background-image: $background-gradient;
+  min-height: 38vh;
   @include breakpoint(mlarge) {
     padding-top: 18rem;
+    min-height: 76vh;
   }
 }
 .container-text {
   max-width: 49.8rem;
-  padding-right: 0;
-  padding-left: 0;
   margin-bottom: 6.4rem;
   @include breakpoint(xxxlarge) {
-    max-width: 80%;
+    max-width: 64%;
   }
   &.margin-md h3 {
     margin-bottom: 2.4rem;
   }
+}
+.container-text-wide {
+  max-width: 49.8rem;
+  &:last-of-type { padding-left: 0 }
+  @include breakpoint(xxxlarge) {
+    max-width: 88%;
+  }
+  @include breakpoint(mlarge) {
+    &:last-of-type { padding-left: 3.2rem }
+  }
+
 }
 .container-grid {
   display: grid;
@@ -33,17 +44,10 @@ main {
   box-sizing: content-box;
   max-width: $container;
   margin: 0 auto;
-  // padding-right: $space_sm;
-  // padding-left: $space_sm;
   @include breakpoint(mlarge) {
     grid-template-columns: auto auto;
   }
-  // .container & {
-    // padding-right: 0;
-    // padding-left: 0;
-  // }
   .margin-md {
-    // margin: 6.4rem 0;
     margin: .8rem 0 2.8rem 0;
   }
 }
@@ -52,8 +56,6 @@ main {
   display: flex;
   max-width: $container;
   margin: 0 auto;
-  padding-right: $space_sm;
-  padding-left: $space_sm;
 }
 .container-no {
   position: relative;
@@ -69,22 +71,6 @@ main {
   @include breakpoint(smedium) {
     padding-right: $space_lg;
     padding-left: $space_lg;
-  }
-  @include breakpoint(medium) {
-    padding-right: $space_xl;
-    padding-left: $space_xl;
-  }
-  @include breakpoint(lxlarge) {
-    padding-right: $space_xxl;
-    padding-left: $space_xxl;
-  }
-  @include breakpoint (xxlarge) {
-    padding-right: $space_xxxl;
-    padding-left: $space_xxxl;
-  }
-  @include breakpoint (xxxlarge) {
-    padding-right: $space_xxxxl;
-    padding-left: $space_xxxxl;
   }
   &.margin-top {
     margin: 5rem auto 0;

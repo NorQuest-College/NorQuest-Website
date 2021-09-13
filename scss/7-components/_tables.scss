@@ -44,21 +44,7 @@ table {
       border-bottom: 0.1rem solid $orange;
       font-size: 1.8rem;
       line-height: 1.33;
-      // &:first-child {
-      //   font-size: 2rem;
-      //   line-height: 1.2;
-      // }
     }
-
-    // &:first-child {
-    //   font-size: 2rem;
-    //   font-weight: 600;
-    //   border-bottom: 0.4rem solid $orange;
-    //   padding: 0;
-    //   td {
-    //     padding: 1.2rem  1.2rem 1.2rem 0;
-    //   }
-    // }
     &:last-child {
       border-bottom: 0.4rem solid $orange;
     }
