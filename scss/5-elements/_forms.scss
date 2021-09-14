@@ -24,16 +24,26 @@ select {
 input {
   border: solid 0.1rem $yellow;
   border-radius: 0.4rem;
+  background-color: $ivory;
   color: $grey;
+  &:disabled {
+    opacity: 0.3;
+  }
+  &:focus {
+    background: white;
+    border: solid 0.1rem $orange;
+    outline: $orange;
+  }
 }
 
 select {
   padding: 0.7rem 1.2rem;
-  border: 0.2rem solid $yellow;
+  border: 1px solid $yellow;
   border-radius: 0.4rem;
   background-color: $ivory;
   color: $grey;
 }
+
 .select2-container--norQuest.select2-container {
   width: 100%;
   max-width: 60rem;
@@ -41,12 +51,31 @@ select {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   line-height: 1.5;
-  border: 0.2rem solid $yellow;
+  border: 1px solid $yellow;
   border-radius: 0.4rem;
   background-color: $ivory;
   color: $grey;
   &:focus {
     outline-color: $peach;
+  }
+  &.select2-results {
+    border: none;
+  }
+  &.select2-container--open {
+    .select2-dropdown--below {
+      border-top: none;
+      border-right: 1px solid #ffbd00;
+      border-bottom: 1px solid #ffbd00;
+      border-left: 1px solid #ffbd00;
+    }
+  }
+  &.select2-container--below.select2-container--open {
+    border-top: 1px solid $orange;
+    border-left: 1px solid $orange;
+    border-right: 1px solid $orange;
+  }
+  .select2-selection__rendered {
+    font-weight: bold;
   }
   button {
     background-color: transparent;
@@ -66,6 +95,7 @@ select {
       top: -13px;
       position: relative;
     }
+    &:hover { box-shadow: none;}
   }
   .select2-dropdown {
     border: 1px solid $yellow;
@@ -80,6 +110,7 @@ select {
     background-color: $ivory;
     min-height: 3.2rem;
     font-family: inherit !important;
+    margin-top: 0.9rem !important;
     &:focus {
       outline: none !important;
     }
@@ -97,16 +128,18 @@ select {
   }
   .select2-selection__choice__display {
     font-weight: bold;
-  }
-  .select2-selection--single {
+    color: $black;
   }
   .select2-selection__rendered {
     min-height: 3.2rem;
     width: fit-content;
     display: inline-block;
-    padding: 0.5rem 2rem 0.9rem 0.8rem;
+    padding: 0.9rem 2rem 0.9rem 0.8rem;
     margin: 0;
     position: relative;
+  }
+  .select2-selection__placeholder {
+    font-weight: 300;
   }
 }
 
@@ -118,12 +151,31 @@ select {
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   line-height: 1.5;
-  border: 0.2rem solid $grey;
+  border: 1px solid $grey;
   border-radius: 0.4rem;
   background-color: white;
   color: $grey;
   &:focus {
     outline-color: $peach;
+  }
+  &.select2-results {
+    border: none;
+  }
+  &.select2-container--open {
+    .select2-dropdown--below {
+      border-top: none;
+      border-right: 1px solid #ffbd00;
+      border-bottom: 1px solid #ffbd00;
+      border-left: 1px solid #ffbd00;
+    }
+  }
+  &.select2-container--below.select2-container--open {
+    border-top: 1px solid $orange;
+    border-left: 1px solid $orange;
+    border-right: 1px solid $orange;
+  }
+  .select2-selection__rendered {
+    font-weight: bold;
   }
   button {
     background-color: transparent;
@@ -143,6 +195,7 @@ select {
       top: -13px;
       position: relative;
     }
+    &:hover { box-shadow: none;}
   }
   .select2-dropdown {
     border: 1px solid $grey;
@@ -157,6 +210,7 @@ select {
     background-color: white;
     min-height: 3.2rem;
     font-family: inherit !important;
+    margin-top: 0.9rem !important;
     &:focus {
       outline: none !important;
     }
@@ -176,15 +230,18 @@ select {
     font-weight: bold;
     color: $black;
   }
-  .select2-selection--single {
-  }
+
   .select2-selection__rendered {
     min-height: 3.2rem;
     width: fit-content;
     display: inline-block;
-    padding: 0.5rem 2rem 0.9rem 0.8rem;
+    padding: 0.9rem 2rem 0.9rem 0.8rem;
     margin: 0;
     position: relative;
+    color: $black;
+  }
+  .select2-selection__placeholder {
+    font-weight: 300;
   }
 }
 
