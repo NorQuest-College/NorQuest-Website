@@ -10,6 +10,7 @@ const themePath = path.join(__dirname, "./");
 const config = {
   entry: {
     // define main entry point — this handles the main JS, CSS, and SVG sprites loading:
+    plugins: themePath + "js/plugins.jQuery.js",
     main: themePath + "js/app.js",
     style: themePath + "scss/_style.scss",
     // define print styles entry point:

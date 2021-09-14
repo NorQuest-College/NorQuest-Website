@@ -1,32 +1,193 @@
 form {
   position: relative;
 }
-
+label { display: block; }
 input,
 select {
   width: 100%;
   max-width: 60rem;
-  height: 4.8rem;
+  min-height: 4.8rem;
   padding-right: 1.5rem;
   padding-left: 1.5rem;
-  border: solid 0.1rem $offwhite;
-  border-radius: 0.4rem;
-  color: $grey;
   line-height: 1.5;
   &:focus {
     outline-color: $peach;
   }
 }
-
-select {
-  height: auto;
-  height: 3.8rem;
-  padding: 0.7rem 1.2rem;
-  border: 0.2rem solid $offwhite;
+.norQuest-dark {
+  input {
+    border: solid 0.1rem $grey;
+    background-color: white;
+  }
+  label { color: white; }
+}
+input {
+  border: solid 0.1rem $yellow;
   border-radius: 0.4rem;
-  background-color: $white;
   color: $grey;
 }
+
+select {
+  padding: 0.7rem 1.2rem;
+  border: 0.2rem solid $yellow;
+  border-radius: 0.4rem;
+  background-color: $ivory;
+  color: $grey;
+}
+.select2-container--norQuest.select2-container {
+  width: 100%;
+  max-width: 60rem;
+  min-height: 4.8rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  line-height: 1.5;
+  border: 0.2rem solid $yellow;
+  border-radius: 0.4rem;
+  background-color: $ivory;
+  color: $grey;
+  &:focus {
+    outline-color: $peach;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    color: $red;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 0 0.4rem;
+    margin: 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    span {
+      top: -13px;
+      position: relative;
+    }
+  }
+  .select2-dropdown {
+    border: 1px solid $yellow;
+    background: $ivory;
+    .select2-search--dropdown {
+      input {
+        background: white
+      }
+    }
+  }
+  .select2-search__field{
+    background-color: $ivory;
+    min-height: 3.2rem;
+    font-family: inherit !important;
+    &:focus {
+      outline: none !important;
+    }
+  }
+  .select2-selection__choice {
+    background-color: white;
+    min-height: 3.2rem;
+    border-radius: 2px;
+    width: fit-content;
+    display: inline-block;
+    padding: 0.3rem 2.4rem 0.3rem 0.8rem;
+    margin: 0.2rem 0.4rem 0.2rem 0;
+    border: 1px solid #e1e1e1;
+    position: relative;
+  }
+  .select2-selection__choice__display {
+    font-weight: bold;
+  }
+  .select2-selection--single {
+  }
+  .select2-selection__rendered {
+    min-height: 3.2rem;
+    width: fit-content;
+    display: inline-block;
+    padding: 0.5rem 2rem 0.9rem 0.8rem;
+    margin: 0;
+    position: relative;
+  }
+}
+
+// used on dark background only not default
+.select2-container--norQuest-dark.select2-container {
+  width: 100%;
+  max-width: 60rem;
+  min-height: 4.8rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  line-height: 1.5;
+  border: 0.2rem solid $grey;
+  border-radius: 0.4rem;
+  background-color: white;
+  color: $grey;
+  &:focus {
+    outline-color: $peach;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+    color: $red;
+    cursor: pointer;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding: 0 0.4rem;
+    margin: 0;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    span {
+      top: -13px;
+      position: relative;
+    }
+  }
+  .select2-dropdown {
+    border: 1px solid $grey;
+    background: white;
+    .select2-search--dropdown {
+      input {
+        background: $ivory;
+      }
+    }
+  }
+  .select2-search__field{
+    background-color: white;
+    min-height: 3.2rem;
+    font-family: inherit !important;
+    &:focus {
+      outline: none !important;
+    }
+  }
+  .select2-selection__choice {
+    background-color: $ivory;
+    min-height: 3.2rem;
+    border-radius: 2px;
+    width: fit-content;
+    display: inline-block;
+    padding: 0.3rem 2.4rem 0.3rem 0.8rem;
+    margin: 0.2rem 0.4rem 0.2rem 0;
+    border: 1px solid #e1e1e1;
+    position: relative;
+  }
+  .select2-selection__choice__display {
+    font-weight: bold;
+    color: $black;
+  }
+  .select2-selection--single {
+  }
+  .select2-selection__rendered {
+    min-height: 3.2rem;
+    width: fit-content;
+    display: inline-block;
+    padding: 0.5rem 2rem 0.9rem 0.8rem;
+    margin: 0;
+    position: relative;
+  }
+}
+
 
 textarea {
   width: 100%;
@@ -130,5 +291,13 @@ input[type="radio"] {
   input {
     height: 4rem;
     max-width: 100%;
+  }
+}
+
+.form-container {
+  padding: 6.4rem 0;
+  &.dark-bg {
+    h3 { color: white; }
+    label { color: white; }
   }
 }

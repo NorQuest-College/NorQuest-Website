@@ -488,8 +488,8 @@ __webpack_require__.r(__webpack_exports__);
 /**
  * Javascript for the webiste
  */
- // import "./customizer.js";
-// import "./navigation.js";
+// import "./plugins.jQuery.js";
+ // import "./navigation.js";
 // import "./skip-link-focus-fix.js";
 // Import SVGs for sprites
 

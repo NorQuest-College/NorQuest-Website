@@ -45,7 +45,22 @@ body {
     }
   }
 }
-
+.dark-bg {
+  background-color: $rouge;
+  position: relative;
+  z-index: 1;
+  &:before {
+    position: absolute;
+    width: 100vw;
+    left: calc(-50vw + 50%);
+    right: 100%;
+    top: 0;
+    content: "";
+    height: 101%;
+    background-color: $rouge;
+    z-index: -1;
+  }
+}
 // hide SVG sprites
 .svg_sprite {
   display: none;
