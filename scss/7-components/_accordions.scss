@@ -13,7 +13,7 @@ details {
     > summary {
       font-weight: 700;
       &:after {
-        transform: rotate(315deg);
+        transform: rotate(135deg);
       }
     }
   }
@@ -43,7 +43,7 @@ details {
       font-size: 1.8rem;
       @include breakpoint(mlarge) {
         top: -1px;
-        font-size: 2.4rem;
+        font-size: 1.8rem;
       }
     }
   }

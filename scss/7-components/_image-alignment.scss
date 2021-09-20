@@ -1,13 +1,14 @@
 .full-width-img {
   position: relative;
   z-index: 1;
-  max-width: 71rem;
+  width: fit-content;
+  // max-width: 71rem;
   margin: 4rem 0;
-  @include breakpoint(xxxlarge) {
-    max-width: 64%;
-  }
+  // @include breakpoint(xxxlarge) {
+  //   max-width: 64%;
+  // }
   img {
-    border-radius: 0.4rem;
+    border-radius: 0.4rem;;
   }
   &:after {
     content: '';
