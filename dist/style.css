@@ -207,7 +207,6 @@ picture {
   overflow: hidden;
   max-width: 100%;
   height: auto;
-  text-indent: 100%;
   white-space: nowrap; }
   img.lazy,
   picture.lazy {
@@ -953,24 +952,27 @@ main {
   max-width: 128.8rem;
   margin: 0 auto; }
 
-.container-no, .container {
+.container-no, .container, .container-resticted {
   position: relative;
   max-width: 128.8rem;
   margin: 0 auto; }
 
-.container {
+.container, .container-resticted {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding-right: 2.4rem;
   padding-left: 2.4rem; }
   @media (min-width: 40em) {
-    .container {
+    .container, .container-resticted {
       padding-right: 4rem;
       padding-left: 4rem; } }
-  .container.margin-top {
+  .container.margin-top, .margin-top.container-resticted {
     margin: 5rem auto 0; }
-  .container.margin-bottom {
+  .container.margin-bottom, .margin-bottom.container-resticted {
     margin: 0 auto 5rem; }
+
+.container-resticted {
+  max-width: 102.4rem; }
 
 nav ul[class^="menu__"] {
   display: -webkit-box;
@@ -1033,7 +1035,7 @@ header.header {
           visibility: hidden; }
         header.header.stick .nav-search {
           padding-top: .5rem; } }
-  header.header .container {
+  header.header .container, header.header .container-resticted {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1042,27 +1044,27 @@ header.header {
         -ms-flex-flow: column;
             flex-flow: column; }
     @media (min-width: 53.75em) {
-      header.header .container {
+      header.header .container, header.header .container-resticted {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: auto 4fr;
         grid-template-columns: auto 4fr;
         -ms-grid-rows: 3.6rem 6.4rem;
         grid-template-rows: 3.6rem 6.4rem; }
-      header.header .container > *:nth-child(1) {
+      header.header .container > *:nth-child(1), header.header .container-resticted > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1; }
-      header.header .container > *:nth-child(2) {
+      header.header .container > *:nth-child(2), header.header .container-resticted > *:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 2; }
-      header.header .container > *:nth-child(3) {
+      header.header .container > *:nth-child(3), header.header .container-resticted > *:nth-child(3) {
     -ms-grid-row: 2;
     -ms-grid-column: 1; }
-      header.header .container > *:nth-child(4) {
+      header.header .container > *:nth-child(4), header.header .container-resticted > *:nth-child(4) {
     -ms-grid-row: 2;
     -ms-grid-column: 2; } }
     @media screen and (max-width: 53.6875em) {
-      header.header .container {
+      header.header .container, header.header .container-resticted {
         padding: 0; } }
   header.header .nav-search {
     -ms-grid-column: 2;
@@ -1622,6 +1624,28 @@ footer {
       font-size: 1.8rem; } }
 
 /* Styles for components of the UI. */
+.hero {
+  height: 49.5rem;
+  position: relative; }
+  @media (min-width: 53.75em) {
+    .hero {
+      padding-top: 100px; } }
+  .hero__container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .hero h1 {
+    color: white; }
+  .hero img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: calc(min(100vh, 49.5rem));
+    width: 100%;
+    z-index: -1; }
+
 .table-wrapper {
   overflow-x: auto;
   width: 100%;
@@ -2271,7 +2295,8 @@ details {
     margin-top: -5.6rem; } }
 
 .breadcrumb-wrapper .breadcrumb ul {
-  padding-left: 0; }
+  padding-left: 0;
+  margin-left: 0; }
   .breadcrumb-wrapper .breadcrumb ul li {
     list-style-type: none; }
 
@@ -2282,7 +2307,7 @@ details {
   font-weight: 700;
   letter-spacing: 1px; }
 
-.breadcrumb-wrapper .breadcrumb.breadcrumb-light a {
+.breadcrumb-wrapper .breadcrumb.light a {
   color: white; }
 
 .alert {

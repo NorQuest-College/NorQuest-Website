@@ -78,14 +78,17 @@ body {
   }
 }
 
+.no-link {
+  &:hover {
+
+  }
+}
 a {
-  // @extend %transition;
   color: $red;
   font-weight: 600;
   word-wrap: break-word;
   overflow-wrap: break-word;
   text-decoration: underline;
-  // text-decoration-color: transparent;
 
   &:hover,
   &:active {
@@ -144,7 +147,6 @@ picture {
   overflow: hidden;
   max-width: 100%;
   height: auto;
-  text-indent: 100%;
   white-space: nowrap;
 
   &.lazy {

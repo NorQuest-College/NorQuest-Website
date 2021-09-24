@@ -17,6 +17,7 @@ main {
     min-height: 76vh;
   }
 }
+
 .container-text {
   max-width: 49.8rem;
   margin-bottom: 6.4rem;
@@ -27,6 +28,7 @@ main {
     margin-bottom: 2.4rem;
   }
 }
+
 .container-text-wide {
   max-width: 49.8rem;
   &:last-of-type { padding-left: 0 }
@@ -36,8 +38,8 @@ main {
   @include breakpoint(mlarge) {
     &:last-of-type { padding-left: 3.2rem }
   }
-
 }
+
 .container-grid {
   display: grid;
   grid-template-columns: auto;
@@ -51,12 +53,14 @@ main {
     margin: .8rem 0 2.8rem 0;
   }
 }
+
 .container-flex {
   box-sizing: content-box;
   display: flex;
   max-width: $container;
   margin: 0 auto;
 }
+
 .container-no {
   position: relative;
   max-width: $container;
@@ -78,4 +82,10 @@ main {
   &.margin-bottom {
     margin: 0 auto 5rem;
   }
+}
+
+.container-resticted{
+  max-width: $containerBasicPage;
+  @extend .container;
+  @include breakpoint(mlarge) {}
 }

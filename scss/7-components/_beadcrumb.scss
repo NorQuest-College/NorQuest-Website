@@ -6,6 +6,7 @@
   .breadcrumb {
     ul {
       padding-left: 0;
+      margin-left: 0;
       li {
         list-style-type: none;
       }
@@ -17,7 +18,7 @@
       font-weight: 700;
       letter-spacing: 1px;
     }
-    &.breadcrumb-light {
+    &.light {
       a {
         color: white;
       }
