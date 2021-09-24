@@ -906,6 +906,8 @@ main {
     main {
       padding-top: 18rem;
       min-height: 76vh; } }
+  main.has-hero {
+    padding-top: 3.2rem; }
 
 .container-text {
   max-width: 49.8rem;
@@ -1626,25 +1628,36 @@ footer {
 /* Styles for components of the UI. */
 .hero {
   height: 49.5rem;
+  margin-top: 15rem;
   position: relative; }
   @media (min-width: 53.75em) {
     .hero {
-      padding-top: 100px; } }
+      padding-top: 100px;
+      margin-top: 0; } }
   .hero__container {
     position: absolute;
-    top: 50%;
     left: 0;
-    width: 100%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
-  .hero h1 {
-    color: white; }
+    top: -12rem;
+    width: 100%; }
+    @media (min-width: 53.75em) {
+      .hero__container {
+        top: calc(50% + 100px);
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); } }
+  @media (min-width: 53.75em) {
+    .hero h1 {
+      color: white; } }
   .hero img {
     -o-object-fit: cover;
        object-fit: cover;
     height: calc(min(100vh, 49.5rem));
     width: 100%;
     z-index: -1; }
+  .hero .breadcrumb-wrapper .breadcrumb.light a {
+    color: #e71321; }
+    @media (min-width: 53.75em) {
+      .hero .breadcrumb-wrapper .breadcrumb.light a {
+        color: white; } }
 
 .table-wrapper {
   overflow-x: auto;

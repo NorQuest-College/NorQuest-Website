@@ -1,34 +1,38 @@
-//
-// *NOTE: It is not recommended that you use these styles in their present form! It would be advisable to use these as reference only. Build your custom styles while keeping mobile-first, accessibility, and modularity top of mind.
-//
 .hero {
     height: 49.5rem;
-
+    margin-top: 15rem;
     position: relative;
     @include breakpoint(mlarge) {
       padding-top: 100px;
+      margin-top: 0;
     }
-  &__container {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-50%);
-  }
-  // &__content {
-  //   max-width: 128.8rem;
-  //   margin: 0 auto;
-  //   z-index: 1;
-  //   width: 100%;
-  // }
-  h1 {
-    color: white;
-  }
-
-  img {
-    object-fit: cover;
-    height: calc(min(100vh, 49.5rem));
-    width: 100%;
-    z-index: -1;
-  }
+    &__container {
+      position: absolute;
+      left: 0;
+      top :-12rem;
+      width: 100%;
+      @include breakpoint(mlarge) {
+        top: calc(50% + 100px);
+        transform: translateY(-50%);
+      }
+    }
+    h1 {
+      @include breakpoint(mlarge) {
+        color: white;
+      }
+    }
+    img {
+      object-fit: cover;
+      height: calc(min(100vh, 49.5rem));
+      width: 100%;
+      z-index: -1;
+    }
+    .breadcrumb-wrapper {
+      .breadcrumb.light a {
+        color: $red;
+        @include breakpoint(mlarge) {
+          color: white;
+        }
+      }
+    }
 }
