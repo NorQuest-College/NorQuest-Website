@@ -87,7 +87,7 @@ main {
   }
 }
 
-.container-resticted{
+.container-restricted {
   max-width: $containerBasicPage;
   @extend .container;
   @include breakpoint(mlarge) {}

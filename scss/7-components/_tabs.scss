@@ -1,11 +1,13 @@
 .tabs-wrapper {
   max-width: 71rem;
-  margin: 0 -2.4rem;
+  max-width: 100%;
+  margin: 0;
   @include breakpoint(smedium){
-    margin: 0;
+    margin: 0 -2.4rem;
+    max-width: 100%;
   }
   @include breakpoint(xxxlarge) {
-    max-width: 64%;
+    max-width: 100%;
   }
 }
 ul.tab-list {

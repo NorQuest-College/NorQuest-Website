@@ -954,26 +954,26 @@ main {
   max-width: 128.8rem;
   margin: 0 auto; }
 
-.container-no, .container, .container-resticted {
+.container-no, .container, .container-restricted {
   position: relative;
   max-width: 128.8rem;
   margin: 0 auto; }
 
-.container, .container-resticted {
+.container, .container-restricted {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding-right: 2.4rem;
   padding-left: 2.4rem; }
   @media (min-width: 40em) {
-    .container, .container-resticted {
+    .container, .container-restricted {
       padding-right: 4rem;
       padding-left: 4rem; } }
-  .container.margin-top, .margin-top.container-resticted {
+  .container.margin-top, .margin-top.container-restricted {
     margin: 5rem auto 0; }
-  .container.margin-bottom, .margin-bottom.container-resticted {
+  .container.margin-bottom, .margin-bottom.container-restricted {
     margin: 0 auto 5rem; }
 
-.container-resticted {
+.container-restricted {
   max-width: 102.4rem; }
 
 nav ul[class^="menu__"] {
@@ -1037,7 +1037,7 @@ header.header {
           visibility: hidden; }
         header.header.stick .nav-search {
           padding-top: .5rem; } }
-  header.header .container, header.header .container-resticted {
+  header.header .container, header.header .container-restricted {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1046,27 +1046,27 @@ header.header {
         -ms-flex-flow: column;
             flex-flow: column; }
     @media (min-width: 53.75em) {
-      header.header .container, header.header .container-resticted {
+      header.header .container, header.header .container-restricted {
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: auto 4fr;
         grid-template-columns: auto 4fr;
         -ms-grid-rows: 3.6rem 6.4rem;
         grid-template-rows: 3.6rem 6.4rem; }
-      header.header .container > *:nth-child(1), header.header .container-resticted > *:nth-child(1) {
+      header.header .container > *:nth-child(1), header.header .container-restricted > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1; }
-      header.header .container > *:nth-child(2), header.header .container-resticted > *:nth-child(2) {
+      header.header .container > *:nth-child(2), header.header .container-restricted > *:nth-child(2) {
     -ms-grid-row: 1;
     -ms-grid-column: 2; }
-      header.header .container > *:nth-child(3), header.header .container-resticted > *:nth-child(3) {
+      header.header .container > *:nth-child(3), header.header .container-restricted > *:nth-child(3) {
     -ms-grid-row: 2;
     -ms-grid-column: 1; }
-      header.header .container > *:nth-child(4), header.header .container-resticted > *:nth-child(4) {
+      header.header .container > *:nth-child(4), header.header .container-restricted > *:nth-child(4) {
     -ms-grid-row: 2;
     -ms-grid-column: 2; } }
     @media screen and (max-width: 53.6875em) {
-      header.header .container, header.header .container-resticted {
+      header.header .container, header.header .container-restricted {
         padding: 0; } }
   header.header .nav-search {
     -ms-grid-column: 2;
@@ -1698,13 +1698,15 @@ table {
 
 .tabs-wrapper {
   max-width: 71rem;
-  margin: 0 -2.4rem; }
+  max-width: 100%;
+  margin: 0; }
   @media (min-width: 40em) {
     .tabs-wrapper {
-      margin: 0; } }
+      margin: 0 -2.4rem;
+      max-width: 100%; } }
   @media (min-width: 90em) {
     .tabs-wrapper {
-      max-width: 64%; } }
+      max-width: 100%; } }
 
 ul.tab-list {
   width: 100%;
@@ -1769,6 +1771,18 @@ section.tab-content {
   @media (min-width: 90em) {
     section.tab-content p {
       max-width: 80%; } }
+
+.tags a {
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.89;
+  color: white;
+  background-color: #ae2830;
+  padding: 0.6rem 1.2rem 1rem;
+  border-radius: 4px;
+  text-decoration: none; }
 
 .menu-shopping-cart-wrapper {
   margin-top: -1rem; }
@@ -2232,6 +2246,34 @@ details {
       color: #ae2830; }
   .related-card p {
     font-size: 1.6rem; }
+
+.course-detail-card-wrapper {
+  max-width: 28.6rem;
+  width: 100%;
+  background-image: -webkit-gradient(linear, right top, left top, from(var(--red)), to(var(--rouge)));
+  background-image: linear-gradient(to left, var(--red), var(--rouge));
+  -webkit-box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
+          box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
+  padding: 2.4rem 3.2rem 2.4rem 3.2rem;
+  border-radius: 0.4rem; }
+  @media (min-width: 62em) {
+    .course-detail-card-wrapper {
+      float: right; } }
+  .course-detail-card-wrapper * {
+    color: white; }
+  .course-detail-card-wrapper h4 {
+    padding-top: 0;
+    margin: 0 0 1.6rem;
+    font-size: 2.4rem; }
+  .course-detail-card-wrapper h5 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-top: 1.6rem;
+    margin-bottom: 0; }
+  .course-detail-card-wrapper p {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0; }
 
 .testimonial {
   -webkit-box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
