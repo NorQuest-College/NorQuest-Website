@@ -89,7 +89,7 @@ a {
   word-wrap: break-word;
   overflow-wrap: break-word;
   text-decoration: underline;
-
+  @extend %transition;
   &:hover,
   &:active {
     text-decoration: none;

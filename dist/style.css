@@ -25,7 +25,7 @@ https://www.madebymike.com.au/writing/fluid-type-calc-examples/
 
 *** Values passed to the interpolate mixin must be of the same units. ***
 */
-.page__content a, a:hover, a:active, .btn,
+.page__content a, a, a:hover, a:active, .btn,
 .button,
 button,
 input[type="submit"], header.header, header.header #NorquestLogo, header.header nav.menu-primary-nav.is-active, .menu-shopping-cart, .menu-shopping-cart i {
@@ -1783,6 +1783,9 @@ section.tab-content {
   padding: 0.6rem 1.2rem 1rem;
   border-radius: 4px;
   text-decoration: none; }
+  .tags a:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(66, 66, 66, 0.24);
+            box-shadow: 0 8px 16px 0 rgba(66, 66, 66, 0.24); }
 
 .menu-shopping-cart-wrapper {
   margin-top: -1rem; }
@@ -2185,6 +2188,10 @@ details {
         .call-to-action .cta-btn a {
           font-size: 2.4rem;
           line-height: 1.17; } }
+    .call-to-action .cta-btn.special {
+      background-color: #702f8a; }
+      .call-to-action .cta-btn.special:after {
+        background: #702f8a; }
 
 .call-to-action__full-width {
   max-width: 100%; }
