@@ -1696,6 +1696,9 @@ table {
   table tbody tr:last-child {
     border-bottom: 0.4rem solid #f58b2e; }
 
+.title-tabs {
+  margin-bottom: 8rem; }
+
 .tabs-wrapper {
   max-width: 71rem;
   max-width: 100%;
@@ -1733,7 +1736,7 @@ ul.tab-list {
     ul.tab-list li.is-active {
       background-color: white; }
       ul.tab-list li.is-active a {
-        border-bottom: 1px transparent;
+        border-bottom: 1px solid transparent;
         font-weight: 700; }
   ul.tab-list a {
     display: block;

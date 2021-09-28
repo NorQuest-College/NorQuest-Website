@@ -1,3 +1,6 @@
+.title-tabs {
+  margin-bottom: 8rem;
+}
 .tabs-wrapper {
   max-width: 71rem;
   max-width: 100%;
@@ -31,7 +34,7 @@ ul.tab-list {
     &.is-active {
       background-color: white;
       a {
-        border-bottom: 1px transparent;
+        border-bottom: 1px solid transparent;
         font-weight: 700;
       }
     }
