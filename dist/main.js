@@ -49,7 +49,34 @@ webpackContext.id = "./images/sprites sync recursive \\.svg$";
   \***********************/
 /***/ (function() {
 
-// header scroll class eventListener
+/**
+ * -- helper function --
+ */
+if (!Element.prototype.matches) {
+  Element.prototype.matches = Element.prototype.msMatchesSelector || Element.prototype.webkitMatchesSelector;
+}
+
+if (!Element.prototype.closest) {
+  Element.prototype.closest = function (s) {
+    var el = this;
+
+    do {
+      if (Element.prototype.matches.call(el, s)) return el;
+      el = el.parentElement || el.parentNode;
+    } while (el !== null && el.nodeType === 1);
+
+    return null;
+  };
+}
+/**
+ * --- end helper function ---
+ */
+
+/**
+ * header scroll class eventListener
+ */
+
+
 var scrollpos = window.scrollY;
 var header = document.querySelector("header");
 var header_height = header.offsetHeight;
@@ -71,7 +98,10 @@ window.addEventListener("scroll", function () {
     remove_class_on_scroll();
   }
 }); // -- END -- header scroll class eventListener
-// search icon toggle
+
+/**
+ * search icon toggle
+ */
 
 var searchBtn = document.querySelector(".header-search-icon-wrapper");
 var searchInput = document.querySelector(".search-form");
@@ -92,7 +122,10 @@ document.addEventListener("click", function (event) {
   searchInput.classList.remove("active");
   searchWrapper.classList.remove("active");
 }); // -- END -- search icon toggle
-// mobile hamburger toggle
+
+/**
+ * mobile hamburger toggle
+ */
 
 var mobileToggle = document.querySelector(".mobile_toggle");
 var menuTopNav = document.querySelector(".menu-top-nav");
@@ -103,7 +136,10 @@ document.querySelector(".mobile_toggle").onclick = function mobileMenuToggle() {
   menuTopNav.classList.toggle("is-active");
   navSearch.classList.toggle("is-active");
 }; // -- END -- mobile hamburger toggle
-// Mobile sub nav toggle button
+
+/**
+ * Mobile sub nav toggle button
+ */
 
 
 var toggleSubNavs = document.getElementsByClassName("menu-close");
@@ -123,7 +159,7 @@ function subNavToggle(e) {
 function lvl2Toggle(e) {
   var toggleSibling = e.target.nextElementSibling;
 
-  if (toggleSibling.classList.contains('lvl-2')) {
+  if (toggleSibling.classList.contains("lvl-2")) {
     e.target.nextElementSibling.classList.toggle("active");
   }
 }
@@ -135,34 +171,45 @@ function lvl3Toggle(e) {
     e.target.nextElementSibling.classList.toggle("active");
   }
 } // -- END -- Mobile sub nav toggle button
-// tab section
+
+/**
+ * -- tab section --
+ */
+// event listener for the click on the tab item.
 
 
-var tabs = document.querySelectorAll(".tabs-wrapper .tabs li");
-var sections = document.querySelectorAll(".tabs-wrapper .tab-content");
+var tabs = document.querySelectorAll(".tabs li");
 tabs.forEach(function (tab) {
   tab.addEventListener("click", function (e) {
     e.preventDefault();
-    removeActiveTab();
+    removeActiveTab(e.target);
     addActiveTab(tab);
   });
 });
 
-var removeActiveTab = function removeActiveTab() {
-  tabs.forEach(function (tab) {
-    tab.classList.remove("is-active");
-  });
-  sections.forEach(function (section) {
-    section.classList.remove("is-active");
-  });
+var removeActiveTab = function removeActiveTab(currentTab) {
+  // removes the .is-acive class on the nav list item
+  var activeTab = currentTab.parentNode.parentNode.querySelectorAll("li");
+
+  for (var i = 0, len = activeTab.length; i < len; i++) {
+    activeTab[i].classList.remove("is-active");
+  } // removes the .is-acive class on the section .tab-content item
+
+
+  var activeSection = currentTab.parentNode.parentNode.parentNode.parentNode.querySelectorAll(".tab-content");
+
+  for (var i = 0, len = activeSection.length; i < len; i++) {
+    activeSection[i].classList.remove("is-active");
+  }
 };
 
 var addActiveTab = function addActiveTab(tab) {
+  // adds .is-active class to list item and tab-content item
   tab.classList.add("is-active");
   var href = tab.querySelector("a").getAttribute("href");
   var matchingSection = document.querySelector(href);
   matchingSection.classList.add("is-active");
-};
+}; // -- END tab section --
 
 /***/ }),
 
