@@ -1,7 +1,15 @@
 form {
   position: relative;
 }
-label { display: block; }
+label {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: $black;
+}
 input,
 select {
   width: 100%;

@@ -35,6 +35,35 @@ $(document).ready(function () {
     placeholder: "- Select one -",
     theme: "norQuest-dark"
   });
+  /**
+   * Listing page selects
+   */
+
+  $(".listingSingle1").select2({
+    placeholder: "- Select one -",
+    theme: "norQuest",
+    width: "resolve"
+  });
+  $(".listingSingle2").select2({
+    placeholder: "- Select one -",
+    theme: "norQuest",
+    width: "resolve"
+  });
+  $(".listingSingle3").select2({
+    placeholder: "- Select one -",
+    theme: "norQuest",
+    width: "resolve"
+  });
+  $(".listingSingle4").select2({
+    placeholder: "- Select one -",
+    theme: "norQuest",
+    width: "resolve"
+  });
+  $(".listingSingle5").select2({
+    placeholder: "- Select one -",
+    theme: "norQuest",
+    width: "resolve"
+  });
 });
 /******/ })()
 ;

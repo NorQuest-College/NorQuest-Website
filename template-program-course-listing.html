@@ -27,6 +27,13 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image:alt" content="Alt text for image">
 
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- END jQuery -->
+  <!-- Select2.js https://select2.org/ -->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js" crossorigin="anonymous"></script>
+  <!-- END https://select2.org/ -->
+
 	<!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="dist/style.css">
   <link rel="stylesheet" type="text/css" href="dist/print.css">
@@ -475,55 +482,193 @@
           <a href="#" class="button">Launch the program and course finder  »</a>
         </article>
     </section>
-    <section class="container">
+    <section class="container listing-form-holder">
       <form action="">
-        <label for="">Are you interested in a specific program area?</label>
-        <select name="" id="">
-          <option></option>
-          <option value="1">Option one</option>
-          <option value="2">Option two</option>
-        </select>
-        <label for="">How do you want to take your program or course?</label>
-        <select name="" id="">
-          <option></option>
-          <option value="1">Option one</option>
-          <option value="2">Option two</option>
-        </select>
-        <label for="">Do you have a preferred campus location?</label>
-        <select name="" id="">
-          <option></option>
-          <option value="1">Option one</option>
-          <option value="2">Option two</option>
-        </select>
-        <label for="">Are you seeking a specific outcome or credential?</label>
-        <select name="" id="">
-          <option></option>
-          <option value="1">Option one</option>
-          <option value="2">Option two</option>
-        </select>
-        <label for="">What type of student are you?</label>
-        <select name="" id="">
-          <option></option>
-          <option value="1">Option one</option>
-          <option value="2">Option two</option>
-        </select>
-        <label for="">Search by keyword</label>
-        <input type="text" placeholder="Start typing…">
+        <div class="form-group container-grid">
+          <div class="select-listing">
+            <label for="listingSingle1">Are you interested in a specific program area?</label>
+            <select name="listingSingle1" id="listingSingle1" class="js-example-basic-single listingSingle1">
+              <option></option>
+              <option value="1">Option one</option>
+              <option value="2">Option two</option>
+            </select>
+          </div>
+          <div class="select-listing">
+            <label for="listingSingle2">How do you want to take your program or course?</label>
+            <select name="listingSingle2" id="listingSingle2" class="js-example-basic-single listingSingle2">
+              <option></option>
+              <option value="1">Option one</option>
+              <option value="2">Option two</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group container-grid">
+          <div class="select-listing">
+            <label for="">Do you have a preferred campus location?</label>
+            <select name="" id="" class="js-example-basic-single listingSingle3">
+              <option></option>
+              <option value="1">Option one</option>
+              <option value="2">Option two</option>
+            </select>
+          </div>
+          <div class="select-listing">
+            <label for="">Are you seeking a specific outcome or credential?</label>
+            <select name="" id="" class="js-example-basic-single listingSingle4">
+              <option></option>
+              <option value="1">Option one</option>
+              <option value="2">Option two</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group container-grid">
+          <div class="select-listing">
+            <label for="">What type of student are you?</label>
+            <select name="" id="" class="js-example-basic-single listingSingle5">
+              <option></option>
+              <option value="1">Option one</option>
+              <option value="2">Option two</option>
+            </select>
+          </div>
+          <div class="input-listing">
+            <label for="">Search by keyword</label>
+            <input type="text" placeholder="Start typing…">
+          </div>
+        </div>
       </form>
     </section>
 
-    <section class="container">
+    <section class="container listing-content-wrapper">
       <header>
-        <p>Showing 1-20 of 238 programs(69) and courses(169).</p>
+        <div class="listing-item-details">
+          <p>Showing 1-20 of 238 programs(69) and courses(169).</p>
+        </div>
         <div class="sort-order">
           <p>Sort by:</p>
-          <a href="">Alphabetical</a>
-          <a href="">Programs only</a>
-          <a href="">Courses only</a>
+          <a href="#" class='is-active'>Alphabetical</a>
+          <a href="#">Programs only</a>
+          <a href="#">Courses only</a>
         </div>
       </header>
       <article>
-
+        <div class="listing-tile-wrapper">
+          <div class="listing-tile-item">
+            <h3>Empowerment and Inclusivity in Health Leadership</h3>
+            <p>For those health-care professionals whose scope of practice has expanded to include leadership responsibilities.</p>
+            <div class="tags">
+              <a href="#">Healthcare</a>
+              <a href="#">Continuing Education</a>
+            </div>
+            <h5>Outcome</h5>
+            <p>Certificate of completion</p>
+            <h5>Length</h5>
+            <p>16 hours</p>
+          </div>
+          <div class="listing-tile-item">
+            <h3>Human Bloodborne Pathogen Exposure</h3>
+            <p>Gain the safe work practices and knowledge needed to work in environments where you may be exposed to bloodborne
+            pathogens.</p>
+            <div class="tags">
+              <a href="#">Practical Nurse</a>
+              <a href="#">Continuing Education</a>
+            </div>
+            <h5>Outcome</h5>
+            <p>Certificate of completion</p>
+            <h5>Length</h5>
+            <p>2 months at your own pace</p>
+          </div>
+          <div class="listing-tile-item">
+            <h3>Medical Cannabis Essentials for Health Professionals</h3>
+            <p>Examine the rapidly evolving aspects of medical cannabis use in Canada and the vital need for healthcare providers to
+            expand their involvement.</p>
+            <div class="tags">
+              <a href="#">Professional development</a>
+              <a href="#">health care</a>
+            </div>
+            <h5>Outcome</h5>
+            <p>Certificate of completion</p>
+            <h5>Length</h5>
+            <p>2 days; 7 hours a day</p>
+          </div>
+          <div class="listing-tile-item">
+            <h3>Empowerment and Inclusivity in Health Leadership</h3>
+            <p>For those health-care professionals whose scope of practice has expanded to include leadership responsibilities.</p>
+            <div class="tags">
+              <a href="#">Practical Nurse</a>
+              <a href="#">Open studies</a>
+            </div>
+            <h5>Outcome</h5>
+            <p>Certificate of completion</p>
+            <h5>Length</h5>
+            <p>16 hours</p>
+          </div>
+          <div class="listing-tile-item">
+            <h3>Human Bloodborne Pathogen Exposure</h3>
+            <p>Gain the safe work practices and knowledge needed to work in environments where you may be exposed to bloodborne
+            pathogens.</p>
+            <div class="tags">
+              <a href="#">Practical Nurse</a>
+              <a href="#">Practical Nurse Refresher</a>
+            </div>
+            <h5>Outcome</h5>
+            <p>Certificate of completion</p>
+            <h5>Length</h5>
+            <p>2 months at your own pace</p>
+          </div>
+          <div class="listing-tile-item">
+            <h3>Medical Cannabis Essentials for Health Professionals</h3>
+            <p>Examine the rapidly evolving aspects of medical cannabis use in Canada and the vital need for healthcare providers to
+            expand their involvement.</p>
+            <div class="tags">
+              <a href="#">Professional development</a>
+              <a href="#">Open studies</a>
+            </div>
+            <h5>Outcome</h5>
+            <p>Certificate of completion</p>
+            <h5>Length</h5>
+            <p>2 days; 7 hours a day</p>
+          </div>
+          <div class="listing-tile-item">
+            <h3>Empowerment and Inclusivity in Health Leadership</h3>
+            <p>For those health-care professionals whose scope of practice has expanded to include leadership responsibilities.
+            </p>
+            <div class="tags">
+              <a href="#">Practical Nurse</a>
+              <a href="#">Open studies</a>
+            </div>
+            <h5>Outcome</h5>
+            <p>Certificate of completion</p>
+            <h5>Length</h5>
+            <p>16 hours</p>
+          </div>
+          <div class="listing-tile-item">
+            <h3>Human Bloodborne Pathogen Exposure</h3>
+            <p>Gain the safe work practices and knowledge needed to work in environments where you may be exposed to bloodborne
+              pathogens.</p>
+            <div class="tags">
+              <a href="#">Practical Nurse</a>
+              <a href="#">Practical Nurse Refresher</a>
+            </div>
+            <h5>Outcome</h5>
+            <p>Certificate of completion</p>
+            <h5>Length</h5>
+            <p>2 months at your own pace</p>
+          </div>
+          <div class="listing-tile-item">
+            <h3>Medical Cannabis Essentials for Health Professionals</h3>
+            <p>Examine the rapidly evolving aspects of medical cannabis use in Canada and the vital need for healthcare providers
+              to
+              expand their involvement.</p>
+            <div class="tags">
+              <a href="#">Professional development</a>
+              <a href="#">Open studies</a>
+            </div>
+            <h5>Outcome</h5>
+            <p>Certificate of completion</p>
+            <h5>Length</h5>
+            <p>2 days; 7 hours a day</p>
+          </div>
+        </div>
       </article>
     </section>
 
@@ -649,6 +794,7 @@
   </footer>
   <!-- END footer -->
 
+  <script type="text/javascript" src="dist/plugins.js"></script>
   <script type="text/javascript" src="dist/main.js"></script>
 
 </body>
