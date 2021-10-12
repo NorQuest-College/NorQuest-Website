@@ -474,7 +474,8 @@ input[type="submit"] {
   button:visited,
   input[type="submit"]:link,
   input[type="submit"]:visited {
-    text-decoration: none; }
+    text-decoration: none;
+    color: white; }
   .btn:hover,
   .button:hover,
   button:hover,
@@ -942,7 +943,7 @@ main {
   grid-template-columns: auto;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
-  max-width: 128.8rem;
+  max-width: 124rem;
   margin: 0 auto; }
   @media (min-width: 53.75em) {
     .container-grid {
@@ -957,12 +958,12 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 128.8rem;
+  max-width: 124rem;
   margin: 0 auto; }
 
 .container-no, .container, .container-restricted {
   position: relative;
-  max-width: 128.8rem;
+  max-width: 124rem;
   margin: 0 auto; }
 
 .container, .container-restricted {
@@ -1719,7 +1720,7 @@ table {
 
 ul.tab-list {
   width: 100%;
-  max-width: 128.8rem;
+  max-width: 124rem;
   padding: 0;
   margin: 0;
   display: -webkit-box;
@@ -2616,14 +2617,17 @@ details {
     border-radius: 0.4rem; }
 
 .listing-form-holder {
-  border-bottom: 0.1rem solid #424242;
-  padding-bottom: 2.4rem;
   margin-bottom: 2.4rem; }
   .listing-form-holder .select-listing {
-    max-width: 600px;
+    max-width: 60.4rem;
     width: 100%; }
   .listing-form-holder .form-group.container-grid {
-    grid-gap: 3.2rem; }
+    grid-gap: 3.2rem;
+    -ms-grid-columns: auto 3.2rem auto;
+    grid-template-columns: auto auto; }
+  .listing-form-holder form {
+    border-bottom: 0.1rem solid #424242;
+    padding-bottom: 2.4rem; }
 
 .listing-content-wrapper header {
   display: -webkit-box;
@@ -2681,18 +2685,23 @@ details {
   width: 100%;
   padding: 2.4rem;
   border-radius: 4px;
-  -webkit-box-shadow: 0 8px 16px 0 rgba(66, 66, 66, 0.12);
-          box-shadow: 0 8px 16px 0 rgba(66, 66, 66, 0.12);
+  -webkit-box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
+          box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
   background-color: var(--ffffff); }
   @media (min-width: 53.75em) {
     .listing-tile-item {
       max-width: 28.6rem; } }
+  .listing-tile-item:hover {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(66, 66, 66, 0.12);
+            box-shadow: 0 8px 16px 0 rgba(66, 66, 66, 0.12); }
   .listing-tile-item h3 {
     font-size: 2rem;
     font-weight: 600;
     line-height: 1.2;
     color: #e71321;
     padding: 0; }
+    .listing-tile-item h3 a {
+      text-decoration: none; }
   .listing-tile-item h5 {
     margin-bottom: 0;
     font-weight: normal; }
