@@ -66,7 +66,8 @@ section.tab-content {
   padding: 2.4rem 2.4rem 1.2rem 2.4rem;
   background-color: white;
   @include breakpoint(mlarge){
-    padding: 4rem 4rem 3.2rem 4rem;
+    padding: 2.4rem 2.4rem;
+    // padding: 4rem 4rem 3.2rem 4rem;
   }
   &.is-active {
     display: block;

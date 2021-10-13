@@ -916,6 +916,9 @@ main {
   main.has-hero {
     padding-top: 3.2rem; }
 
+.container-768 {
+  max-width: 76.8rem; }
+
 .container-text {
   max-width: 49.8rem;
   margin-bottom: 6.4rem; }
@@ -1678,11 +1681,13 @@ table {
   @media screen and (max-width: 47.9375em) {
     table * {
       font-size: 90% !important; } }
+  table .button {
+    padding: 0.3rem 1rem 0.6rem;
+    margin: 0; }
   table caption {
     margin-bottom: 1rem; }
   table th,
   table td {
-    width: 1%;
     padding: 2.4rem 2.4rem 2.4rem 0; }
   table th {
     border-bottom: 0.2rem solid #fff;
@@ -1771,7 +1776,7 @@ section.tab-content {
   background-color: white; }
   @media (min-width: 53.75em) {
     section.tab-content {
-      padding: 4rem 4rem 3.2rem 4rem; } }
+      padding: 2.4rem 2.4rem; } }
   section.tab-content.is-active {
     display: block; }
   section.tab-content h1, section.tab-content h2, section.tab-content h3, section.tab-content h4, section.tab-content h5, section.tab-content h6 {
