@@ -107,6 +107,17 @@ a {
   outline: none;
 }
 
+// screen reader accessible, but visually hidden
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 0.1rem;
+  height: 0.1rem;
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
 // list styles
 
 ul,

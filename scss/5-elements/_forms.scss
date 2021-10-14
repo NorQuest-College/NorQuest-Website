@@ -11,11 +11,12 @@ form {
       color: white !important;
     }
   }
-  input {
-    border: solid 0.1rem $grey;
-    background-color: white;
-  }
-  span {
+  // input {
+    // border: solid 0.1rem $grey;
+    // background-color: white;
+  // }
+
+  span.form-item_description {
     display: inherit;
     font-size: 1.4rem;
     margin-top: 0.8rem;

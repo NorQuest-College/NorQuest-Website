@@ -177,6 +177,16 @@ a {
 *:focus:not(:focus-visible) {
   outline: none; }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 0.1rem;
+  height: 0.1rem;
+  white-space: nowrap;
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%); }
+
 ul,
 ol {
   margin-top: 1.2rem;
@@ -593,18 +603,15 @@ form {
   form.norQuest-dark label,
   form.norQuest-dark span {
     color: white !important; }
-  form input {
-    border: solid 0.1rem #6e7371;
-    background-color: white; }
-  form span {
+  form span.form-item_description {
     display: inherit;
     font-size: 1.4rem;
     margin-top: 0.8rem; }
-    form span.error {
+    form span.form-item_description.error {
       color: #ae2830; }
-    form span.success {
+    form span.form-item_description.success {
       color: #1c6902; }
-    form span.verifying {
+    form span.form-item_description.verifying {
       color: #424242; }
 
 label {
@@ -992,6 +999,59 @@ input:focus + .slider {
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   transform: translateX(26px); }
+
+.pager {
+  text-align: center;
+  max-width: 49.8rem;
+  margin: 8rem auto;
+  border-top: 1px solid #424242; }
+
+.pager__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 0;
+  margin: 20px auto 10px;
+  list-style: none; }
+
+.pager__item {
+  height: 3.5rem;
+  min-width: 3.5rem;
+  display: inline-block;
+  border: 2px solid #e71321;
+  border-radius: 4px;
+  margin-right: 0.8rem;
+  padding-left: 0 !important;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease; }
+  .pager__item:last-child {
+    margin-right: 0; }
+  .pager__item a {
+    padding: 1.2rem 1.3rem 0.9rem 1.4rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    text-decoration: none;
+    color: #e71321; }
+  .pager__item.is-active {
+    background: #424242;
+    border: 2px solid #424242; }
+    .pager__item.is-active a {
+      color: white; }
+  .pager__item--ellipsis {
+    border: none;
+    min-width: 2rem; }
 
 /* Higher-level structure in which all the components can live: Wrappers, containers, grids, and all kinds of reusable objects that provide layout patterns. This is the skeleton of your site. */
 .layout-container {
