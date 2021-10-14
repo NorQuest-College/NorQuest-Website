@@ -1,5 +1,28 @@
 form {
   position: relative;
+  > p {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+  }
+  &.norQuest-dark {
+    > p,
+    label,
+    span {
+      color: white !important;
+    }
+  }
+  input {
+    border: solid 0.1rem $grey;
+    background-color: white;
+  }
+  span {
+    display: inherit;
+    font-size: 1.4rem;
+    margin-top: 0.8rem;
+    &.error { color: $rouge; }
+    &.success { color: $dark-green; }
+    &.verifying { color: $black; }
+  }
 }
 label {
   font-size: 1.8rem;
@@ -10,7 +33,7 @@ label {
   letter-spacing: normal;
   color: $black;
   display: block;
-  margin: 0.8rem 0;
+  margin: 2.4rem 0 0.8rem 0;
 }
 input,
 select {
@@ -24,13 +47,7 @@ select {
     outline-color: $peach;
   }
 }
-.norQuest-dark {
-  input {
-    border: solid 0.1rem $grey;
-    background-color: white;
-  }
-  label { color: white; }
-}
+
 input {
   border: solid 0.1rem $yellow;
   border-radius: 0.4rem;
@@ -43,6 +60,15 @@ input {
     background: white;
     border: solid 0.1rem $orange;
     outline: $orange;
+  }
+  &.verifying {
+      border: solid 1px $black;
+  }
+  &.error {
+      border: solid 2px $rouge;
+  }
+  &.success {
+      border: solid 1px $dark-green;
   }
 }
 
@@ -64,7 +90,7 @@ select {
   border: 1px solid $yellow;
   border-radius: 0.4rem;
   background-color: $ivory;
-  color: $grey;
+  color: $black;
   &:focus {
     outline-color: $peach;
   }
@@ -72,17 +98,10 @@ select {
     border: none;
   }
   &.select2-container--open {
-    .select2-dropdown--below {
-      border-top: none;
-      border-right: 1px solid #ffbd00;
-      border-bottom: 1px solid #ffbd00;
-      border-left: 1px solid #ffbd00;
-    }
+    border: none;
   }
   &.select2-container--below.select2-container--open {
-    border-top: 1px solid $orange;
-    border-left: 1px solid $orange;
-    border-right: 1px solid $orange;
+    border: 1px solid $orange;
   }
   .select2-selection__rendered {
     font-weight: bold;

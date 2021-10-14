@@ -586,6 +586,26 @@ input[type="submit"] {
 
 form {
   position: relative; }
+  form > p {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem; }
+  form.norQuest-dark > p,
+  form.norQuest-dark label,
+  form.norQuest-dark span {
+    color: white !important; }
+  form input {
+    border: solid 0.1rem #6e7371;
+    background-color: white; }
+  form span {
+    display: inherit;
+    font-size: 1.4rem;
+    margin-top: 0.8rem; }
+    form span.error {
+      color: #ae2830; }
+    form span.success {
+      color: #1c6902; }
+    form span.verifying {
+      color: #424242; }
 
 label {
   font-size: 1.8rem;
@@ -596,7 +616,7 @@ label {
   letter-spacing: normal;
   color: #424242;
   display: block;
-  margin: 0.8rem 0; }
+  margin: 2.4rem 0 0.8rem 0; }
 
 input,
 select {
@@ -610,13 +630,6 @@ select {
   select:focus {
     outline-color: #ffdea3; }
 
-.norQuest-dark input {
-  border: solid 0.1rem #6e7371;
-  background-color: white; }
-
-.norQuest-dark label {
-  color: white; }
-
 input {
   border: solid 0.1rem #ffbd00;
   border-radius: 0.4rem;
@@ -628,6 +641,12 @@ input {
     background: white;
     border: solid 0.1rem #f58b2e;
     outline: #f58b2e; }
+  input.verifying {
+    border: solid 1px #424242; }
+  input.error {
+    border: solid 2px #ae2830; }
+  input.success {
+    border: solid 1px #1c6902; }
 
 select {
   padding: 0.7rem 1.2rem;
@@ -646,20 +665,15 @@ select {
   border: 1px solid #ffbd00;
   border-radius: 0.4rem;
   background-color: #fff7e9;
-  color: #6e7371; }
+  color: #424242; }
   .select2-container--norQuest.select2-container:focus {
     outline-color: #ffdea3; }
   .select2-container--norQuest.select2-container.select2-results {
     border: none; }
-  .select2-container--norQuest.select2-container.select2-container--open .select2-dropdown--below {
-    border-top: none;
-    border-right: 1px solid #ffbd00;
-    border-bottom: 1px solid #ffbd00;
-    border-left: 1px solid #ffbd00; }
+  .select2-container--norQuest.select2-container.select2-container--open {
+    border: none; }
   .select2-container--norQuest.select2-container.select2-container--below.select2-container--open {
-    border-top: 1px solid #f58b2e;
-    border-left: 1px solid #f58b2e;
-    border-right: 1px solid #f58b2e; }
+    border: 1px solid #f58b2e; }
   .select2-container--norQuest.select2-container .select2-selection__rendered {
     font-weight: bold; }
   .select2-container--norQuest.select2-container button {
