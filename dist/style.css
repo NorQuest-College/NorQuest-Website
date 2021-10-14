@@ -1044,6 +1044,8 @@ input:checked + .slider:before {
     text-align: center;
     text-decoration: none;
     color: #e71321; }
+    .pager__item a:hover {
+      text-decoration: underline; }
   .pager__item.is-active {
     background: #424242;
     border: 2px solid #424242; }
