@@ -1805,7 +1805,7 @@ footer {
 
 /* Styles for components of the UI. */
 .hero {
-  height: 49.5rem;
+  height: calc(100px + 49.5rem);
   margin-top: 15rem;
   position: relative; }
   @media (min-width: 53.75em) {
