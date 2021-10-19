@@ -1,8 +1,9 @@
 .hero {
-    height: calc(100px + 49.5rem);
+    height: auto;
     margin-top: 15rem;
     position: relative;
     @include breakpoint(mlarge) {
+      height: calc(100px + 49.5rem);
       padding-top: 100px;
       margin-top: 0;
     }

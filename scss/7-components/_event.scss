@@ -1,13 +1,37 @@
 .upcoming-event-block {
+  margin: 6.4rem 0 8rem 0;
+  @include breakpoint (medium) {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .event-block-title {
+    h3 {
+      padding-top: 0;
+    }
+  }
   .event-block {
     max-width: 92.2rem;
-    display: grid;
-    grid-template-columns: 28.6rem auto 36rem;
-    grid-gap: 3.2rem;
     align-items: center;
     box-shadow: $box-shadow-default;
+    @include breakpoint (medium) {
+      display: grid;
+      grid-template-columns: 268px 0.7fr 1fr;
+      grid-gap: 3.2rem;
+    }
+  }
+  .event-img {
+    img {
+      width: 100%;
+      display: block;
+    }
   }
   .event-info {
+    padding: 2.4rem;
+    @include breakpoint (medium) {
+      padding: 0;
+    }
     h4 {
       font-size: 2rem;
       font-weight: 600;
@@ -24,6 +48,9 @@
     }
   }
   .event-copy {
-    padding-right: 3.2rem;
+    padding: 0 2.4rem 2.4rem;
+    @include breakpoint (medium) {
+      padding: 0 3.2rem 0;
+    }
   }
 }

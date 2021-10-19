@@ -41,9 +41,14 @@ main {
   max-width: 76.8rem;
 }
 .container-50 {
-  max-width: 50%;
+  max-width: 100%;
   width: 100%;
   p { max-width: 46.8rem;}
+  @include breakpoint (medium) {
+    max-width: 50%;
+    padding-right: 6.4rem;
+    &:nth-last-child(1) { padding: 0; }
+  }
 }
 .container-text {
   max-width: 49.8rem;
@@ -83,9 +88,11 @@ main {
 
 .container-flex {
   box-sizing: content-box;
-  display: flex;
   max-width: $container;
   margin: 0 auto;
+  @include breakpoint (medium) {
+    display: flex;
+  }
 }
 
 .container-no {
