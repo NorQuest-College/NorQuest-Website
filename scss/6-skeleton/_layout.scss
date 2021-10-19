@@ -20,8 +20,30 @@ main {
     padding-top: 3.2rem;
   }
 }
+.container {
+  @extend .container-no;
+  box-sizing: content-box;
+  padding-right: $space_sm;
+  padding-left: $space_sm;
+  @include breakpoint(smedium) {
+    padding-right: $space_lg;
+    padding-left: $space_lg;
+  }
+  &.margin-top {
+    margin: 5rem auto 0;
+  }
+  &.margin-bottom {
+    margin: 0 auto 5rem;
+  }
+}
+
 .container-768 {
   max-width: 76.8rem;
+}
+.container-50 {
+  max-width: 50%;
+  width: 100%;
+  p { max-width: 46.8rem;}
 }
 .container-text {
   max-width: 49.8rem;
@@ -72,25 +94,7 @@ main {
   margin: 0 auto;
 }
 
-.container {
-  @extend .container-no;
-  box-sizing: content-box;
-  padding-right: $space_sm;
-  padding-left: $space_sm;
-  @include breakpoint(smedium) {
-    padding-right: $space_lg;
-    padding-left: $space_lg;
-  }
-  &.margin-top {
-    margin: 5rem auto 0;
-  }
-  &.margin-bottom {
-    margin: 0 auto 5rem;
-  }
-}
-
 .container-restricted {
   max-width: $containerBasicPage;
   @extend .container;
-  @include breakpoint(mlarge) {}
 }

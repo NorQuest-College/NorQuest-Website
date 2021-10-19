@@ -68,3 +68,12 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+.fa-blank {
+  visibility: hidden;
+  &:before {
+    width: 1.8rem;
+    content: ' ';
+    display: block;
+  }
+}

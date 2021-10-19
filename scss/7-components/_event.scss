@@ -1,0 +1,29 @@
+.upcoming-event-block {
+  .event-block {
+    max-width: 92.2rem;
+    display: grid;
+    grid-template-columns: 28.6rem auto 36rem;
+    grid-gap: 3.2rem;
+    align-items: center;
+    box-shadow: $box-shadow-default;
+  }
+  .event-info {
+    h4 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.2;
+      color: $red;
+      padding: 0;
+      margin-bottom: 1.2rem;
+    }
+    p {
+      margin: 0;
+    }
+    .tags {
+      margin-top: 0.8rem;
+    }
+  }
+  .event-copy {
+    padding-right: 3.2rem;
+  }
+}

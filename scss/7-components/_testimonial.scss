@@ -5,7 +5,7 @@
   border-radius: 0.4rem;
   @include breakpoint(medium) {
     display: grid;
-    grid-template-columns: 317px auto;
+    grid-template-columns: 31.7rem auto;
     grid-gap: 3.2rem;
   }
   @include breakpoint(xxxlarge) {
@@ -69,5 +69,21 @@
   }
   .testimonial-footer {
     p { margin: 0; }
+  }
+}
+.testimonial-full {
+  max-width: 100%;
+  margin: 8rem 0;
+  @include breakpoint(medium) {
+    grid-template-columns: 53rem auto;
+    grid-gap: 10.6rem;
+  }
+  .testimonial-copy {
+    padding: 2.4rem;
+    position: relative;
+    z-index: 2;
+    @include breakpoint(medium) {
+      padding: 6.4rem 10.6rem 10.6rem 0;
+    }
   }
 }
