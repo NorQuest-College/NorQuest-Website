@@ -1,0 +1,57 @@
+.tile-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-gap: 3.2rem;
+  margin: 4rem 0 6.4rem;
+  @include breakpoint(smedium) {
+    grid-template-columns: repeat(2, auto);
+  }
+  @include breakpoint(mlarge) {
+    grid-template-columns: repeat(3, auto);
+  }
+  @include breakpoint(lxlarge) {
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+.tile-item {
+    max-width: 100%;
+    width: 100%;
+    padding: 2.4rem;
+    border-radius: 4px;
+    box-shadow: $box-shadow-default;
+    background-color: var(--ffffff);
+    position: relative;
+    @include breakpoint(mlarge) {
+      max-width: 28.6rem;
+    }
+    &:hover { box-shadow: 0 8px 16px 0 rgba(66, 66, 66, 0.12); }
+    h3 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.2;
+      color: $red;
+      padding: 0;
+      a{
+        text-decoration: none;
+      }
+
+    }
+    h5 {
+      margin-bottom: 0;
+      font-weight: normal;
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 1.33;
+      font-weight: 600;
+    }
+    .tags {
+      margin-bottom: 1.2rem;
+      a {
+        font-size: 1.4rem;
+        line-height: 1.14;
+        padding: 0.2rem 0.8rem 0.4rem;
+      }
+    }
+}

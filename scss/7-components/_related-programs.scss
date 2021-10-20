@@ -1,0 +1,28 @@
+.related-programs {
+  display: grid;
+  grid-template-columns: repeat(4, 224px);
+  grid-gap: 3.2rem;
+  margin: 4rem 0 6.4rem;
+  overflow-x: scroll;
+  @include breakpoint(mlarge) {
+    grid-template-columns: repeat(4, auto);
+    overflow: inherit;
+  }
+  /* height */
+  &::-webkit-scrollbar {
+    height: 1.2rem;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0px 0px 20px 12px $black;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $red;
+    border-radius: 10px;
+  }
+}
+
