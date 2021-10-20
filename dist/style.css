@@ -224,7 +224,8 @@ picture {
   overflow: hidden;
   max-width: 100%;
   height: auto;
-  white-space: nowrap; }
+  white-space: nowrap;
+  display: block; }
   img.lazy,
   picture.lazy {
     background: -webkit-gradient(linear, left top, left bottom, from(#acacac), color-stop(#b5b5b5), color-stop(#bfbfbf), color-stop(#c8c8c8), color-stop(#d2d2d2), color-stop(#dbdbdb), color-stop(#e5e5e5), to(#efefef));
@@ -381,8 +382,11 @@ p {
     font-family: Agenda, Helvetica, Arial, sans-serif;
     line-height: 1.8; }
   p.intro-text {
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 1.5; }
+    @media (min-width: 53.75em) {
+      p.intro-text {
+        font-size: 2.4rem; } }
 
 blockquote {
   margin: 6.4rem 0 5.6rem 0;
@@ -1589,27 +1593,33 @@ header.header {
   background-color: white; }
 
 .program-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column; }
+  padding-left: 0;
+  padding-right: 0; }
   @media (min-width: 53.75em) {
     .program-nav {
-      -webkit-box-orient: horizontal;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-flow: row;
-              flex-flow: row; } }
+          -ms-flex-flow: column;
+              flex-flow: column;
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      -ms-flex-flow: row;
+          flex-flow: row;
+      padding-right: 2.4rem;
+      padding-left: 2.4rem; } }
+  @media (min-width: 53.75em) and (min-width: 64em) {
+    .program-nav {
+      padding-right: 4rem;
+      padding-left: 4rem; } }
   .program-nav .hero-nav ul,
   .program-nav .secondary-hero-nav ul {
     list-style-type: none;
@@ -1631,15 +1641,15 @@ header.header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-direction: column;
-        flex-direction: column; }
+    -ms-flex-flow: column;
+        flex-flow: column; }
     @media (min-width: 53.75em) {
       .program-nav .hero-nav ul,
       .program-nav .secondary-hero-nav ul {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row; } }
+            -ms-flex-flow: row;
+                flex-flow: row; } }
     .program-nav .hero-nav ul li,
     .program-nav .secondary-hero-nav ul li {
       margin-right: 1.2rem; }
@@ -1654,7 +1664,8 @@ header.header {
       .program-nav .secondary-hero-nav ul li .btn {
         margin: 0;
         padding: 0.6rem 1.6rem 0.6rem;
-        font-size: 1.6rem; }
+        font-size: 1.6rem;
+        line-height: 1.1; }
         @media (min-width: 64em) {
           .program-nav .hero-nav ul li .btn,
           .program-nav .secondary-hero-nav ul li .btn {
@@ -1675,11 +1686,11 @@ header.header {
     .program-nav .hero-nav ul {
       height: 4.8rem;
       width: 100%;
-      overflow: hidden;
+      line-height: 4.8rem;
       background-color: #fff7e9;
-      padding: 0px;
-      margin: 0px;
-      cursor: pointer; } }
+      display: block;
+      padding-left: 2.4rem;
+      padding-right: 2.4rem; } }
   .program-nav .hero-nav ul li.active a {
     font-weight: bold; }
   .program-nav .hero-nav ul li a {
@@ -1700,11 +1711,16 @@ header.header {
     .program-nav .secondary-hero-nav ul {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; }
+          -ms-flex-flow: row;
+              flex-flow: row;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: start;
+      width: 100%;
+      line-height: 4.8rem;
+      background-color: white;
+      padding-left: 2.4rem;
+      padding-right: 2.4rem; }
       @media (min-width: 53.75em) {
         .program-nav .secondary-hero-nav ul {
           -webkit-box-pack: end;

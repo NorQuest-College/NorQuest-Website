@@ -3,14 +3,23 @@
   background-color: white;
 }
 .program-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  flex-flow: column;
+  padding-left: 0;
+  padding-right: 0;
   @include breakpoint(mlarge) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
     flex-flow: row;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+    @include breakpoint(lxlarge) {
+      padding-right: 4rem;
+      padding-left: 4rem;
+
+    }
   }
   .hero-nav,
   .secondary-hero-nav {
@@ -25,9 +34,9 @@
       width: 100%;
       justify-content: flex-end;
       align-items: center;
-      flex-direction: column;
+      flex-flow: column;
       @include breakpoint(mlarge) {
-        flex-direction: row;
+        flex-flow: row;
       }
       li {
         margin-right: 1.2rem;
@@ -41,6 +50,7 @@
           margin: 0;
           padding: 0.6rem 1.6rem 0.6rem;
           font-size: 1.6rem;
+          line-height: 1.1;
           @include breakpoint(lxlarge) {
             padding: 0.9rem 2.4rem 1rem;
             font-size: 1.8rem;
@@ -64,11 +74,11 @@
       @media screen and (max-width: $mlarge-down) {
           height: 4.8rem;
           width: 100%;
-          overflow:hidden;
-          background-color: $ivory;
-          padding:0px;
-          margin:0px;
-          cursor:pointer;
+          line-height: 4.8rem;
+          background-color: #fff7e9;
+          display: block;
+          padding-left: 2.4rem;
+          padding-right: 2.4rem;
       }
       li {
         &.active {
@@ -97,8 +107,13 @@
       width: auto;
     }
     ul {
-      flex-direction: row;
-      justify-content: center;
+      flex-flow: row;
+      justify-content: start;
+      width: 100%;
+      line-height: 4.8rem;
+      background-color: white;
+      padding-left: 2.4rem;
+      padding-right: 2.4rem;
       @include breakpoint(mlarge) {
         justify-content: end;
       }
