@@ -11,11 +11,90 @@
       padding-top: 0;
     }
   }
+  .events-2x {
+    @media screen and (max-width: $medium-down) {
+      display: grid;
+      grid-template-columns: repeat(2, 22.4rem);
+      grid-gap: 3.2rem;
+      margin: 4rem 0 6.4rem;
+      padding: 0 3.2rem 3.2rem 0;
+      overflow-x: scroll;
+    }
+
+    .event-block {
+      max-width: 22.4rem;
+      @include breakpoint (medium) {
+        max-width: 92.2rem;
+      }
+      &:first-of-type {
+        margin-bottom: 1.2rem;
+      }
+    }
+    /* height */
+    &::-webkit-scrollbar {
+      height: 1.2rem;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0px 0px 20px 12px $black;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $red;
+      border-radius: 10px;
+    }
+  }
+  .events-3x {
+    display: grid;
+    grid-template-columns: repeat(3, 26.8rem);
+    grid-gap: 3.2rem;
+    margin: 4rem 0 6.4rem;
+
+    @media screen and (max-width: $mlarge-down) {
+      padding: 0 3.2rem 3.2rem 0;
+      grid-template-columns: repeat(3, 22.4rem);
+      overflow-x: scroll;
+    }
+    .event-block {
+      display: block;
+    }
+    .event-info {
+      padding: 2.4rem;
+      @include breakpoint (mlarge) {
+        padding: 3.2rem;
+      }
+    }
+    .event-copy {
+      padding: 0 2.4rem 2.4rem;
+      @include breakpoint (mlarge) {
+        padding: 0 3.2rem 0;
+      }
+    }
+    /* height */
+    &::-webkit-scrollbar {
+      height: 1.2rem;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      box-shadow: inset 0px 0px 20px 12px $black;
+      border-radius: 10px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $red;
+      border-radius: 10px;
+    }
+  }
   .event-block {
-    max-width: 92.2rem;
     align-items: center;
     box-shadow: $box-shadow-default;
     @include breakpoint (medium) {
+      max-width: 92.2rem;
       display: grid;
       grid-template-columns: 268px 0.7fr 1fr;
       grid-gap: 3.2rem;

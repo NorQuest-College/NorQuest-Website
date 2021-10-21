@@ -3163,8 +3163,74 @@ details {
           flex-wrap: wrap; } }
   .upcoming-event-block .event-block-title h3 {
     padding-top: 0; }
+  .upcoming-event-block .events-2x {
+    /* height */
+    /* Track */
+    /* Handle */ }
+    @media screen and (max-width: 47.9375em) {
+      .upcoming-event-block .events-2x {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 22.4rem 3.2rem 22.4rem;
+        grid-template-columns: repeat(2, 22.4rem);
+        grid-gap: 3.2rem;
+        margin: 4rem 0 6.4rem;
+        padding: 0 3.2rem 3.2rem 0;
+        overflow-x: scroll; } }
+    .upcoming-event-block .events-2x .event-block {
+      max-width: 22.4rem; }
+      @media (min-width: 48em) {
+        .upcoming-event-block .events-2x .event-block {
+          max-width: 92.2rem; } }
+      .upcoming-event-block .events-2x .event-block:first-of-type {
+        margin-bottom: 1.2rem; }
+    .upcoming-event-block .events-2x::-webkit-scrollbar {
+      height: 1.2rem; }
+    .upcoming-event-block .events-2x::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0px 0px 20px 12px #424242;
+              box-shadow: inset 0px 0px 20px 12px #424242;
+      border-radius: 10px; }
+    .upcoming-event-block .events-2x::-webkit-scrollbar-thumb {
+      background: #e71321;
+      border-radius: 10px; }
+  .upcoming-event-block .events-3x {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 26.8rem 3.2rem 26.8rem 3.2rem 26.8rem;
+    grid-template-columns: repeat(3, 26.8rem);
+    grid-gap: 3.2rem;
+    margin: 4rem 0 6.4rem;
+    /* height */
+    /* Track */
+    /* Handle */ }
+    @media screen and (max-width: 53.6875em) {
+      .upcoming-event-block .events-3x {
+        padding: 0 3.2rem 3.2rem 0;
+        -ms-grid-columns: 22.4rem 3.2rem 22.4rem 3.2rem 22.4rem;
+        grid-template-columns: repeat(3, 22.4rem);
+        overflow-x: scroll; } }
+    .upcoming-event-block .events-3x .event-block {
+      display: block; }
+    .upcoming-event-block .events-3x .event-info {
+      padding: 2.4rem; }
+      @media (min-width: 53.75em) {
+        .upcoming-event-block .events-3x .event-info {
+          padding: 3.2rem; } }
+    .upcoming-event-block .events-3x .event-copy {
+      padding: 0 2.4rem 2.4rem; }
+      @media (min-width: 53.75em) {
+        .upcoming-event-block .events-3x .event-copy {
+          padding: 0 3.2rem 0; } }
+    .upcoming-event-block .events-3x::-webkit-scrollbar {
+      height: 1.2rem; }
+    .upcoming-event-block .events-3x::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0px 0px 20px 12px #424242;
+              box-shadow: inset 0px 0px 20px 12px #424242;
+      border-radius: 10px; }
+    .upcoming-event-block .events-3x::-webkit-scrollbar-thumb {
+      background: #e71321;
+      border-radius: 10px; }
   .upcoming-event-block .event-block {
-    max-width: 92.2rem;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -3172,6 +3238,7 @@ details {
             box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1); }
     @media (min-width: 48em) {
       .upcoming-event-block .event-block {
+        max-width: 92.2rem;
         display: -ms-grid;
         display: grid;
         -ms-grid-columns: 268px 3.2rem 0.7fr 3.2rem 1fr;
