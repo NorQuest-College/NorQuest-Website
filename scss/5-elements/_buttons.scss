@@ -38,7 +38,7 @@ input[type="submit"] {
     margin: 0 3.2rem 3.2rem 0;
   }
   @include breakpoint(xxxlarge) {
-    max-width: 30.8rem;
+    // max-width: 30.8rem;
   }
 
   &:link,

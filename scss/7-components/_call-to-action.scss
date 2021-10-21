@@ -1,3 +1,17 @@
+.call-to-action.call-to-action__full-inline {
+  width: 100%;
+  max-width: 100%;
+  .cta-copy {
+    max-width: 100%;
+  }
+  .cta-btn {
+    @include breakpoint(smedium) {
+      padding: 2.4rem 3.2rem;
+      max-width: 23%;
+    }
+  }
+}
+
 .call-to-action.call-to-action__full-width {
   margin: 0;
   .cta-copy {

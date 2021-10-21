@@ -3,10 +3,12 @@
   grid-template-columns: repeat(4, 224px);
   grid-gap: 3.2rem;
   margin: 4rem 0 6.4rem;
+  padding: 0 3.2rem 3.2rem 0;
   overflow-x: scroll;
   @include breakpoint(mlarge) {
     grid-template-columns: repeat(4, auto);
     overflow: inherit;
+    padding: 0;
   }
   /* height */
   &::-webkit-scrollbar {

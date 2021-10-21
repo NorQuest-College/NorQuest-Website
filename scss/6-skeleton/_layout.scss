@@ -50,6 +50,28 @@ main {
     &:nth-last-child(1) { padding: 0; }
   }
 }
+.container-70 {
+  max-width: 100%;
+  width: 100%;
+  p { max-width: 46.8rem;}
+  @include breakpoint (medium) {
+    max-width: 70%;
+    padding-right: 6.4rem;
+    &:nth-last-child(1) { padding: 0; }
+  }
+}
+.container-37 {
+  max-width: 100%;
+  width: 100%;
+  p { max-width: 46.8rem;}
+  @include breakpoint (medium) {
+    max-width: 37%;
+    padding-right: 6.4rem;
+    &:nth-last-child(1) { padding: 0; }
+  }
+}
+
+
 .container-text {
   max-width: 49.8rem;
   margin-bottom: 6.4rem;
