@@ -138,6 +138,20 @@ document.querySelector(".mobile_toggle").onclick = function mobileMenuToggle() {
 }; // -- END -- mobile hamburger toggle
 
 /**
+ * hero nav program list mobile toggle
+ *
+ */
+
+
+var programNavToggle = document.querySelector(".program-nav--title-wrap");
+var programNavlist = document.querySelector(".hero-nav ul");
+
+document.querySelector(".program-nav--title-wrap").onclick = function mobileMenuToggle() {
+  programNavToggle.classList.toggle("is-active");
+  programNavlist.classList.toggle("is-active");
+  console.log('clicky');
+};
+/**
  * Mobile sub nav toggle button
  */
 

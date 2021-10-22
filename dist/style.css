@@ -1674,6 +1674,10 @@ header.header {
       @media (min-width: 64em) {
         .program-nav .hero-nav ul li,
         .program-nav .secondary-hero-nav ul li {
+          margin-right: 2.2rem; } }
+      @media (min-width: 71.25em) {
+        .program-nav .hero-nav ul li,
+        .program-nav .secondary-hero-nav ul li {
           margin-right: 3.2rem; } }
       .program-nav .hero-nav ul li:last-child,
       .program-nav .secondary-hero-nav ul li:last-child {
@@ -1684,7 +1688,7 @@ header.header {
         padding: 0.6rem 1.6rem 0.6rem;
         font-size: 1.6rem;
         line-height: 1.1; }
-        @media (min-width: 64em) {
+        @media (min-width: 71.25em) {
           .program-nav .hero-nav ul li .btn,
           .program-nav .secondary-hero-nav ul li .btn {
             padding: 0.9rem 2.4rem 1rem;
@@ -1700,27 +1704,38 @@ header.header {
     .program-nav .hero-nav {
       background-color: #fff7e9;
       width: 100%; } }
-  @media screen and (max-width: 53.6875em) {
-    .program-nav .hero-nav ul {
-      height: 4.8rem;
-      width: 100%;
-      line-height: 4.8rem;
-      background-color: #fff7e9;
-      display: block;
-      padding-left: 2.4rem;
-      padding-right: 2.4rem; } }
-  .program-nav .hero-nav ul li.active a {
-    font-weight: bold; }
-  .program-nav .hero-nav ul li a {
-    color: #424242;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.6rem; }
-    @media (min-width: 64em) {
-      .program-nav .hero-nav ul li a {
-        font-size: 1.8rem; } }
-    .program-nav .hero-nav ul li a:hover {
-      text-decoration: underline; }
+  .program-nav .hero-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    @media screen and (max-width: 53.6875em) {
+      .program-nav .hero-nav ul {
+        width: 100%;
+        line-height: 4.8rem;
+        background-color: #fff7e9;
+        display: block;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+        max-height: 0;
+        -webkit-transition: max-height 0.15s ease-out;
+        transition: max-height 0.15s ease-out;
+        overflow: hidden; }
+        .program-nav .hero-nav ul.is-active {
+          max-height: 500px;
+          -webkit-transition: max-height 0.25s ease-in;
+          transition: max-height 0.25s ease-in; } }
+    .program-nav .hero-nav ul li.active a {
+      font-weight: bold; }
+    .program-nav .hero-nav ul li a {
+      color: #424242;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.6rem; }
+      @media (min-width: 64em) {
+        .program-nav .hero-nav ul li a {
+          font-size: 1.8rem; } }
+      .program-nav .hero-nav ul li a:hover {
+        text-decoration: underline; }
   .program-nav .secondary-hero-nav {
     width: 100%; }
     @media (min-width: 53.75em) {
@@ -1741,9 +1756,28 @@ header.header {
       padding-right: 2.4rem; }
       @media (min-width: 53.75em) {
         .program-nav .secondary-hero-nav ul {
+          padding-left: 0;
+          padding-right: 0;
           -webkit-box-pack: end;
               -ms-flex-pack: end;
                   justify-content: end; } }
+  .program-nav .program-nav--title-wrap {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 4.8rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem; }
+    @media (min-width: 53.75em) {
+      .program-nav .program-nav--title-wrap {
+        display: none; } }
 
 nav.menu-top-nav {
   position: relative;

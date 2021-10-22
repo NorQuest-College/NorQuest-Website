@@ -41,6 +41,9 @@
       li {
         margin-right: 1.2rem;
         @include breakpoint(lxlarge) {
+          margin-right: 2.2rem
+        }
+        @include breakpoint(xlarge) {
           margin-right: 3.2rem;
         }
         &:last-child {
@@ -51,7 +54,7 @@
           padding: 0.6rem 1.6rem 0.6rem;
           font-size: 1.6rem;
           line-height: 1.1;
-          @include breakpoint(lxlarge) {
+          @include breakpoint(xlarge) {
             padding: 0.9rem 2.4rem 1rem;
             font-size: 1.8rem;
           }
@@ -71,14 +74,21 @@
       width: 100%;
     }
     ul {
+      display: flex;
       @media screen and (max-width: $mlarge-down) {
-          height: 4.8rem;
-          width: 100%;
-          line-height: 4.8rem;
-          background-color: #fff7e9;
-          display: block;
-          padding-left: 2.4rem;
-          padding-right: 2.4rem;
+        width: 100%;
+        line-height: 4.8rem;
+        background-color: #fff7e9;
+        display: block;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+        max-height: 0;
+        transition: max-height 0.15s ease-out;
+        overflow: hidden;
+        &.is-active {
+          max-height: 500px;
+          transition: max-height 0.25s ease-in;
+        }
       }
       li {
         &.active {
@@ -115,8 +125,22 @@
       padding-left: 2.4rem;
       padding-right: 2.4rem;
       @include breakpoint(mlarge) {
+        padding-left: 0;
+        padding-right: 0;
         justify-content: end;
       }
+    }
+  }
+  .program-nav--title-wrap {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.8rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    @include breakpoint(mlarge) {
+      display: none;
     }
   }
 }
