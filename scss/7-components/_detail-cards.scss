@@ -57,4 +57,7 @@
     font-weight: 600;
     margin-bottom: 0;
   }
+  .container-grid {
+    grid-template-columns: auto auto auto;
+  }
 }

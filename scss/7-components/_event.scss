@@ -16,7 +16,6 @@
       display: grid;
       grid-template-columns: repeat(2, 22.4rem);
       grid-gap: 3.2rem;
-      margin: 4rem 0 6.4rem;
       padding: 0 3.2rem 3.2rem 0;
       overflow-x: scroll;
     }
@@ -49,9 +48,8 @@
   }
   .events-3x {
     display: grid;
-    grid-template-columns: repeat(3, 26.8rem);
+    grid-template-columns: repeat(3, 28.6rem);
     grid-gap: 3.2rem;
-    margin: 4rem 0 6.4rem;
 
     @media screen and (max-width: $mlarge-down) {
       padding: 0 3.2rem 3.2rem 0;
@@ -96,7 +94,7 @@
     @include breakpoint (medium) {
       max-width: 92.2rem;
       display: grid;
-      grid-template-columns: 268px 0.7fr 1fr;
+      grid-template-columns: 268px auto 1fr;
       grid-gap: 3.2rem;
     }
   }

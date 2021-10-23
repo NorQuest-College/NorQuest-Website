@@ -54,8 +54,8 @@
           padding: 0.6rem 1.6rem 0.6rem;
           font-size: 1.6rem;
           line-height: 1.1;
-          @include breakpoint(xlarge) {
-            padding: 0.9rem 2.4rem 1rem;
+          @include breakpoint(large) {
+            padding: 1.4rem 1.8rem 1.3rem;
             font-size: 1.8rem;
           }
         }
@@ -122,9 +122,9 @@
       width: 100%;
       line-height: 4.8rem;
       background-color: white;
-      padding-left: 2.4rem;
-      padding-right: 2.4rem;
       @include breakpoint(mlarge) {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
         padding-left: 0;
         padding-right: 0;
         justify-content: end;
@@ -139,8 +139,22 @@
     height: 4.8rem;
     padding-left: 2.4rem;
     padding-right: 2.4rem;
+    cursor: pointer;
     @include breakpoint(mlarge) {
       display: none;
+    }
+  }
+  .startDateSelector {
+    padding: 0 1.4rem;
+    border-radius: 4px 4px 0 0;
+    @include breakpoint(mlarge) {
+      padding: 0.9rem 1.4rem;
+      margin-top: -0.8rem;
+      margin-bottom: -0.8rem;
+    }
+    &.is-active {
+      background-color: $black;
+      a { color: white; }
     }
   }
 }

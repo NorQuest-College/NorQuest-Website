@@ -1,3 +1,10 @@
+.tab-content {
+  details {
+    > summary {
+      font-size: 1.8rem;
+    }
+  }
+}
 .accordion-wrapper {
   margin: $space_xxl 0;
 }

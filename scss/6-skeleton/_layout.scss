@@ -100,12 +100,14 @@ main {
   box-sizing: content-box;
   max-width: $container;
   margin: 0 auto;
+  grid-gap: 3.2rem;
   @include breakpoint(mlarge) {
     grid-template-columns: auto auto;
   }
   .margin-md {
     margin: .8rem 0 2.8rem 0;
   }
+
 }
 
 .container-flex {

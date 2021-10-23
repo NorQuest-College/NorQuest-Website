@@ -28,7 +28,7 @@ https://www.madebymike.com.au/writing/fluid-type-calc-examples/
 .page__content a, a, a:hover, a:active, .btn,
 .button,
 button,
-input[type="submit"], .checkbox, .checkbox:before, .slider, .slider:before, header.header, header.header #NorquestLogo, header.header nav.menu-primary-nav.is-active, .menu-shopping-cart, .menu-shopping-cart i {
+input[type="submit"], .checkbox, .checkbox:before, .slider, .slider:before, header.header, header.header #NorquestLogo, header.header nav.menu-primary-nav.is-active, .menu-shopping-cart, .menu-shopping-cart i, .program-tile-wrapper .program-tile {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
@@ -318,27 +318,23 @@ h2 {
   font-size: 3.2rem;
   font-weight: 600;
   line-height: 1.2;
-  padding-top: 3.2rem;
   margin-bottom: 3.2rem; }
   @media (min-width: 53.75em) {
     h2 {
       font-size: 4.8rem;
       font-weight: 600;
       line-height: 1.2;
-      padding-top: 4rem;
       margin-bottom: 4rem; } }
 
 h3 {
   font-size: 2.6rem;
   font-weight: 700;
-  line-height: 1.2;
-  padding-top: 2.4rem; }
+  line-height: 1.2; }
   @media (min-width: 53.75em) {
     h3 {
       font-size: 3.2rem;
       font-weight: bold;
-      line-height: 1;
-      padding-top: 3.2rem; } }
+      line-height: 1; } }
 
 h4 {
   font-size: 2rem;
@@ -425,10 +421,10 @@ blockquote {
         font-size: 6.4rem; } }
 
 small {
+  font-size: 80%;
   display: block;
   margin: 0;
-  color: #6e7371;
-  font-size: 1.8rem; }
+  font-size: 1.2rem; }
 
 b,
 strong {
@@ -1170,10 +1166,11 @@ main {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   max-width: 124rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  grid-gap: 3.2rem; }
   @media (min-width: 53.75em) {
     .container-grid {
-      -ms-grid-columns: auto auto;
+      -ms-grid-columns: auto 3.2rem auto;
       grid-template-columns: auto auto; } }
   .container-grid .margin-md {
     margin: .8rem 0 2.8rem 0; }
@@ -1688,10 +1685,10 @@ header.header {
         padding: 0.6rem 1.6rem 0.6rem;
         font-size: 1.6rem;
         line-height: 1.1; }
-        @media (min-width: 71.25em) {
+        @media (min-width: 62em) {
           .program-nav .hero-nav ul li .btn,
           .program-nav .secondary-hero-nav ul li .btn {
-            padding: 0.9rem 2.4rem 1rem;
+            padding: 1.4rem 1.8rem 1.3rem;
             font-size: 1.8rem; } }
       .program-nav .hero-nav ul li a,
       .program-nav .secondary-hero-nav ul li a {
@@ -1751,11 +1748,11 @@ header.header {
               justify-content: start;
       width: 100%;
       line-height: 4.8rem;
-      background-color: white;
-      padding-left: 2.4rem;
-      padding-right: 2.4rem; }
+      background-color: white; }
       @media (min-width: 53.75em) {
         .program-nav .secondary-hero-nav ul {
+          padding-left: 2.4rem;
+          padding-right: 2.4rem;
           padding-left: 0;
           padding-right: 0;
           -webkit-box-pack: end;
@@ -1774,10 +1771,23 @@ header.header {
             align-items: center;
     height: 4.8rem;
     padding-left: 2.4rem;
-    padding-right: 2.4rem; }
+    padding-right: 2.4rem;
+    cursor: pointer; }
     @media (min-width: 53.75em) {
       .program-nav .program-nav--title-wrap {
         display: none; } }
+  .program-nav .startDateSelector {
+    padding: 0 1.4rem;
+    border-radius: 4px 4px 0 0; }
+    @media (min-width: 53.75em) {
+      .program-nav .startDateSelector {
+        padding: 0.9rem 1.4rem;
+        margin-top: -0.8rem;
+        margin-bottom: -0.8rem; } }
+    .program-nav .startDateSelector.is-active {
+      background-color: #424242; }
+      .program-nav .startDateSelector.is-active a {
+        color: white; }
 
 nav.menu-top-nav {
   position: relative;
@@ -2323,6 +2333,9 @@ section.tab-content {
     transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19); }
 
+.tab-content details > summary {
+  font-size: 1.8rem; }
+
 .accordion-wrapper {
   margin: 6.4rem 0; }
 
@@ -2740,6 +2753,9 @@ details {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 0; }
+  .program-detail-card-wrapper .container-grid {
+    -ms-grid-columns: auto 3.2rem auto 3.2rem auto;
+    grid-template-columns: auto auto auto; }
 
 .testimonial {
   -webkit-box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
@@ -3181,6 +3197,45 @@ details {
       line-height: 1.14;
       padding: 0.2rem 0.8rem 0.4rem; }
 
+.program-tile-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+  grid-template-columns: repeat(1, auto);
+  grid-gap: 3.2rem;
+  padding: 4rem 0; }
+  @media (min-width: 48em) {
+    .program-tile-wrapper {
+      -ms-grid-columns: auto 3.2rem auto;
+      grid-template-columns: repeat(2, auto); } }
+  @media (min-width: 62em) {
+    .program-tile-wrapper {
+      -ms-grid-columns: auto 3.2rem auto 3.2rem auto 3.2rem auto;
+      grid-template-columns: repeat(4, auto); } }
+  .program-tile-wrapper .program-tile {
+    background-color: #fcfaf5;
+    padding: 2.4rem; }
+    .program-tile-wrapper .program-tile:hover {
+      background-color: white; }
+      .program-tile-wrapper .program-tile:hover h4 {
+        text-decoration: underline; }
+    .program-tile-wrapper .program-tile h4 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.2;
+      color: #e71321; }
+    .program-tile-wrapper .program-tile p {
+      font-size: 1.6rem;
+      line-height: 1.13;
+      color: #424242; }
+  .program-tile-wrapper .program-tile-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
 .upcoming-event-block {
   margin: 6.4rem 0 8rem 0; }
   @media (min-width: 48em) {
@@ -3208,7 +3263,6 @@ details {
         -ms-grid-columns: 22.4rem 3.2rem 22.4rem;
         grid-template-columns: repeat(2, 22.4rem);
         grid-gap: 3.2rem;
-        margin: 4rem 0 6.4rem;
         padding: 0 3.2rem 3.2rem 0;
         overflow-x: scroll; } }
     .upcoming-event-block .events-2x .event-block {
@@ -3230,10 +3284,9 @@ details {
   .upcoming-event-block .events-3x {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 26.8rem 3.2rem 26.8rem 3.2rem 26.8rem;
-    grid-template-columns: repeat(3, 26.8rem);
+    -ms-grid-columns: 28.6rem 3.2rem 28.6rem 3.2rem 28.6rem;
+    grid-template-columns: repeat(3, 28.6rem);
     grid-gap: 3.2rem;
-    margin: 4rem 0 6.4rem;
     /* height */
     /* Track */
     /* Handle */ }
@@ -3275,8 +3328,8 @@ details {
         max-width: 92.2rem;
         display: -ms-grid;
         display: grid;
-        -ms-grid-columns: 268px 3.2rem 0.7fr 3.2rem 1fr;
-        grid-template-columns: 268px 0.7fr 1fr;
+        -ms-grid-columns: 268px 3.2rem auto 3.2rem 1fr;
+        grid-template-columns: 268px auto 1fr;
         grid-gap: 3.2rem; } }
   .upcoming-event-block .event-img img {
     width: 100%;
@@ -3330,6 +3383,41 @@ details {
   .related-programs::-webkit-scrollbar-thumb {
     background: #e71321;
     border-radius: 10px; }
+
+.date-selector {
+  background-color: #424242;
+  color: white;
+  height: 0;
+  -webkit-transition: max-height 0.15s ease-out;
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+  padding: 0; }
+  .date-selector.is-active {
+    height: 100%;
+    -webkit-transition: max-height 0.25s ease-in;
+    transition: max-height 0.25s ease-in;
+    padding: 6.4rem 0 8rem 0; }
+  .date-selector h3, .date-selector h4, .date-selector p {
+    color: white; }
+  .date-selector hr {
+    background-color: white; }
+  .date-selector .pager {
+    border-color: white;
+    margin: 0 auto;
+    padding-bottom: 6.4rem; }
+    .date-selector .pager a {
+      color: white; }
+    .date-selector .pager .pager__item {
+      border-color: white; }
+      .date-selector .pager .pager__item.is-active {
+        background: white;
+        border-color: white; }
+        .date-selector .pager .pager__item.is-active a {
+          color: #424242; }
+    .date-selector .pager p {
+      color: white; }
+  .date-selector .container-text {
+    margin: 0; }
 
 /* Utility and helper classes and, most importantly, states and modifiers like '.is-active' or '.sr-only' */
 .sr-only:not(:focus):not(:active) {

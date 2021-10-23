@@ -1,0 +1,36 @@
+.date-selector {
+  background-color: $black;
+  color: white;
+  height: 0;
+
+  transition: max-height 0.15s ease-out;
+  overflow: hidden;
+  padding: 0;
+  &.is-active {
+    height: 100%;
+
+    transition: max-height 0.25s ease-in;
+    padding: 6.4rem 0 8rem 0;
+  }
+  h3, h4, p {
+    color: white;
+  }
+  hr { background-color: white; }
+  .pager {
+    border-color: white;
+    margin: 0 auto;
+    padding-bottom: 6.4rem;
+    a { color: white; }
+    .pager__item {
+      border-color: white;
+      &.is-active {
+        background: white;
+        border-color: white;
+        a { color: $black; }
+      }
+    }
+    p { color: white; }
+  }
+  .container-text { margin: 0;}
+
+}

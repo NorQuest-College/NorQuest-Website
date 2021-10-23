@@ -80,15 +80,19 @@ document.querySelector(".mobile_toggle").onclick = function mobileMenuToggle() {
 
 /**
  * hero nav program list mobile toggle
+ * and startDateSelector toggle
  *
  */
-const programNavToggle = document.querySelector(".program-nav--title-wrap");
 const programNavlist = document.querySelector(".hero-nav ul");
-
 document.querySelector(".program-nav--title-wrap").onclick = function mobileMenuToggle() {
-  programNavToggle.classList.toggle("is-active");
   programNavlist.classList.toggle("is-active");
-  console.log('clicky')
+};
+const startDateSelector = document.querySelector(".startDateSelector");
+const dateSelector = document.querySelector(".date-selector");
+document.querySelector(".secondary-hero-nav").onclick = function mobileMenuToggle() {
+  event.preventDefault();
+  startDateSelector.classList.toggle("is-active");
+  dateSelector.classList.toggle("is-active");
 };
 
 

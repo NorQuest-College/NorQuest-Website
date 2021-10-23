@@ -55,3 +55,42 @@
       }
     }
 }
+
+.program-tile-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  grid-gap: 3.2rem;
+  padding: 4rem 0;
+
+  @include breakpoint(medium) {
+    grid-template-columns: repeat(2, auto);
+  }
+  @include breakpoint(large) {
+    grid-template-columns: repeat(4, auto);
+  }
+  .program-tile {
+    background-color: #fcfaf5;
+    padding: 2.4rem;
+    @extend %transition;
+    &:hover {
+      background-color: white;
+      h4 { text-decoration: underline; }
+    }
+    h4 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.2;
+      color: $red;
+    }
+    p {
+      font-size: 1.6rem;
+      line-height: 1.13;
+      color: $black;
+      // font-weight: 600;
+    }
+  }
+  .program-tile-info {
+    display: flex;
+    justify-content: space-between;
+  }
+}
