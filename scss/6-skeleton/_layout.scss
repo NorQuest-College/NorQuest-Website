@@ -18,6 +18,9 @@ main {
   }
   &.has-hero {
     padding-top: 3.2rem;
+    @include breakpoint(mlarge) {
+      padding-top: 6.4rem
+    }
   }
 }
 .container {
