@@ -232,6 +232,62 @@ var addActiveTab = function addActiveTab(tab) {
   matchingSection.classList.add("is-active");
 }; // -- END tab section --
 
+/**
+ * Show me the modal !
+ */
+
+
+var modal = document.getElementById("modal"); // Get the <span> element that closes the modal
+
+var span = document.getElementsByClassName("close")[0]; // When the user clicks on the button, open the modal
+
+document.querySelector(".tuitionFeesModalBtn").onclick = function modalBtn() {
+  modal.style.display = "block";
+}; // When the user clicks on <span> (x), close the modal
+
+
+span.onclick = function () {
+  modal.style.display = "none";
+}; // When the user clicks anywhere outside of the modal, close it
+
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+/**
+ * Modal next-previous functions
+ */
+
+
+document.querySelector(".next-button").onclick = function nextBtn() {
+  event.preventDefault();
+  var selected = document.querySelector(".current-panel");
+
+  if (selected.nextElementSibling) {
+    selected.classList.remove("current-panel");
+    selected.nextElementSibling.classList.add("current-panel");
+  }
+
+  var indicator = document.getElementsByClassName("page-indicator"); // indicator.nextElementSibling.classList.add("active");
+  // indicator.nextElementSibling.classList.remove("actve");
+  // indicator.classList.add("done");
+  // console.log(indicator);
+
+  console.log(indicator);
+};
+
+document.querySelector(".previous-button").onclick = function prevBtn() {
+  event.preventDefault();
+  var selected = document.querySelector(".current-panel");
+
+  if (selected.previousElementSibling) {
+    selected.classList.remove("current-panel");
+    selected.previousElementSibling.classList.add("current-panel");
+  }
+};
+
 /***/ }),
 
 /***/ "./images/sprites/NorQuest-badge-colour.svg":
