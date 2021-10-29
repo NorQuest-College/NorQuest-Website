@@ -7,10 +7,10 @@
     grid-template-columns: repeat(2, auto);
   }
   @include breakpoint(mlarge) {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
   }
   @include breakpoint(lxlarge) {
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -91,5 +91,46 @@
   .program-tile-info {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.profile-tile-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 224px);
+  grid-gap: 3.2rem;
+  margin: 4rem 0 6.4rem;
+  padding: 0 3.2rem 3.2rem 0;
+  overflow-x: scroll;
+  @include breakpoint(mlarge) {
+    grid-template-columns: repeat(4, auto);
+    overflow: inherit;
+    padding: 0;
+  }
+  /* height */
+  &::-webkit-scrollbar {
+    height: 1.2rem;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0px 0px 20px 12px $black;
+    border-radius: 10px;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $red;
+    border-radius: 10px;
+  }
+  .profile-tile-item {
+    background-color: white;
+    box-shadow: $box-shadow-default;
+    padding: 2.4rem;
+    border-radius: 4px;
+    h4 {
+      font-size: 2rem;
+      a {
+        text-decoration: none;
+      }
+    }
+    p { margin-right: 0;}
   }
 }

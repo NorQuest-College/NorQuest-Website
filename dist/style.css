@@ -378,6 +378,7 @@ h6 {
 
 p {
   margin-bottom: 1.2rem;
+  margin-right: 1.2rem;
   font-size: 1.8rem;
   font-family: Agenda, Helvetica, Arial, sans-serif;
   font-weight: normal;
@@ -386,6 +387,7 @@ p {
   color: #424242; }
   p.lead {
     margin-bottom: 1rem;
+    margin-right: 1rem;
     font-size: 1.8rem;
     font-family: Agenda, Helvetica, Arial, sans-serif;
     line-height: 1.8; }
@@ -2750,9 +2752,11 @@ details {
   -webkit-box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
           box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
   padding: 2.4rem 3.2rem 2.4rem 3.2rem;
-  border-radius: 0.4rem; }
+  border-radius: 0.4rem;
+  margin-bottom: 1.2rem; }
   @media (min-width: 62em) {
     .program-detail-card-wrapper {
+      max-width: 100%;
       float: right; } }
   .program-detail-card-wrapper * {
     color: white; }
@@ -3169,12 +3173,12 @@ details {
       grid-template-columns: repeat(2, auto); } }
   @media (min-width: 53.75em) {
     .tile-wrapper {
-      -ms-grid-columns: auto 3.2rem auto 3.2rem auto;
-      grid-template-columns: repeat(3, auto); } }
+      -ms-grid-columns: 1fr 3.2rem 1fr 3.2rem 1fr;
+      grid-template-columns: repeat(3, 1fr); } }
   @media (min-width: 64em) {
     .tile-wrapper {
-      -ms-grid-columns: auto 3.2rem auto 3.2rem auto 3.2rem auto;
-      grid-template-columns: repeat(4, auto); } }
+      -ms-grid-columns: 1fr 3.2rem 1fr 3.2rem 1fr 3.2rem 1fr;
+      grid-template-columns: repeat(4, 1fr); } }
 
 .tile-item {
   max-width: 100%;
@@ -3251,6 +3255,46 @@ details {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+
+.profile-tile-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 224px 3.2rem 224px 3.2rem 224px 3.2rem 224px;
+  grid-template-columns: repeat(4, 224px);
+  grid-gap: 3.2rem;
+  margin: 4rem 0 6.4rem;
+  padding: 0 3.2rem 3.2rem 0;
+  overflow-x: scroll;
+  /* height */
+  /* Track */
+  /* Handle */ }
+  @media (min-width: 53.75em) {
+    .profile-tile-wrapper {
+      -ms-grid-columns: auto 3.2rem auto 3.2rem auto 3.2rem auto;
+      grid-template-columns: repeat(4, auto);
+      overflow: inherit;
+      padding: 0; } }
+  .profile-tile-wrapper::-webkit-scrollbar {
+    height: 1.2rem; }
+  .profile-tile-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0px 0px 20px 12px #424242;
+            box-shadow: inset 0px 0px 20px 12px #424242;
+    border-radius: 10px; }
+  .profile-tile-wrapper::-webkit-scrollbar-thumb {
+    background: #e71321;
+    border-radius: 10px; }
+  .profile-tile-wrapper .profile-tile-item {
+    background-color: white;
+    -webkit-box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
+            box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
+    padding: 2.4rem;
+    border-radius: 4px; }
+    .profile-tile-wrapper .profile-tile-item h4 {
+      font-size: 2rem; }
+      .profile-tile-wrapper .profile-tile-item h4 a {
+        text-decoration: none; }
+    .profile-tile-wrapper .profile-tile-item p {
+      margin-right: 0; }
 
 .upcoming-event-block {
   margin: 6.4rem 0 8rem 0; }

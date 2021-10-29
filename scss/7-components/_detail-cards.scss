@@ -35,7 +35,9 @@
   box-shadow: $box-shadow-default;
   padding: 2.4rem 3.2rem 2.4rem 3.2rem;
   border-radius: 0.4rem;
+  margin-bottom: 1.2rem;
   @include breakpoint (large){
+    max-width: 100%;
     float: right;
   }
   * {

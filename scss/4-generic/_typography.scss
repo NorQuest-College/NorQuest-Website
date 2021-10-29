@@ -93,6 +93,7 @@ h6 {
 
 p {
   margin-bottom: 1.2rem;
+  margin-right: 1.2rem;
   font-size: $font_size;
   font-family: $primary_font;
   font-weight: normal;
@@ -101,6 +102,7 @@ p {
   color: $black;
   &.lead {
     margin-bottom: 1rem;
+    margin-right: 1rem;
     font-size: $font_size;
     font-family: $primary_font;
     line-height: $line_height;
