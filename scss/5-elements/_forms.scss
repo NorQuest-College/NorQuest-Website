@@ -275,6 +275,15 @@ select {
   }
 }
 
+fieldset {
+  border: none;
+  padding: 3.2rem;
+  background-color: white;
+  max-width: 60.4rem;
+  box-shadow: $box-shadow-default;
+  border-radius: 4px;
+}
+
 textarea {
   width: 100%;
   max-width: 75rem;
@@ -344,7 +353,7 @@ input[required="required"] {
 }
 
 .form-container {
-  padding: 6.4rem 0;
+  padding: 3.2rem 0;
   &.dark-bg {
     h3, h4 { color: white; }
     label { color: white; }
@@ -384,8 +393,6 @@ input[required="required"] {
 }
 .check {
   position: relative;
-  height: 2.6rem;
-  width: 2.6rem;
   padding-left: 3.2rem;
 }
 .checkbox {

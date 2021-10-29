@@ -66,7 +66,7 @@
     grid-template-columns: repeat(2, auto);
   }
   @include breakpoint(large) {
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
   }
   .program-tile {
     background-color: #fcfaf5;
@@ -102,7 +102,7 @@
   padding: 0 3.2rem 3.2rem 0;
   overflow-x: scroll;
   @include breakpoint(mlarge) {
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
     overflow: inherit;
     padding: 0;
   }
@@ -131,6 +131,6 @@
         text-decoration: none;
       }
     }
-    p { margin-right: 0;}
+    p { margin-right: 0; }
   }
 }
