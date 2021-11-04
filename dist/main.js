@@ -243,7 +243,7 @@ var modalBtn = document.querySelectorAll(".tuitionFeesModalBtn");
 modalBtn.forEach(function (modalBtns) {
   modalBtns.addEventListener("click", function (e) {
     e.preventDefault();
-    modalBtns.closest(".container-flex").querySelector(".modal").style.display = "block";
+    modalBtns.closest(".container--hasModal").querySelector(".modal").style.display = "block";
   });
 }); // When the user clicks on <span> (x), close the modal
 // Get the <span> element that closes the modal
@@ -265,42 +265,48 @@ span.forEach(function (close) {
  * Modal next-previous functions
  */
 
-document.querySelector(".next-button").onclick = function nextBtn() {
-  event.preventDefault();
-  var selected = document.querySelector(".current-panel");
+var nextBtn = document.querySelectorAll(".next-button");
+nextBtn.forEach(function (nextBtns) {
+  nextBtns.addEventListener("click", function (e) {
+    event.preventDefault();
+    var currentParent = nextBtns.closest(".modal-content");
+    var selected = currentParent.querySelector(".current-panel");
 
-  if (selected.nextElementSibling) {
-    selected.classList.remove("current-panel");
-    selected.nextElementSibling.classList.add("current-panel");
-  }
+    if (selected.nextElementSibling) {
+      selected.classList.remove("current-panel");
+      selected.nextElementSibling.classList.add("current-panel");
+    }
 
-  var indicator = document.querySelector(".current-indicator");
+    var indicator = currentParent.querySelector(".current-indicator");
 
-  if (indicator.nextElementSibling) {
-    indicator.classList.remove("current-indicator");
-    indicator.nextElementSibling.classList.add("current-indicator");
-    indicator.classList.add("done");
-  } // console.log(indicator);
+    if (indicator.nextElementSibling) {
+      indicator.classList.remove("current-indicator");
+      indicator.nextElementSibling.classList.add("current-indicator");
+      indicator.classList.add("done");
+    }
+  });
+});
+var prevBtn = document.querySelectorAll(".previous-button");
+prevBtn.forEach(function (prevBtns) {
+  prevBtns.addEventListener("click", function (e) {
+    event.preventDefault();
+    var currentParent = prevBtns.closest(".modal-content");
+    var selected = currentParent.querySelector(".current-panel");
 
-};
+    if (selected.previousElementSibling) {
+      selected.classList.remove("current-panel");
+      selected.previousElementSibling.classList.add("current-panel");
+    }
 
-document.querySelector(".previous-button").onclick = function prevBtn() {
-  event.preventDefault();
-  var selected = document.querySelector(".current-panel");
+    var indicator = currentParent.querySelector(".current-indicator");
 
-  if (selected.previousElementSibling) {
-    selected.classList.remove("current-panel");
-    selected.previousElementSibling.classList.add("current-panel");
-  }
-
-  var indicator = document.querySelector(".current-indicator");
-
-  if (indicator.previousElementSibling) {
-    indicator.classList.remove("current-indicator");
-    indicator.previousElementSibling.classList.add("current-indicator");
-    indicator.classList.remove("done");
-  }
-};
+    if (indicator.previousElementSibling) {
+      indicator.classList.remove("current-indicator");
+      indicator.previousElementSibling.classList.add("current-indicator");
+      indicator.classList.remove("done");
+    }
+  });
+});
 
 /***/ }),
 

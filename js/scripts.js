@@ -8,8 +8,9 @@ if (!Element.prototype.matches) {
 }
 
 if (!Element.prototype.closest) {
-  Element.prototype.closest = function (s) {
+  Element.prototype.closest = function(s) {
     var el = this;
+
     do {
       if (Element.prototype.matches.call(el, s)) return el;
       el = el.parentElement || el.parentNode;
@@ -173,7 +174,9 @@ const modalBtn = document.querySelectorAll(".tuitionFeesModalBtn");
 modalBtn.forEach((modalBtns) => {
   modalBtns.addEventListener("click", (e) => {
     e.preventDefault();
-    modalBtns.closest(".container-flex").querySelector(".modal").style.display = "block";
+    modalBtns
+      .closest(".container--hasModal")
+      .querySelector(".modal").style.display = "block";
   });
 });
 
@@ -197,35 +200,43 @@ span.forEach((close) => {
 /**
  * Modal next-previous functions
  */
-document.querySelector(".next-button").onclick = function nextBtn() {
-  event.preventDefault();
-  let selected = document.querySelector(".current-panel");
-  if (selected.nextElementSibling) {
-    selected.classList.remove("current-panel");
-    selected.nextElementSibling.classList.add("current-panel");
-  }
+const nextBtn = document.querySelectorAll(".next-button");
+nextBtn.forEach((nextBtns) => {
+  nextBtns.addEventListener("click", (e) => {
+    event.preventDefault();
+    let currentParent = nextBtns.closest(".modal-content");
+    let selected = currentParent.querySelector(".current-panel");
+    if (selected.nextElementSibling) {
+      selected.classList.remove("current-panel");
+      selected.nextElementSibling.classList.add("current-panel");
+    }
 
-  let indicator = document.querySelector(".current-indicator");
-  if (indicator.nextElementSibling) {
-    indicator.classList.remove("current-indicator");
-    indicator.nextElementSibling.classList.add("current-indicator");
-    indicator.classList.add("done");
-  }
-  // console.log(indicator);
-};
+    let indicator = currentParent.querySelector(".current-indicator");
+    if (indicator.nextElementSibling) {
+      indicator.classList.remove("current-indicator");
+      indicator.nextElementSibling.classList.add("current-indicator");
+      indicator.classList.add("done");
+    }
 
-document.querySelector(".previous-button").onclick = function prevBtn() {
-  event.preventDefault();
-  let selected = document.querySelector(".current-panel");
-  if (selected.previousElementSibling) {
-    selected.classList.remove("current-panel");
-    selected.previousElementSibling.classList.add("current-panel");
-  }
+  })
+})
 
-  let indicator = document.querySelector(".current-indicator");
-  if (indicator.previousElementSibling) {
-    indicator.classList.remove("current-indicator");
-    indicator.previousElementSibling.classList.add("current-indicator");
-    indicator.classList.remove("done");
-  }
-};
+const prevBtn = document.querySelectorAll(".previous-button");
+prevBtn.forEach((prevBtns) => {
+  prevBtns.addEventListener("click", (e) => {
+    event.preventDefault();
+    let currentParent = prevBtns.closest(".modal-content");
+    let selected = currentParent.querySelector(".current-panel");
+    if (selected.previousElementSibling) {
+      selected.classList.remove("current-panel");
+      selected.previousElementSibling.classList.add("current-panel");
+    }
+
+    let indicator = currentParent.querySelector(".current-indicator");
+    if (indicator.previousElementSibling) {
+      indicator.classList.remove("current-indicator");
+      indicator.previousElementSibling.classList.add("current-indicator");
+      indicator.classList.remove("done");
+    }
+  });
+});
