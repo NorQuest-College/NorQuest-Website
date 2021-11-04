@@ -237,29 +237,33 @@ var addActiveTab = function addActiveTab(tab) {
  */
 
 
-var modal = document.getElementById("modal"); // Get the <span> element that closes the modal
+var modal = document.getElementById("modal"); // When the user clicks on the button, open the modal
 
-var span = document.getElementsByClassName("close")[0]; // When the user clicks on the button, open the modal
+var modalBtn = document.querySelectorAll(".tuitionFeesModalBtn");
+modalBtn.forEach(function (modalBtns) {
+  modalBtns.addEventListener("click", function (e) {
+    e.preventDefault();
+    modalBtns.closest(".container-flex").querySelector(".modal").style.display = "block";
+  });
+}); // When the user clicks on <span> (x), close the modal
+// Get the <span> element that closes the modal
 
-document.querySelector(".tuitionFeesModalBtn").onclick = function modalBtn() {
-  modal.style.display = "block";
-}; // When the user clicks on <span> (x), close the modal
+var span = document.querySelectorAll(".close");
+span.forEach(function (close) {
+  close.addEventListener("click", function (e) {
+    close.closest(".modal").style.display = "none";
+  });
+}); // When the user clicks anywhere outside of the modal, close it
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     console.log(event.target);
+//     // event.target.style.display = "none";
+//   }
+// }
 
-
-span.onclick = function () {
-  modal.style.display = "none";
-}; // When the user clicks anywhere outside of the modal, close it
-
-
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
 /**
  * Modal next-previous functions
  */
-
 
 document.querySelector(".next-button").onclick = function nextBtn() {
   event.preventDefault();
@@ -270,12 +274,14 @@ document.querySelector(".next-button").onclick = function nextBtn() {
     selected.nextElementSibling.classList.add("current-panel");
   }
 
-  var indicator = document.getElementsByClassName("page-indicator"); // indicator.nextElementSibling.classList.add("active");
-  // indicator.nextElementSibling.classList.remove("actve");
-  // indicator.classList.add("done");
-  // console.log(indicator);
+  var indicator = document.querySelector(".current-indicator");
 
-  console.log(indicator);
+  if (indicator.nextElementSibling) {
+    indicator.classList.remove("current-indicator");
+    indicator.nextElementSibling.classList.add("current-indicator");
+    indicator.classList.add("done");
+  } // console.log(indicator);
+
 };
 
 document.querySelector(".previous-button").onclick = function prevBtn() {
@@ -285,6 +291,14 @@ document.querySelector(".previous-button").onclick = function prevBtn() {
   if (selected.previousElementSibling) {
     selected.classList.remove("current-panel");
     selected.previousElementSibling.classList.add("current-panel");
+  }
+
+  var indicator = document.querySelector(".current-indicator");
+
+  if (indicator.previousElementSibling) {
+    indicator.classList.remove("current-indicator");
+    indicator.previousElementSibling.classList.add("current-indicator");
+    indicator.classList.remove("done");
   }
 };
 

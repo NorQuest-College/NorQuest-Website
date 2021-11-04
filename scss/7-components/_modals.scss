@@ -42,8 +42,28 @@
     &.current-panel {
       display: block;
     }
+    .form-modal-wrapper {
+      display: flex;
+      width: 100%;
+    }
+    .form-modal-item {
+      border: 1px solid $yellow;
+      border-radius: 4px;
+      max-width: 51.8rem;
+      width: 100%;
+      padding: 2.2rem 3.2rem;
+      &:first-of-type { margin-right: 3.2rem }
+    }
   }
 }
+
+// next / prev buttons
+.modal-item-buttons-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
 /* The Close Button */
 .close {
   color: white;
@@ -52,6 +72,7 @@
   z-index: 1;
   position: relative;
   cursor: pointer;
+  .fas { font-size: 1.6rem; }
 }
 
 .modal-page-indicator {
@@ -105,7 +126,7 @@
         border: solid 2px $black;
         color: white;
       }
-      &.active {
+      &.current-indicator {
         width: 4rem;
         height: 4rem;
         background-color: $red;
@@ -126,8 +147,5 @@
         }
       }
     }
-  }
-  .active {
-
   }
 }

@@ -1096,7 +1096,7 @@
               <hr>
               <div class="modal-page-indicator">
                 <ul>
-                  <li class="page-indicator active">1</li>
+                  <li class="page-indicator current-indicator">1</li>
                   <li class="page-indicator">2</li>
                   <li class="page-indicator">3</li>
                   <li class="page-indicator">4</li>
@@ -1109,8 +1109,14 @@
                 <h3>What is your citizenship?</h3>
                 <p>Your tuition may be slightly different based on your citizenship.</p>
                 <form action="">
-                  <input type="radio">Canadian / Permanent resident
-                  <input type="radio">International
+                  <div class="form-modal-wrapper">
+                    <div class="form-modal-item">
+                      <input type="radio">Canadian / Permanent resident
+                    </div>
+                    <div class="form-modal-item">
+                      <input type="radio">International
+                    </div>
+                  </div>
                 </form>
               </div>
 
@@ -1118,8 +1124,14 @@
                 <h3>How many courses are you planning on taking per term?</h3>
                 <p>Get a better idea of how much your courses will cost.</p>
                 <form action="">
-                  <input type="radio">Get a better idea of how much your courses will cost.
-                  <input type="radio">Some courses; customizing a part-time schedule.
+                  <div class="form-modal-wrapper">
+                    <div class="form-modal-item">
+                      <input type="radio">Get a better idea of how much your courses will cost.
+                    </div>
+                    <div class="form-modal-item">
+                      <input type="radio">Some courses; customizing a part-time schedule.
+                    </div>
+                  </div>
                 </form>
               </div>
 
@@ -1127,8 +1139,14 @@
                 <h3>Page 3 panel</h3>
                 <p>Get a better idea of how much your courses will cost.</p>
                 <form action="">
-                  <input type="radio">Get a better idea of how much your courses will cost.
-                  <input type="radio">Some courses; customizing a part-time schedule.
+                  <div class="form-modal-wrapper">
+                    <div class="form-modal-item">
+                      <input type="radio">Get a better idea of how much your courses will cost.
+                    </div>
+                    <div class="form-modal-item">
+                      <input type="radio">Some courses; customizing a part-time schedule.
+                    </div>
+                  </div>
                 </form>
               </div>
 
@@ -1136,16 +1154,26 @@
                 <h3>Page 4 panel</h3>
                 <p>Get a better idea of how much your courses will cost.</p>
                 <form action="">
-                  <input type="radio">Get a better idea of how much your courses will cost.
-                  <input type="radio">Some courses; customizing a part-time schedule.
+                  <div class="form-modal-wrapper">
+                    <div class="form-modal-item">
+                      <input type="radio">Get a better idea of how much your courses will cost.
+                    </div>
+                    <div class="form-modal-item">
+                      <input type="radio">Some courses; customizing a part-time schedule.
+                    </div>
+                  </div>
                 </form>
               </div>
 
             </div>
-            <div class="container">
-              <a href="#" class='btn previous-button'>« Previous</a>
-              <a href="#" class='btn next-button'>Next »</a>
-            </div>
+            <!-- <div class="container"> -->
+              <div class="modal-item-buttons-wrapper">
+                <div class="modal-item-buttons">
+                  <a href="#" class='btn previous-button'>« Previous</a>
+                  <a href="#" class='btn next-button'>Next »</a>
+                </div>
+              </div>
+            <!-- </div> -->
           </div>
 
         </div>
@@ -1241,21 +1269,94 @@
         </div>
 
         <!-- The Modal -->
-        <div id="modal-2" class="modal">
+        <div id="modal-fees" class="modal">
 
           <!-- Modal content -->
-          <div class="modal-content">
-            <div class="modal-header">
-              <span class="close">&times;</span>
-              <h2>#2 Modal Header #2</h2>
+          <div class="modal-content contianer">
+            <span class="button secondary close secondMODAL">Close <i class="fas fa-times"></i></span>
+            <div class="container">
+              <h4>Tuition and fees estimator The second MODAL</h4>
+              <hr>
+              <div class="modal-page-indicator">
+                <ul>
+                  <li class="page-indicator current-indicator">1</li>
+                  <li class="page-indicator">2</li>
+                  <li class="page-indicator">3</li>
+                  <li class="page-indicator">4</li>
+                </ul>
+              </div>
             </div>
-            <div class="modal-body">
-              <p>#2 Some text in the Modal Body</p>
-              <p>#2 Some other text...</p>
+
+            <div class="container modal-body">
+              <div class="page1 page-item current-panel">
+                <h3>The second MODAL What is your citizenship?</h3>
+                <p>Your tuition may be slightly different based on your citizenship.</p>
+                <form action="">
+                  <div class="form-modal-wrapper">
+                    <div class="form-modal-item">
+                      <input type="radio">Canadian / Permanent resident
+                    </div>
+                    <div class="form-modal-item">
+                      <input type="radio">International
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="page2 page-item">
+                <h3>The second MODAL How many courses are you planning on taking per term?</h3>
+                <p>Get a better idea of how much your courses will cost.</p>
+                <form action="">
+                  <div class="form-modal-wrapper">
+                    <div class="form-modal-item">
+                      <input type="radio">Get a better idea of how much your courses will cost.
+                    </div>
+                    <div class="form-modal-item">
+                      <input type="radio">Some courses; customizing a part-time schedule.
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="page3 page-item">
+                <h3>Page 3 panel</h3>
+                <p>Get a better idea of how much your courses will cost.</p>
+                <form action="">
+                  <div class="form-modal-wrapper">
+                    <div class="form-modal-item">
+                      <input type="radio">Get a better idea of how much your courses will cost.
+                    </div>
+                    <div class="form-modal-item">
+                      <input type="radio">Some courses; customizing a part-time schedule.
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <div class="page4 page-item">
+                <h3>Page 4 panel</h3>
+                <p>Get a better idea of how much your courses will cost.</p>
+                <form action="">
+                  <div class="form-modal-wrapper">
+                    <div class="form-modal-item">
+                      <input type="radio">Get a better idea of how much your courses will cost.
+                    </div>
+                    <div class="form-modal-item">
+                      <input type="radio">Some courses; customizing a part-time schedule.
+                    </div>
+                  </div>
+                </form>
+              </div>
+
             </div>
-            <div class="modal-footer">
-              <h3>#2 Modal Footer</h3>
+            <!-- <div class="container"> -->
+            <div class="modal-item-buttons-wrapper">
+              <div class="modal-item-buttons">
+                <a href="#" class='btn previous-button'>« Previous</a>
+                <a href="#" class='btn next-button'>Next »</a>
+              </div>
             </div>
+            <!-- </div> -->
           </div>
 
         </div>
@@ -1264,11 +1365,11 @@
         <div class="tabs-wrapper container-50">
           <nav class="tabs">
             <ul class="tab-list">
-              <li class="is-active"><a href="#tab-one">Canadian students</a></li>
-              <li><a href="#tab-two">International students</a></li>
+              <li class="is-active"><a href="#tab-one-1">Canadian students</a></li>
+              <li><a href="#tab-two-2">International students</a></li>
             </ul>
           </nav>
-          <section class="tab-content is-active" id="tab-one">
+          <section class="tab-content is-active" id="tab-one-1">
            <table>
             <tr>
               <td></td>
@@ -1326,7 +1427,7 @@
               </div>
             </div>
           </section>
-          <section class="tab-content" id="tab-two">
+          <section class="tab-content" id="tab-two-2">
             <h4>Section two content title</h4>
             <p>NorQuest College offers professional and confidential counselling at no cost to registered students. Our
               educational counsellors, also known as success partners, are psychologists and possess a wide range of expertise

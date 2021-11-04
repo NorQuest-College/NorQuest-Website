@@ -3535,6 +3535,24 @@ details {
   display: none; }
   .modal-body .page-item.current-panel {
     display: block; }
+  .modal-body .page-item .form-modal-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+  .modal-body .page-item .form-modal-item {
+    border: 1px solid #ffbd00;
+    border-radius: 4px;
+    max-width: 51.8rem;
+    width: 100%;
+    padding: 2.2rem 3.2rem; }
+    .modal-body .page-item .form-modal-item:first-of-type {
+      margin-right: 3.2rem; }
+
+.modal-item-buttons-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
 
 /* The Close Button */
 .close {
@@ -3544,6 +3562,8 @@ details {
   z-index: 1;
   position: relative;
   cursor: pointer; }
+  .close .fas {
+    font-size: 1.6rem; }
 
 .modal-page-indicator {
   max-width: 54rem; }
@@ -3593,17 +3613,17 @@ details {
         background-color: #424242;
         border: solid 2px #424242;
         color: white; }
-      .modal-page-indicator ul li.active {
+      .modal-page-indicator ul li.current-indicator {
         width: 4rem;
         height: 4rem;
         background-color: #e71321;
         border: solid 2px #e71321;
         color: white;
         font-size: 1.8rem; }
-        .modal-page-indicator ul li.active:nth-child(1):before {
+        .modal-page-indicator ul li.current-indicator:nth-child(1):before {
           left: 3.8rem;
           top: 19px; }
-        .modal-page-indicator ul li.active:last-child:before {
+        .modal-page-indicator ul li.current-indicator:last-child:before {
           left: 3.8rem;
           top: 19px; }
 

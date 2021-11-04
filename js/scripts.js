@@ -166,26 +166,33 @@ const addActiveTab = (tab) => {
 /**
  * Show me the modal !
  */
-var modal = document.getElementById("modal");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+const modal = document.getElementById("modal");
 
 // When the user clicks on the button, open the modal
-document.querySelector(".tuitionFeesModalBtn").onclick = function modalBtn() {
-  modal.style.display = "block";
-}
+const modalBtn = document.querySelectorAll(".tuitionFeesModalBtn");
+modalBtn.forEach((modalBtns) => {
+  modalBtns.addEventListener("click", (e) => {
+    e.preventDefault();
+    modalBtns.closest(".container-flex").querySelector(".modal").style.display = "block";
+  });
+});
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
+// Get the <span> element that closes the modal
+const span = document.querySelectorAll(".close");
+span.forEach((close) => {
+  close.addEventListener("click", (e) => {
+    close.closest(".modal").style.display = "none";
+  });
+});
+
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+// window.onclick = function(event) {
+//   if (event.target == modal) {
+//     console.log(event.target);
+//     // event.target.style.display = "none";
+//   }
+// }
 
 /**
  * Modal next-previous functions
@@ -198,12 +205,13 @@ document.querySelector(".next-button").onclick = function nextBtn() {
     selected.nextElementSibling.classList.add("current-panel");
   }
 
-  let indicator = document.getElementsByClassName("page-indicator");
-  // indicator.nextElementSibling.classList.add("active");
-  // indicator.nextElementSibling.classList.remove("actve");
-  // indicator.classList.add("done");
+  let indicator = document.querySelector(".current-indicator");
+  if (indicator.nextElementSibling) {
+    indicator.classList.remove("current-indicator");
+    indicator.nextElementSibling.classList.add("current-indicator");
+    indicator.classList.add("done");
+  }
   // console.log(indicator);
-  console.log(indicator);
 };
 
 document.querySelector(".previous-button").onclick = function prevBtn() {
@@ -212,5 +220,12 @@ document.querySelector(".previous-button").onclick = function prevBtn() {
   if (selected.previousElementSibling) {
     selected.classList.remove("current-panel");
     selected.previousElementSibling.classList.add("current-panel");
+  }
+
+  let indicator = document.querySelector(".current-indicator");
+  if (indicator.previousElementSibling) {
+    indicator.classList.remove("current-indicator");
+    indicator.previousElementSibling.classList.add("current-indicator");
+    indicator.classList.remove("done");
   }
 };
