@@ -3130,8 +3130,8 @@ details {
     width: 100%; }
   .listing-form-holder .form-group.container-grid {
     grid-gap: 3.2rem;
-    -ms-grid-columns: auto 3.2rem auto;
-    grid-template-columns: auto auto; }
+    -ms-grid-columns: 50% 3.2rem 50%;
+    grid-template-columns: 50% 50%; }
   .listing-form-holder form {
     border-bottom: 0.1rem solid #424242;
     padding-bottom: 2.4rem; }
