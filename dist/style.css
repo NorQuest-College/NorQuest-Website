@@ -1575,7 +1575,11 @@ header.header {
             font-size: 1.4rem; } }
       header.header nav.menu-primary-nav li .menu__subnav.menu__subnav.lvl-2 a {
         line-height: 1.11;
-        margin: 0; }
+        margin: 0;
+        padding: 0.8rem 0; }
+        @media screen and (max-width: 53.6875em) {
+          header.header nav.menu-primary-nav li .menu__subnav.menu__subnav.lvl-2 a {
+            padding: 2.4rem 0; } }
         header.header nav.menu-primary-nav li .menu__subnav.menu__subnav.lvl-2 a:hover, header.header nav.menu-primary-nav li .menu__subnav.menu__subnav.lvl-2 a:active {
           text-decoration: underline;
           color: #e71321; }
