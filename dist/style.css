@@ -3144,6 +3144,20 @@ details {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+    .listing-form-holder .form-group.container-flex .select-listing {
+      max-width: 30%; }
+  .listing-form-holder .upcoming-event-block .events-3x {
+    -ms-grid-columns: (auto)[1];
+    grid-template-columns: repeat(1, auto);
+    overflow-x: auto; }
+    @media (min-width: 48em) {
+      .listing-form-holder .upcoming-event-block .events-3x {
+        -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto); } }
+    @media (min-width: 53.75em) {
+      .listing-form-holder .upcoming-event-block .events-3x {
+        -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto); } }
 
 .listing-content-wrapper header {
   display: -webkit-box;

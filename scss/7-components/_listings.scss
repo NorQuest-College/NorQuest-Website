@@ -14,6 +14,21 @@
   }
   .form-group.container-flex {
     justify-content: space-between;
+    .select-listing {
+      max-width: 30%;
+    }
+  }
+  .upcoming-event-block {
+    .events-3x {
+      grid-template-columns: repeat(1, auto);
+      overflow-x: auto;
+    @include breakpoint (medium) {
+      grid-template-columns: repeat(2, auto);
+    }
+    @include breakpoint (mlarge) {
+        grid-template-columns: repeat(3, auto);
+      }
+    }
   }
 }
 .listing-content-wrapper {
