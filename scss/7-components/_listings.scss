@@ -12,6 +12,9 @@
     border-bottom: 0.1rem solid #424242;
     padding-bottom: 2.4rem;
   }
+  .form-group.container-flex {
+    justify-content: space-between;
+  }
 }
 .listing-content-wrapper {
   header {

@@ -2702,6 +2702,7 @@ details {
 
 .related-card-wrapper {
   max-width: 28.6rem;
+  min-width: 28.6rem;
   background: white;
   -webkit-box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
           box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
@@ -3139,6 +3140,10 @@ details {
   .listing-form-holder form {
     border-bottom: 0.1rem solid #424242;
     padding-bottom: 2.4rem; }
+  .listing-form-holder .form-group.container-flex {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
 
 .listing-content-wrapper header {
   display: -webkit-box;
