@@ -49,7 +49,10 @@ main {
 }
 .container-center {
   margin: 0 auto;
-  max-width: 65%;
+  max-width: 100%;
+  @include breakpoint(mlarge) {
+    max-width: 65%;
+  }
 }
 .container-50 {
   max-width: 100%;
