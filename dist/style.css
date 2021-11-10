@@ -1124,8 +1124,16 @@ main {
   .container.margin-bottom, .margin-bottom.container-restricted {
     margin: 0 auto 5rem; }
 
+.container-60 {
+  max-width: 60.4rem;
+  margin: 0 auto; }
+
 .container-768 {
   max-width: 76.8rem; }
+
+.container-center {
+  margin: 0 auto;
+  max-width: 65%; }
 
 .container-50 {
   max-width: 100%;
@@ -2221,7 +2229,7 @@ section.tab-content {
   line-height: 0.89;
   color: white;
   background-color: #ae2830;
-  padding: 0.6rem 1.2rem 1rem;
+  padding: 0.6rem 1.2rem 0.6rem;
   border-radius: 4px;
   text-decoration: none;
   display: inline-block; }
@@ -2246,6 +2254,10 @@ section.tab-content {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block; }
+
+.tags-light a {
+  color: #ae2830 !important;
+  background-color: white; }
 
 .menu-shopping-cart-wrapper {
   margin-top: -1rem; }
@@ -3326,6 +3338,27 @@ details {
     .profile-tile-wrapper .profile-tile-item p {
       margin-right: 0; }
 
+.upcoming-event-block-single-detail {
+  margin: 6.4rem auto 1.2rem auto;
+  width: 100%; }
+  .upcoming-event-block-single-detail .event-block-single-detail {
+    -webkit-box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
+            box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
+    position: relative;
+    padding: 2.4rem 3.2rem;
+    background-color: #424242;
+    border-radius: 4px; }
+    @media (min-width: 48em) {
+      .upcoming-event-block-single-detail .event-block-single-detail {
+        max-width: 60.4rem;
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 268px 3.2rem auto 3.2rem 1fr;
+        grid-template-columns: 268px auto 1fr;
+        grid-gap: 3.2rem; } }
+    .upcoming-event-block-single-detail .event-block-single-detail * {
+      color: white; }
+
 .upcoming-event-block {
   margin: 6.4rem 0 8rem 0; }
   @media (min-width: 48em) {
@@ -3412,7 +3445,8 @@ details {
         -ms-flex-align: center;
             align-items: center;
     -webkit-box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
-            box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1); }
+            box-shadow: 0 5px 10px 0 rgba(66, 66, 66, 0.1);
+    position: relative; }
     @media (min-width: 48em) {
       .upcoming-event-block .event-block {
         max-width: 92.2rem;

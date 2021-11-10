@@ -40,8 +40,16 @@ main {
   }
 }
 
+.container-60 {
+  max-width: 60.4rem;
+  margin: 0 auto;
+}
 .container-768 {
   max-width: 76.8rem;
+}
+.container-center {
+  margin: 0 auto;
+  max-width: 65%;
 }
 .container-50 {
   max-width: 100%;

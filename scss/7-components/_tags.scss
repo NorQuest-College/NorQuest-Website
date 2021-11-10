@@ -7,7 +7,7 @@
     line-height: 0.89;
     color: white;
     background-color: $rouge;
-    padding: 0.6rem 1.2rem 1rem;
+    padding: 0.6rem 1.2rem 0.6rem;
     border-radius: 4px;
     text-decoration: none;
     display: inline-block;
@@ -33,4 +33,10 @@
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
+}
+.tags-light {
+  a {
+    color: $rouge !important;
+    background-color: white;
+  }
 }
