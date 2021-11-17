@@ -11,7 +11,11 @@ h6 {
 }
 .h1 {
   @extend h1;
-  margin-bottom: 0 !important;
+  line-height: 1;
+  margin-bottom: 2rem !important;
+  @include breakpoint(mlarge) {
+    margin-bottom: 4rem !important;
+  }
 }
 h1{
   font-size: calc(min(max(3.8rem, 5vw), 5.6rem));

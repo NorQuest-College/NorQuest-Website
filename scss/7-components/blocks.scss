@@ -1,15 +1,19 @@
 .blocks {
-  margin: 4rem 0 8rem 0;
+  margin: 4.8rem 0 8rem 0;
   &.__2x {
     .block {
       max-width: 39.2rem;
     }
   }
   &.__3x {
-    grid-template-columns: repeat(auto-fill, 28.6rem);
+    grid-template-columns: auto;
+    @include breakpoint(mlarge) {
+      grid-template-columns: repeat(auto-fill, 28.6rem);
+    }
   }
   .block {
     max-width: 28.6rem;
+    h1 { margin-bottom: 4.8rem; }
     h4 {
       font-size: 2.4rem;
       font-weight: 600;
@@ -18,9 +22,37 @@
     }
   }
 }
+.video-blocks-wrapper {
+  grid-gap: 3.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 224px);
+  overflow-x: scroll;
+  @include breakpoint(mlarge) {
+    grid-template-columns: repeat(3, 1fr);
+    overflow: inherit;
+    padding: 0;
+  }
+  /* height */
+  &::-webkit-scrollbar {
+    height: 1.2rem;
+  }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0px 0px 20px 12px $black;
+    border-radius: 10px;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: $red;
+    border-radius: 10px;
+  }
+}
 .__video {
     &.__3x {
-      grid-template-columns: repeat(3, auto);
+      grid-template-columns: auto;
+      @include breakpoint(mlarge) {
+        grid-template-columns: repeat(3, auto);
+      }
     }
   .video-block {
     a {
@@ -55,8 +87,43 @@
 .feature-content-blocks {
   h2.h1 { text-align: center; }
   .feature-content-blocks--wrapper {
+    &.__3x {
+      grid-template-columns: auto;
+      @include breakpoint(mlarge) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
     .feature-content-blocks--item {
-
+      background-color: $rouge;
+      padding: 3.2rem 4rem;
+      border-radius: 4px;
+      box-shadow: $box-shadow-default;
+      display: block;
+      text-decoration: none;
+      &:hover { box-shadow: 0 8px 16px 0 rgba(66, 66, 66, 0.24); }
+      h4 { padding-top : 0; }
+      * { color: white; }
     }
   }
+}
+.feature-content-image-blocks {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+  &.__3x {
+    grid-template-columns: auto;
+    @include breakpoint(mlarge) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .feature-content-image-block--item {
+    h2.h1 { line-height: 1; margin-bottom: 3.2rem !important; }
+    &:first-of-type {
+      p {
+        font-size: 2.4rem;
+        line-height: 1.33;
+        margin-bottom: 3.2rem;
+      }
+    }
+  }
+
 }

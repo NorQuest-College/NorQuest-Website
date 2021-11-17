@@ -125,7 +125,6 @@ main {
     grid-template-columns: auto;
     @include breakpoint(mlarge) {
       // grid-template-columns: auto auto auto;
-      // grid-template-columns: minmax(26.8rem, max-content) repeat(auto-fill, 28.6rem);
       grid-template-columns: repeat(auto-fill, 28.6rem);
     }
   }
