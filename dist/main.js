@@ -18,7 +18,8 @@ var map = {
 	"./menu-open.svg": "./images/sprites/menu-open.svg",
 	"./norquest-logo-horizontal-edit.svg": "./images/sprites/norquest-logo-horizontal-edit.svg",
 	"./norquest-logo-horizontal.svg": "./images/sprites/norquest-logo-horizontal.svg",
-	"./norquest-logo-vertical.svg": "./images/sprites/norquest-logo-vertical.svg"
+	"./norquest-logo-vertical.svg": "./images/sprites/norquest-logo-vertical.svg",
+	"./play-button.svg": "./images/sprites/play-button.svg"
 };
 
 
@@ -516,6 +517,25 @@ __webpack_require__.r(__webpack_exports__);
       id: "norquest-logo-vertical-usage",
       viewBox: "0 0 537 432",
       url: __webpack_require__.p + "sprites.svg#norquest-logo-vertical",
+      toString: function () {
+        return this.url;
+      }
+    });
+
+/***/ }),
+
+/***/ "./images/sprites/play-button.svg":
+/*!****************************************!*\
+  !*** ./images/sprites/play-button.svg ***!
+  \****************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+      id: "play-button-usage",
+      viewBox: "0 0 88 88",
+      url: __webpack_require__.p + "sprites.svg#play-button",
       toString: function () {
         return this.url;
       }

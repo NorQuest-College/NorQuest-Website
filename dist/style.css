@@ -43,6 +43,7 @@ input[type="submit"], .checkbox, .checkbox:before, .slider, .slider:before, head
 /* Remove default margin */
 body,
 h1,
+.h1,
 h2,
 h3,
 h4,
@@ -219,6 +220,9 @@ hr {
   border: none;
   background-color: #f58b2e; }
 
+.container img, .container-restricted img {
+  border-radius: 4px; }
+
 img,
 picture {
   overflow: hidden;
@@ -290,7 +294,9 @@ main img {
 .site-wide--alert-container {
   display: none; }
 
+
 h1,
+.h1,
 h2,
 h3,
 h4,
@@ -301,18 +307,27 @@ h6 {
   color: #424242;
   font-family: Agenda, Helvetica, Arial, sans-serif; }
 
-h1 {
+.h1 {
+  margin-bottom: 0 !important; }
+
+
+h1,
+.h1 {
   font-size: calc(min(max(3.8rem, 5vw), 5.6rem));
   font-weight: bold;
   margin-bottom: 4rem; }
   @media (min-width: 53.75em) {
-    h1 {
+    
+    h1,
+    .h1 {
       margin-bottom: 8rem; } }
-  h1.page-title {
+  h1.page-title, .page-title.h1 {
     max-width: 81.6rem; }
     @media (min-width: 90em) {
-      h1.page-title {
+      h1.page-title, .page-title.h1 {
         max-width: 80%; } }
+  h1.page-title--large, .page-title--large.h1 {
+    font-size: 8rem; }
 
 h2 {
   font-size: 3.2rem;
@@ -1210,6 +1225,12 @@ main {
       grid-template-columns: auto auto; } }
   .container-grid .margin-md {
     margin: .8rem 0 2.8rem 0; }
+  .container-grid.__3x {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto; }
+    @media (min-width: 53.75em) {
+      .container-grid.__3x {
+        grid-template-columns: repeat(auto-fill, 28.6rem); } }
 
 .container-flex {
   -webkit-box-sizing: content-box;
@@ -1670,7 +1691,8 @@ header.header {
       -ms-flex-flow: row;
           flex-flow: row;
       padding-right: 2.4rem;
-      padding-left: 2.4rem; } }
+      padding-left: 2.4rem;
+      min-height: 5.2rem; } }
   @media (min-width: 53.75em) and (min-width: 64em) {
     .program-nav {
       padding-right: 4rem;
@@ -2091,7 +2113,7 @@ footer {
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%); } }
   @media (min-width: 53.75em) {
-    .hero h1 {
+    .hero h1, .hero .h1 {
       color: white; } }
   .hero img {
     -o-object-fit: cover;
@@ -2214,7 +2236,7 @@ section.tab-content {
       padding: 2.4rem 2.4rem; } }
   section.tab-content.is-active {
     display: block; }
-  section.tab-content h1, section.tab-content h2, section.tab-content h3, section.tab-content h4, section.tab-content h5, section.tab-content h6 {
+  section.tab-content h1, section.tab-content .h1, section.tab-content h2, section.tab-content h3, section.tab-content h4, section.tab-content h5, section.tab-content h6 {
     padding-top: 0;
     margin-bottom: 1.2rem;
     max-width: 49.8rem; }
@@ -3686,6 +3708,56 @@ details {
         .modal-page-indicator ul li.current-indicator:last-child:before {
           left: 3.8rem;
           top: 19px; }
+
+.blocks {
+  margin: 4rem 0 8rem 0; }
+  .blocks.__2x .block {
+    max-width: 39.2rem; }
+  .blocks.__3x {
+    grid-template-columns: repeat(auto-fill, 28.6rem); }
+  .blocks .block {
+    max-width: 28.6rem; }
+    .blocks .block h4 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      line-height: 1;
+      color: #e71321; }
+
+.__video.__3x {
+  -ms-grid-columns: (auto)[3];
+  grid-template-columns: repeat(3, auto); }
+
+.__video .video-block a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .__video .video-block a:hover svg {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+
+.__video .video-block h4 {
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #e71321;
+  margin-bottom: 0;
+  padding-top: 1.2rem; }
+
+.__video .video-block .play-button {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out; }
+
+.feature-content-blocks h2.h1 {
+  text-align: center; }
 
 /* Utility and helper classes and, most importantly, states and modifiers like '.is-active' or '.sr-only' */
 .sr-only:not(:focus):not(:active) {

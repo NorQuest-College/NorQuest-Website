@@ -9,8 +9,11 @@ h6 {
   color: $black;
   font-family: $primary_font;
 }
-
-h1 {
+.h1 {
+  @extend h1;
+  margin-bottom: 0 !important;
+}
+h1{
   font-size: calc(min(max(3.8rem, 5vw), 5.6rem));
   font-weight: bold;
   margin-bottom: 4rem;
@@ -22,6 +25,9 @@ h1 {
     @include breakpoint(xxxlarge) {
       max-width: 80%;
     }
+  }
+  &.page-title--large {
+    font-size: 8rem;
   }
 }
 

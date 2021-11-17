@@ -15,6 +15,7 @@
     flex-flow: row;
     padding-right: 2.4rem;
     padding-left: 2.4rem;
+    min-height: 5.2rem;
     @include breakpoint(lxlarge) {
       padding-right: 4rem;
       padding-left: 4rem;
