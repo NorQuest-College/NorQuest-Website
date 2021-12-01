@@ -248,7 +248,7 @@ var modalBtn = document.querySelectorAll(".tuitionFeesModalBtn");
 modalBtn.forEach(function (modalBtns) {
   modalBtns.addEventListener("click", function (e) {
     e.preventDefault();
-    modalBtns.closest(".container--hasModal").querySelector(".modal").style.display = "block";
+  modal.style.display = "block";
   });
 }); // When the user clicks on <span> (x), close the modal
 // Get the <span> element that closes the modal
