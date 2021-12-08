@@ -157,7 +157,7 @@ var startDateSelector = document.querySelector(".startDateSelector");
 var dateSelector = document.querySelector(".date-selector");
 
 if (startDateSelector || dateSelector) {
-  document.querySelector(".secondary-hero-nav").onclick = function startDateSelectors() {
+  document.querySelector(".startDateSelector").onclick = function startDateSelectors() {
     event.preventDefault();
     startDateSelector.classList.toggle("is-active");
     dateSelector.classList.toggle("is-active");
